@@ -1,26 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import './Footer.css';
+import Input from './Input/Input';
+import Button from '../components/Button/Button';
+import Menu_information from './Menu_information/Menu_information';
+import Menu_onlineRetail from './Menu_onlineRetail/Menu_onlineRetail';
+import ListSocial from './ListSocial/ListSocial';
 
-function App() {
+function Footer() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="footer">
+      <div className="footer-top">
+        <div className="footer-subscribe">
+          <div className="footer-subscribe__title">
+            Подпишитесь на нашу рассылку и узнавайте о акция быстрее
+          </div>
+
+          <form className="footer-subscribe__email-form">
+            <Input />
+            <Button btnName="Отправить" />
+          </form>
+        </div>
+      </div>
+
+      <div className="footer-top__information-list">
+        <Menu_information />
+      </div>
+
+      <div className="footer-top__onlineRetail-list">
+        <Menu_onlineRetail />
+      </div>
+
+      <div className="footer-top__social">
+        <ListSocial />
+      </div>
+
     </div>
   );
 }
 
-export default App;
+export default Footer;
