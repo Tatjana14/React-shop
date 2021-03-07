@@ -1,8 +1,8 @@
 import './Image.css';
 
-function Image() {
+function Image(props) {
     return (
-        <img src="#" alt="" />
+        <img src={props.src} alt={props.alt} />
     );
 }
 
