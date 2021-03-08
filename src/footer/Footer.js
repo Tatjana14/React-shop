@@ -1,6 +1,6 @@
 import './Footer.css';
 import Input from './Input/Input';
-import Button from '../components/Button/Button';
+import Button from '../../src/components/Button/Button';
 import Link from '../components/Link/Link'
 import MenuFooter_Information from './MenuFooter_Information/MenuFooter_Information';
 import MenuFooter_onlineShop from './MenuFooter_onlineShop/MenuFooter_onlineShop';
