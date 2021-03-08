@@ -3,9 +3,7 @@ import './Catalog.css';
 function Catalog() {
   return (
     <section className="Catalog">
-      <div className="Catalog-wrapper">
-
-      </div>
+      <div className="Catalog-wrapper"></div>
     </section>
   );
 }

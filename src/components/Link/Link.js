@@ -3,7 +3,7 @@ import './Link.css';
 
 function Link(props) {
     return (
-        <a href="#" className="link">{props.linkName}</a>
+        <a href={props.to} className={props.className}>{props.linkValue}</a>
     );
 }
 
