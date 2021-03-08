@@ -1,11 +1,11 @@
 import './Footer.css';
 import Input from './Input/Input';
-import Button from '../components/Button/Button';
-import Link from '../components/Link/Link'
+import Button from '../components/button/Button';
+import Link from '../components/link/Link'
 import MenuFooter_Information from './MenuFooter_Information/MenuFooter_Information';
 import MenuFooter_onlineShop from './MenuFooter_onlineShop/MenuFooter_onlineShop';
 import ListSocial from './ListSocial/ListSocial';
-import Title_h3 from '../components/Title_h3/Title_h3';
+import Title_h3 from '../components/title_h3/Title_h3';
 
 function Footer() {
   return (
