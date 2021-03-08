@@ -1,5 +1,5 @@
 import './Card.css';
-import Image from '../Image/Image'
+import Image from '../image/Image'
 import like from '../../assets/img/common/like.svg';
 import count from '../../assets/img/common/count_button.svg';
 
