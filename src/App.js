@@ -3,6 +3,7 @@ import Header from './header/Header'
 import Catalog from './pages/catalog/Catalog';
 import Footer from './footer/Footer';
 import Main from "../src/pages/main/Main"
+import Product1 from './pages/product/Product';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Main/>
       <Catalog/>
       <Footer />
+      <Product1/>
     </div>
   );
 }
