@@ -4,7 +4,7 @@ import map from "../../assets/img/header/map.svg";
 import like from "../../assets/img/common/like.svg";
 import user from "../../assets/img/header/user.svg";
 import count from "../../assets/img/header/count.svg";
-import Image from '../../components/Image/Image';
+import Image from '../../components/image/Image';
 import Link from '../../components/link/Link';
 
 

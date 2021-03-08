@@ -1,6 +1,6 @@
 import './MenuFooter_onlineShop.css';
-import List_item from '../../components/list_item/List_item';
-import Link from '../../components/link/Link';
+import List_item from '../../components/List_item/List_item';
+import Link from '../../components/Link/Link';
 
 function MenuFooter_onlineShop(props) {
   return (
