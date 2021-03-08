@@ -1,4 +1,4 @@
-import './navMenu.css';
+import './NavMenu.css';
 import MenuItem from '../../../components/menuItem/MenuItem';
 
 

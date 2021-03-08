@@ -1,5 +1,6 @@
 import './Product.css';
 import NavMenu from './navMenu/NavMenu';
+import ProductDescribtion from './productDescribtion/ProductDescribtion';
 
 
 function Product() {
@@ -7,7 +8,9 @@ function Product() {
         <div className="Product">
             <NavMenu/>
             <div className="ProductDescription">
-                
+                <div className="ProductDescription__card">
+                    <ProductDescribtion />
+                </div>
             </div>
         </div>
     );
