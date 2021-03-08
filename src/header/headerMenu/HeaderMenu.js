@@ -1,6 +1,6 @@
 
 import './HeaderMenu.css';
-import Link from '../../components/Link/Link';
+import Link from '../../components/link/Link';
 
 function HeaderMenu() {
   return (

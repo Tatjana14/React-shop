@@ -5,7 +5,7 @@ import like from "../../assets/img/common/like.svg";
 import user from "../../assets/img/header/user.svg";
 import count from "../../assets/img/header/count.svg";
 import Image from '../../components/Image/Image';
-import Link from '../../components/Link/Link';
+import Link from '../../components/link/Link';
 
 
 function HeaderNav() {
