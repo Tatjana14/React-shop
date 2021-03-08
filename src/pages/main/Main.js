@@ -3,6 +3,7 @@ import './Main.module.css'
 import CardDiscount from "./cardDiscount/CardDiscount";
 import motor from '../../assets/img/sale/motor.svg'
 import SearchForm from "./searchForm/SearchForm";
+import Categories from "./categories/Categories";
 
 function Main() {
   return ( <div>
@@ -16,6 +17,7 @@ function Main() {
       date = "31.08.2020"
     />
     <SearchForm />
+    <Categories />
   </div>
   );
 }
