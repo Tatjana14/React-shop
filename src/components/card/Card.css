@@ -1,0 +1,15 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnlike {
+    background-color: transparent;
+    border: none;
+}
+
+.btncount {
+    background-color: #1C62CD;
+    border: none;
+}

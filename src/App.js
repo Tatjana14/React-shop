@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header/>
       <Catalog />
-      <SliderBanner />
+      {/* <SliderBanner /> */}
       <Footer />
     </div>
   );
