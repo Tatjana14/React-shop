@@ -1,11 +1,12 @@
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #F0F0F4;
+  padding: 42px 451px 0px 375px;
 }
 
 .footer-top {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
