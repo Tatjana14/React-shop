@@ -1,0 +1,7 @@
+.wrapper{
+    display: flex;
+}
+.menuList{
+    display: flex;
+    list-style: none;
+}

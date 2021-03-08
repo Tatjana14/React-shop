@@ -1,18 +1,28 @@
-import Image from '../../../components/Image/Image'
+
 import arrowLeft from '../../../assets/img/common/slider_arrow_left.svg';
 import arrowRight from '../../../assets/img/common/slider_arrow_right.svg';
-import './SliderBanner.css';
+import s from './SliderBanner.module.css';
 import bannerFirst  from '../../../assets/img/common/slider_banner.svg';
+import ButtonSlider from '../../../components/ButtonSlider/ButtonSlider'
 
 function SliderBanner() {
   return (
-    <div className="SliderBanner">
-        <button><Image src = {arrowLeft} alt = "Arrow left"/></button>
-        <Image src = {bannerFirst} alt = "First banner"/>
-        <button><Image src = {arrowRight} alt = "Arrow right"/></button>
-        <div className = "SliderIndicator">
+    <div className = {s.container}>
+      <div className = {s.wrapper}>
+        <ButtonSlider buttonClass = {s.buttonLeft} imgClass = {s.imgLeft} src = {arrowLeft} alt = "Arrow left"/>
+        <div className = {s.images}>
+          <img className={s.image} src = {bannerFirst} alt = "First banner"/>
+        </div>
+        <ButtonSlider buttonClass = {s.buttonRight} imgClass = {s.imgRight} src = {arrowRight} alt = "Arrow right"/>
+        <div className = {s.indicatores}>
+          <div className = "SliderIndicatorItem"></div>
+          <div className = "SliderIndicatorItem"></div>
+          <div className = "SliderIndicatorItem"></div>
+          <div className = "SliderIndicatorItem"></div>
+          <div className = "SliderIndicatorItem"></div>
           <div className = "SliderIndicatorItem"></div>
         </div>
+      </div>
     </div>
   );
 }
