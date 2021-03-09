@@ -24,7 +24,7 @@ function Card(props) {
             </a>
             <span>{props.price}</span>
             <a className ='cardAvailable' href="">{props.available}</a>
-            <ButtonCount buttonClass = 'buttonCount' imgClass = 'imgCount' src = {count} alt = "ButtonCount"/>
+            <ButtonCount buttonClass = 'buttonCount' imgClass = 'imgCount' src = {count} alt = "ButtonCount" style={props.style}/>
         </div>
     );
 }
