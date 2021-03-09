@@ -2,7 +2,7 @@ import './Image.css';
 
 function Image(props) {
     return (
-        <img src={props.src} alt={props.alt} />
+        <img className = {props.className} src={props.src} alt={props.alt} />
     );
 }
 

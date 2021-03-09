@@ -22,9 +22,9 @@ function Card(props) {
             <Image src = {props.src}/>
                 <p>{props.cardText}</p>
             </a>
-            <span>{props.price}</span>
+            <span className = {props.classNameCpan}>{props.valueSpan}</span>
             <a className ='cardAvailable' href="">{props.available}</a>
-            <ButtonCount buttonClass = 'buttonCount' imgClass = 'imgCount' src = {count} alt = "ButtonCount"/>
+            {props.button}
         </div>
     );
 }

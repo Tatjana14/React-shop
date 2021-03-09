@@ -4,6 +4,8 @@ import CardDiscount from "./cardDiscount/CardDiscount";
 import motor from '../../assets/img/sale/motor.svg'
 import SearchForm from "./searchForm/SearchForm";
 import Categories from "./categories/Categories";
+import PopularProducts from "./popularProducts/PopularProducts";
+import Advertising from "./advertising/Advertising";
 
 function Main() {
   return ( <div>
@@ -18,6 +20,8 @@ function Main() {
     />
     <SearchForm />
     <Categories />
+    <PopularProducts />
+    <Advertising />
   </div>
   );
 }

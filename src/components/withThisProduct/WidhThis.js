@@ -1,5 +1,5 @@
-import Section from '../../../components/section/Section';
-import s from './PopularProducts.module.css';
+import Section from '../section/Section';
+import s from './WidhThis.module.css';
 import SliderPopular from './sliderPopular/SliderPopular'
 
 
