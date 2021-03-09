@@ -1,4 +1,4 @@
-import MenuItem from '../../../components/menuItem/MenuItem'
+import MenuItem from '../menuItem/MenuItem'
 import s from './Section.module.css';
 
 function Section(props) {

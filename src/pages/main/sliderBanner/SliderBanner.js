@@ -3,7 +3,7 @@ import arrowLeft from '../../../assets/img/common/slider_arrow_left.svg';
 import arrowRight from '../../../assets/img/common/slider_arrow_right.svg';
 import s from './SliderBanner.module.css';
 import bannerFirst  from '../../../assets/img/common/slider_banner.svg';
-import ButtonSlider from '../../../components/ButtonSlider/ButtonSlider'
+import ButtonSlider from '../../../components/buttonSlider/ButtonSlider'
 
 function SliderBanner() {
   return (

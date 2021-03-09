@@ -1,7 +1,7 @@
 import left from '../../assets/img/common/slider_arrow_left.svg'
 import right from '../../assets/img/common/slider_arrow_right.svg'
 import s from './Slider.module.css';
-import ButtonSlider from '../ButtonSlider/ButtonSlider'
+import ButtonSlider from '../buttonSlider/ButtonSlider'
 
 function Slider(props) {
   return ( 
