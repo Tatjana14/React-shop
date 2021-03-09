@@ -13,6 +13,7 @@ function App() {
       <Header/>
       <Main/>
       <Footer />
+      <Product1 />
     </div>
   );
 }
