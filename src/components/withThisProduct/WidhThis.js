@@ -1,19 +1,19 @@
 import Section from '../section/Section';
 import s from './WidhThis.module.css';
-import SliderPopular from './sliderPopular/SliderPopular'
+import SliderWihtThis from './sliderWithThis/SliderWihtThis';
 
 
-function PopularProducts() {
+function WidhThis() {
   return (
     <div className = {s.wrapper}>
       <Section 
-        nameSection = "Популярные товары" 
+        nameSection = "С этим товаром покупают" 
         content = {
-          <SliderPopular />
+          <SliderWihtThis />
         }
       />
     </div>
     )
 }
 
-export default PopularProducts;
+export default WidhThis;

@@ -6,6 +6,7 @@ import SearchForm from "./searchForm/SearchForm";
 import Categories from "./categories/Categories";
 import PopularProducts from "./popularProducts/PopularProducts";
 import Advertising from "./advertising/Advertising";
+import WidhThis from "../../components/withThisProduct/WidhThis";
 
 function Main() {
   return ( <div>
@@ -22,6 +23,7 @@ function Main() {
     <Categories />
     <PopularProducts />
     <Advertising />
+    <WidhThis />
   </div>
   );
 }

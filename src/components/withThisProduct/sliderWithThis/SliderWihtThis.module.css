@@ -1,1 +1,9 @@
 
+.btnCount {
+    background-color: #1C62CD;
+    border: none;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
