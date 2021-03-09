@@ -4,7 +4,7 @@ import Vk from '../../assets/img/footer/vk_footer.svg';
 import Facebook from '../../assets/img/footer/facebook_footer.svg';
 import Youtube from "../../assets/img/footer/youtube_footer.svg";
 import MenuItem from '../../components/menuItem/MenuItem';
-import Image from '../../components/Image/Image';
+import Image from '../../components/image/Image';
 
 function ListSocial() {
     return (

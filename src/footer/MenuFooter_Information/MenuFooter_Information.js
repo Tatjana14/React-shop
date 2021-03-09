@@ -1,6 +1,6 @@
 import './MenuFooter_Information.css';
-import List_item from '../../components/List_item/List_item';
-import Link from '../../components/Link/Link';
+import List_item from '../../components/list_item/List_item';
+import Link from '../../components/link/Link';
 
 function MenuFooter_Information(props) {
   return (

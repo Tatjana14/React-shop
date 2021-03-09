@@ -5,16 +5,16 @@ import like from "../../assets/img/common/like.svg";
 import user from "../../assets/img/header/user.svg";
 import count from "../../assets/img/header/count.svg";
 import Image from '../../components/image/Image';
-import Link from '../../components/link/Link';
+import MenuItem from '../../components/menuItem/MenuItem';
 
 
 function HeaderNav() {
   return (
     <div className="HeaderNav">
       <ul className="HeaderNavItems">
-        <li><Link linkName="Магазины"/></li>
-        <li><Link linkName="Акции"/></li>
-        <li><Link linkName="Доставка и оплата"/></li>
+        <MenuItem classItem = 'headerNavItem' classLink = 'headerNavLink' adress = '' valueLink = 'Магазины'/>
+        <MenuItem classItem = 'headerNavItem' classLink = 'headerNavLink' adress = '' valueLink = 'Акции'/>
+        <MenuItem classItem = 'headerNavItem' classLink = 'headerNavLink' adress = '' valueLink = 'Доставка'/>
       </ul>
       <Image src={logo} alt="#"/>
       <div className="HeaderMap">
