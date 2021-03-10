@@ -3,8 +3,7 @@ import like from '../../assets/img/common/like.svg';
 import count from '../../assets/img/common/count_button.svg';
 import ButtonLike from '../buttonLike/ButtonLike';
 import ButtonCount from '../buttonCount/ButtonCount';
-import Sale from '../sale/Sale';
-import Image from '../image/Image';
+import Sticker from '../sticker/Sticker';
 
 
 
@@ -14,17 +13,20 @@ import Image from '../image/Image';
 function Card(props) {
     return (
         <div className="Card">
-            <div className="Card-inner">
-                <Sale saleValue = {props.value}/>
-                <ButtonLike buttonClass = 'buttonLike' imgClass = 'imgLike'  src = {like} alt = "ButtonLike"/>
-            </div>
+                <Sticker Sticker={props.Sticker} className="cardSticker" saleValue = {props.value}/>
+                <button className="btnLike"><img className="imgLike" src={like} alt=""/></button>
             <a className='cardLink' href={props.to}>
-            <Image src = {props.src}/>
-                <p>{props.cardText}</p>
+                <img className="cardImg" src = {props.src}/>
+                <p className="cardText">{props.cardText}</p>
             </a>
-            <span className = {props.classNameCpan}>{props.valueSpan}</span>
-            <a className ='cardAvailable' href="">{props.available}</a>
-            {props.button}
+            <div className="cardAvailable" style={props.Available}>
+                <span className = 'cardPrice'>{props.valuePrice}</span>
+                <button className="btnCount"><img className="imgCount" src={count} alt=""/></button>
+            </div>
+            <div className="cardNonAvailable" style={props.NonAvailable}>
+                <span className='cardNonAvailableText'>Нет в наличии</span>
+                <a className='cardNonAvailableLink' href="">Сообщить о поступлении</a>
+            </div>
         </div>
     );
 }
