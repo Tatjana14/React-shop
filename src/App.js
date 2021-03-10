@@ -10,17 +10,11 @@ import Product1 from './pages/product/Product';
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      {/* <Header/> */}
-      {/* <Main/> */}
-      <Catalog/>
-      {/* <Footer /> */}
-=======
       <Header/>
-      <Main/>
+      <Product1/>
+      {/* <Main/>
+      <Catalog/> */}
       <Footer />
-      <Product1 />
->>>>>>> 1a191ba4a1da6aa9f8687587fa0f69ea7fa5df31
     </div>
   );
 }
