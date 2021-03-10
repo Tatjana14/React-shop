@@ -1,0 +1,9 @@
+.productTableInfoNav__list{
+    display: flex;
+    list-style-type: none;
+}
+
+.productTableInfoNav__item{
+    margin-right: 20px;
+}
+
