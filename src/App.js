@@ -8,14 +8,14 @@ import Product1 from './pages/product/Product';
 
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      {/* <Main/> */}
-      {/* <Catalog/> */}
-      <Product1 />
+      return (
+      <div className="App">
+      <Catalog/>
+      <Header/>
+      <Main/>
       <Footer />
-    </div>
+      <Product1 />
+      </div>
       );
 }
 
