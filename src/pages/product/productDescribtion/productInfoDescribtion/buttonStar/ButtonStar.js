@@ -1,5 +1,5 @@
 import './ButtonStar.css';
-import StarEmpty from '../../../../../assets/img/Product/star_empty.svg';
+import StarEmpty from '../../../../../assets/img/Product/Star_empty.svg';
 
 
 function ButtonStar(props) {
