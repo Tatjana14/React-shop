@@ -42,8 +42,8 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <Link  linkName="Договор оферты"/>
-        <Link  linkName="Политика обработки персональных данных"/>
+        <Link  linkValue="Договор оферты"/>
+        <Link  linkValue="Политика обработки персональных данных"/>
       </div>
 
 
