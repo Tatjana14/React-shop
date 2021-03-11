@@ -13,7 +13,7 @@ function ProductTable() {
                     <th>Количество</th>
                 </tr>
 
-                <ProductTableRow adress="Москва" workHours="c 8 до 21" avaiable="В наличии" count="222" />
+                <ProductTableRow adress="Москва" weekdayworkDaysValue="пн-сб:" weekdayworkHoursValue="08:00-19:00" weekendWorkDaysValue="вс:" weekendWorkHoursValue="09:00-17:00" avaiable="В наличии" count="222" />
             </table>
             
         </div>
