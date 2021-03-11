@@ -8,14 +8,20 @@ import Product1 from './pages/product/Product';
 
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Main/>
-      <Footer />
-      <Product1 />
-    </div>
-  );
+      return (
+      <div className="App">
+
+
+        <Catalog/>
+
+        <Header/>
+        <Main/>
+        <Footer />
+
+        <Product1 />
+
+      </div>
+      );
 }
 
 export default App;
