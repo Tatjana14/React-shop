@@ -4,7 +4,7 @@ import ButtonLike from '../../../../components/buttonLike/ButtonLike';
 import Like from '../../../../assets/img/common/like.svg';
 import Raiting from '../../../../assets/img/Product/raiting_icon.svg'
 import ProductInfoRow from './productInfoRow/ProductInfoRow';
-import Star from '../../../../assets/img/Product/star_empty.svg';
+import Star from '../../../../assets/img/Product/Star_empty.svg';
 
 
 

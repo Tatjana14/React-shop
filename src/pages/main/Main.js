@@ -1,5 +1,5 @@
 
-import s from './Main.module.css'
+import s from './Main.module.scss'
 import motor from '../../assets/img/sale/motor.svg'
 import CategoriesCard from "../../components/categoriesCard/CategoriesCard";
 
@@ -17,6 +17,18 @@ import engine  from '../../assets/img/catalog_section/engine.svg'
 
 import moto  from '../../assets/img/main/advertising/moto.svg'
 import quadrosale  from '../../assets/img/main/advertising/quadro.svg'
+import Card from '../../components/card/Card';
+
+import bag from '../../assets/img/products/popular/backpack.svg'
+import audioSystemPremium from '../../assets/img/products/popular/audio_system_premium.svg'
+import equipment from '../../assets/img/products/popular/equipment.svg'
+import vest from '../../assets/img/products/popular/vest.svg'
+
+import audioSystem from '../../assets/img/products/with_this_product/audio_system.svg'
+import echomap from '../../assets/img/products/with_this_product/echomap.svg'
+import key from '../../assets/img/products/with_this_product/key.svg'
+import menSuit from '../../assets/img/products/with_this_product/men_suit.svg'
+
 
 function Main() {
   return ( 
@@ -130,7 +142,32 @@ function Main() {
     <section>
       <div>
       <SectionProducts nameSection = "Популярные товары"/>
-      <Slider sliderContent ={"#"} />
+      <Slider sliderContent ={
+        <>
+        <Card to 
+        value = 'Sale'  
+        src = {bag} 
+        cardText = 'BRP Audio-портативная система' 
+        Available = {{display: 'none'}}  />
+        <Card to   
+        src = {vest} 
+        cardText = "Garmin Echomap Plus 62cv" 
+        valuePrice = '45 800 ₽' 
+        Sticker={{display: 'none'}}  
+        NonAvailable={{display: 'none'}} />
+        <Card to 
+        value = 'Sale' 
+        src = {key} 
+        cardText = "RF D.E.S.S.TM Key"  
+        Available = {{display: 'none'}} />
+        <Card to  
+        src = {menSuit} 
+        cardText = "Мужской костюм 3мм" 
+        valuePrice = '7 000 ₽' 
+        Sticker={{display: 'none'}}  
+        NonAvailable={{display: 'none'}} />
+        </>
+      } />
       <button>ПОКАЗАТЬ ЕЩЁ</button>
       </div>
     </section>
@@ -143,13 +180,22 @@ function Main() {
           </div>
             <h3 className = {s.advertisingTitle}>CКИДКИ на все запчасти до 70%</h3>
             <button className = {s.advertisingBtn}>ПОСМОТРЕТЬ ВСЕ</button>
+            
         </div>
     </div>
     </section>
     <section>
       <div>
       <SectionProducts nameSection = "С этим товаром покупают"/>
-      <Slider sliderContent ={"#"} />
+      <Slider sliderContent ={
+        <>
+        <Card to  src = {audioSystem} cardText = 'Водонепроницаемый Рюкзак' valuePrice = '9 800 ₽'  Sticker={{display: 'none'}} NonAvailable={{display: 'none'}} />
+        <Card to value = 'Sale'  src = {echomap} cardText = "Спасательный жилет BRP Men's Airflow PFD" valuePrice = '6 900 ₽'  NonAvailable={{display: 'none'}} />
+        <Card to  src = {audioSystemPremium} cardText = "BRP Audio-Premium System" valuePrice = '68 000 ₽'  Sticker={{display: 'none'}}  NonAvailable={{display: 'none'}} />
+        <Card to value = 'Sale'  src = {equipment} cardText = "Спасательное снаряжение" valuePrice = '68 000 ₽' Available = {{display: 'none'}} />
+        </>
+      } />
+      
       </div>
     </section>
     </>

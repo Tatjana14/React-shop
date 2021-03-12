@@ -1,5 +1,5 @@
 
-import s from './CategoriesCard.module.css';
+import s from './CategoriesCard.module.scss';
 
 function CategoriesCard(props) {
   return (

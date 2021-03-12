@@ -1,4 +1,53 @@
 .HeaderNav {
   display: flex;
   align-items:center;
+  justify-content: space-between;
+  border: 1px solid red;
+  position: relative;
+  padding: 50px 0;
+}
+.HeaderLogo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.HeaderNavItems {
+  display: flex;
+  border: 1px solid red;
+}
+.headerNavItem {
+  margin-right: 50px;
+}
+.headerNavItem:last-child {
+  margin-right: 0px;
+}
+
+.HeaderPersonalWrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.HeaderMap {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  margin-right: 90px;
+}
+.HeaderPersonal {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+.HeaderPersonalIcon {
+  margin-right: 10px;
+}
+.HeaderPersonalIcon:last-child {
+  margin-right: 0;
 }
