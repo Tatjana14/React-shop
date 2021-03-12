@@ -1,4 +1,6 @@
-import './Sticker.css';
+
+
+import './Sticker.module.scss';
 
 
 function Sticker(props) {

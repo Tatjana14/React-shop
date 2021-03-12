@@ -1,8 +1,7 @@
-import './Card.css';
+
+import './Card.module.scss';
 import like from '../../assets/img/common/like.svg';
 import count from '../../assets/img/common/count_button.svg';
-import ButtonLike from '../buttonLike/ButtonLike';
-import ButtonCount from '../buttonCount/ButtonCount';
 import Sticker from '../sticker/Sticker';
 
 

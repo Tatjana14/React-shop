@@ -1,4 +1,5 @@
-import s from './SectionProducts.module.css';
+
+import s from './SectionProducts.module.scss';
 
 function SectionProducts(props) {
   return (

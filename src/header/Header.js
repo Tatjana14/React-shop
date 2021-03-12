@@ -1,4 +1,5 @@
-import './Header.css';
+
+import './Header.module.scss';
 import HeaderMenu from './headerMenu/HeaderMenu';
 import HeaderNav from './headerNav/HeaderNav'
 

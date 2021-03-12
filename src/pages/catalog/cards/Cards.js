@@ -1,4 +1,6 @@
-import './Cards.css';
+
+
+import './Cards.module.scss';
 import Card from '../../../components/card/Card';
 import jet_ski_130hp from '../../../assets/img/products/jet_sky/jet_ski_130hp.svg';
 import jet_ski_155hp from '../../../assets/img/products/jet_sky/jet_ski_155hp.svg';

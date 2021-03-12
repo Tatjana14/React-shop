@@ -1,5 +1,6 @@
+
 import Cards from './cards/Cards';
-import './Catalog.css';
+import './Catalog.module.scss';
 
 
 

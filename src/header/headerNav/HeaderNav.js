@@ -1,10 +1,11 @@
-import './HeaderNav.css';
+
+import './HeaderNav.module.scss';
 import logo from "../../assets/img/header/logo.svg";
 import map from "../../assets/img/header/map.svg";
 import like from "../../assets/img/common/like.svg";
 import user from "../../assets/img/header/user.svg";
 import count from "../../assets/img/header/count.svg";
-import MenuItem from '../../components/menuItem/MenuItem';
+
 
 
 function HeaderNav() {
