@@ -1,6 +1,4 @@
 import './ProductInfoDescribtion.css';
-import Button from '../../../../components/button/Button';
-import ButtonLike from '../../../../components/buttonLike/ButtonLike';
 import Like from '../../../../assets/img/common/like.svg';
 import Raiting from '../../../../assets/img/Product/raiting_icon.svg'
 import ProductInfoRow from './productInfoRow/ProductInfoRow';
