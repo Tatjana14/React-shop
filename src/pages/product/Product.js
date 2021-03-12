@@ -9,10 +9,8 @@ function Product() {
         <div className="Product">
             <NavMenu/>
             <div className="ProductDescription">
-                <div className="ProductDescription__card">
                     <ProductDescribtion />
                     <ProductTableInfo/>
-                </div>
             </div>
         </div>
     );

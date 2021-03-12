@@ -9,7 +9,7 @@ import Sticker from '../../../../components/sticker/Sticker';
 function ProductCardDescribtion(props) {
   return (
     <div className="ProductCardDescribtion">
-      <div className="">
+      <div className="Card1">
       <Sticker saleValue="SALE"/>
       <img src={HydroCicleBlueMetallic} alt=""/>
       </div>

@@ -7,13 +7,13 @@ function ProductTableInfoDelivery() {
                 <label for="search">Магазин</label>
                 <input type="text" name="search" />
             </div>
-            <div className="productTableInfoDelivery__checkboxes">
-                <div className="productTableInfoDelivery__checkbox-today">
-                    <input type="checkbox" name="today" />
+            <div className="productTableInfoDelivery__inputRadio">
+                <div className="productTableInfoDelivery__radio-today">
+                    <input type="radio" name="today" />
                     <label for="today">Забрать сегодня</label>
                 </div>
-                <div className="productTableInfoDelivery__checkbox-later">
-                    <input type="checkbox" name="later" />
+                <div className="productTableInfoDelivery__radio-later">
+                    <input type="radio" name="later" checked/>
                     <label for="later">Забрать в течение недели</label>
                 </div>
             </div>
