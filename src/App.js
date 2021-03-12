@@ -1,5 +1,5 @@
 
-import './App.module.scss';
+import s from './App.module.scss';
 import Header from './header/Header';
 import Catalog from './pages/catalog/Catalog';
 // import Footer from './footer/Footer';
@@ -8,14 +8,19 @@ import Product1 from './pages/product/Product';
 
 
 
+
+
+
 function App() {
       return (
       <div className="App">
-       <Header/>
-       <Main/> 
-       <Catalog/>
-       {/* <Footer /> */}
-       <Product1 />
+            <div className={s.mainWrap}>
+            <Header/>
+            <Main/> 
+            <Catalog/>
+            <Product1 />
+            {/* <Footer /> */}
+            </div>
       </div>
       );
 }
