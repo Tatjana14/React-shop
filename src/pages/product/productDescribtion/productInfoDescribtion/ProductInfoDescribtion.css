@@ -1,0 +1,9 @@
+.productInfoDescribtion-characteristick__links-nav{
+    display: flex;
+}
+
+.productInfoDescribtion-characteristick__info-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
