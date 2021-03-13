@@ -9,17 +9,21 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    .wrapper{ 
-        padding: 20px 20px 16px;
-        display: flex;
-        .links{
-            @include flex ($justify-content: space-between, $align-items:start);
-            flex-direction: column;
-            .linkCategory h3{
+    @include flex ($justify-content: space-between, $align-items: stretch);
+    .links{
+        padding: 20px 0px 16px 20px;
+        @include flex ($justify-content: space-between, $align-items:start);
+        flex-direction: column;
+        .linkCategory{
+            .title{
                 @include font ($font-family:'BarlowBold', $color: $colorTitle, $font-size: 23px)
             }
         }
+        .linkMore{
+            @include font ($font-family:'SFProDisplaySemibold', $color: $colorText, $font-size: 14px)
+        }
+    }
+    .image{
+        @include flex ($justify-content: flex-end);
     }
 }
-
-

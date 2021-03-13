@@ -1,4 +1,17 @@
-.Header {
-  display: flex;
-  flex-direction: column;
+
+
+
+
+
+
+
+
+
+.categories{
+  .categoriesWrapper{
+    display: grid;
+    grid-template-rows: repeat(2, 129px);
+    grid-template-columns: repeat(3, 370px);
+    gap: 30px;
+  }
 }
