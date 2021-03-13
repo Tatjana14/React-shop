@@ -1,12 +1,6 @@
-.HeaderNav {
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  border: 1px solid red;
-  position: relative;
-  padding: 50px 0;
-}
-.HeaderLogo {
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+.headerLogo {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -16,38 +10,48 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-
-.HeaderNavItems {
+.headerNav {
   display: flex;
-  border: 1px solid red;
+  align-items:center;
+  justify-content: space-between;
+  position: relative;
+  padding: 50px 0;
+  &Items {
+    display: flex;
+  }
+  &Item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &Link {
+    color: black;
+    @include font ('SF Pro Display', $colorTitle, 20px);
+    font-weight: 700;
+  }
 }
-.headerNavItem {
-  margin-right: 50px;
-}
-.headerNavItem:last-child {
-  margin-right: 0px;
-}
-
-.HeaderPersonalWrap {
+.headerMap {
   display: flex;
   align-items: center;
-  border: 1px solid red;
-}
-
-.HeaderMap {
-  display: flex;
-  align-items: center;
-  border: 1px solid red;
   margin-right: 90px;
+  &Text {
+    @include font ('SFProDisplayRegular', $colorTitle, 20px);
+    font-weight: 700;
+    margin-left: 5px;
+  }
 }
-.HeaderPersonal {
-  border: 1px solid red;
+.headerPersonalWrap {
   display: flex;
   align-items: center;
 }
-.HeaderPersonalIcon {
-  margin-right: 10px;
-}
-.HeaderPersonalIcon:last-child {
-  margin-right: 0;
+.headerPersonal {
+  display: flex;
+  align-items: center;
+  &Icon {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

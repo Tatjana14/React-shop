@@ -1,6 +1,24 @@
-.HeaderMenu {
-  display: flex;
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.headerMenuItems {
+  @include flex (space-between, baseline);
+  background-color: $secondaryBg;
 }
-.HeaderMenuItems {
-  display: flex;
+.headerMenuItem {
+  transition: 0.3s;
+  padding: 15px 0;
+  border-bottom: 3px solid transparent;
+  &:hover {
+    border-bottom: 3px solid $secondaryColor;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
+.headerMenuLink {
+  @include font ('SFProDisplayRegular', $colorTitle, 20px);
+}
+
+
+

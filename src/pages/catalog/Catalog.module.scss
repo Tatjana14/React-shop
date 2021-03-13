@@ -1,3 +1,7 @@
-.Catalog-wrapper {
+@import '../../sass/abstracts/_mixins.scss';
+@import '../../sass/abstracts/_vars.scss';
+
+.catalogWrapper {
     display: flex;
+    justify-content: space-between;
 }

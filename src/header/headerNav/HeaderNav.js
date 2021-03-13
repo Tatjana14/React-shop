@@ -1,5 +1,5 @@
 
-import './HeaderNav.module.scss';
+import s from './HeaderNav.module.scss';
 import logo from "../../assets/img/header/logo.svg";
 import map from "../../assets/img/header/map.svg";
 import like from "../../assets/img/common/like.svg";
@@ -10,28 +10,28 @@ import count from "../../assets/img/header/count.svg";
 
 function HeaderNav() {
   return (
-    <div className="HeaderNav">
-      <ul className="HeaderNavItems">
-        <li className='headerNavItem'>
-          <a className='headerNavLink' href="">Магазины</a>
+    <div className={s.headerNav}>
+      <ul className={s.headerNavItems}>
+        <li className={s.headerNavItem}>
+          <a className={s.headerNavLink} href="">Магазины</a>
         </li>
-        <li className='headerNavItem'>
-          <a className='headerNavLink' href="">Акции</a>
+        <li className={s.headerNavItem}>
+          <a className={s.headerNavLink} href="">Акции</a>
         </li>
-        <li className='headerNavItem'>
-          <a className='headerNavLink' href="">Доставки</a>
+        <li className={s.headerNavItem}>
+          <a className={s.headerNavLink} href="">Доставки</a>
         </li>
       </ul>
-      <img className='HeaderLogo' src={logo} alt="#" />
-      <div className='HeaderPersonalWrap'>
-        <div className='HeaderMap'>
+      <img className={s.headerLogo} src={logo} alt="#" />
+      <div className={s.headerPersonalWrap}>
+        <div className={s.headerMap}>
           <img src={map} alt="#" />
-          <span>Москва, ул. Науки 25</span>
+          <span className={s.headerMapText}>Москва, ул. Науки 25</span>
         </div>
-        <div className="HeaderPersonal">
-          <a className='HeaderPersonalIcon' href=""><img src={like} alt="#" /></a>
-          <a className='HeaderPersonalIcon' href=""><img src={user} alt="#" /></a>
-          <a className='HeaderPersonalIcon' href=""><img src={count} alt="#" /></a>
+        <div className={s.headerPersonal}>
+          <a className={s.headerPersonalIcon} href=""><img src={like} alt="#" /></a>
+          <a className={s.headerPersonalIcon} href=""><img src={user} alt="#" /></a>
+          <a className={s.headerPersonalIcon} href=""><img src={count} alt="#" /></a>
         </div>
       </div>
 

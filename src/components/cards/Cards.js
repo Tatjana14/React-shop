@@ -1,6 +1,6 @@
 
 
-import './Cards.module.scss';
+import s from './Cards.module.scss';
 import Card from '../card/Card';
 import jet_ski_130hp from '../../assets/img/products/jet_sky/jet_ski_130hp.svg';
 import jet_ski_155hp from '../../assets/img/products/jet_sky/jet_ski_155hp.svg';
@@ -24,7 +24,7 @@ import jet_ski_spark_blueberry from '../../assets/img/products/jet_sky/jet_ski_s
 
 function Cards() {
   return (
-    <div className="cards">
+    <div className={s.cards}>
       <Card to  src = {jet_ski_130hp} cardText = 'Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango' valuePrice = '1 049 500 ₽'  Sticker={{display: 'none'}} NonAvailable={{display: 'none'}} />
       <Card to value = 'Sale'   src = {jet_ski_155hp} cardText = 'Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic' valuePrice = '1 100 475 ₽' NonAvailable={{display: 'none'}}/>
       <Card to  src = {jet_ski_230hp} cardText = 'Гидроцикл BRP SeaDoo GTR 230hp X California green ' valuePrice = '1 323 700 ₽' Sticker={{display: 'none'}} NonAvailable={{display: 'none'}}/>

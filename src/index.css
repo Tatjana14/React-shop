@@ -26,38 +26,46 @@ ul {
 }
 
 @font-face{
-  font-family: 'BarlowBold';
-  src: local('BarlowBold'), url(./assets/fonts/barlow/Barlow-Bold.ttf) format('ttf');
+  font-family: 'BarlowBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/barlow/Barlow-Bold.ttf);
 }
 @font-face{
-  font-family: 'SFProDisplayRegular';
-  src: local('SFProDisplayRegular'), url(./assets/fonts/sf_display/SFProDisplay-Regular.ttf) format('ttf');
+  font-family: 'SFProDisplayRegular' sans-serif;
+  font-weight: 400;
+  src: url(./assets/fonts/sf_display/SFProDisplay-Regular.ttf);
 }
 @font-face{
-  font-family: 'SFProDisplayBold';
-  src: local('SFProDisplayBold'), url(./assets/fonts/sf_display/SFProDisplay-Bold.ttf) format('ttf');
+  font-family: 'SFProDisplayBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/sf_display/SFProDisplay-Bold.ttf);
 }
 @font-face{
-  font-family: 'BarlowRegular';
-  src: local('BarlowRegular'), url(./assets/fonts/barlow/Barlow-Regular.ttf) format('ttf');
+  font-family: 'BarlowRegular' sans-serif;
+  font-weight: 400;
+  src: url(./assets/fonts/barlow/Barlow-Regular.ttf);
 }
 @font-face{
-  font-family: 'SFProDisplaySemibold';
-  src: local('SFProDisplaySemibold'), url(./assets/fonts/sf_display/SFProDisplay-Semibold.ttf) format('ttf');
+  font-family: 'SFProDisplaySemibold' sans-serif;
+  font-weight: 600;
+  src: url(./assets/fonts/sf_display/SFProDisplay-Semibold.ttf);
 }
 @font-face{
-  font-family: 'ProximaNovaBold';
-  src: local('ProximaNovaBold'), url(./assets/fonts/ProximaNova/ProximaNova-Bold.ttf) format('ttf');
+  font-family: 'ProximaNovaBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/ProximaNova/ProximaNova-Bold.ttf);
 }
 
 @font-face{
-  font-family: 'BarlowLight';
-  src: local('BarlowLight'), url(./assets/fonts/barlow/Barlow-Light.ttf) format('ttf');
+  font-family: 'BarlowLight' sans-serif;
+  font-weight: 300;
+  src: url(./assets/fonts/barlow/Barlow-Light.ttf);
 }
 
 @font-face{
-  font-family: 'BarlowSemiBold';
-  src: local('BarlowSemiBold'), url(./assets/fonts/barlow/Barlow-SemiBold.ttf) format('ttf');
+  font-family: 'BarlowSemiBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/barlow/Barlow-SemiBold.ttf);
 }
 
 
