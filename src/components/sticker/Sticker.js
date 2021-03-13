@@ -1,11 +1,11 @@
 
 
-import './Sticker.module.scss';
+import s from './Sticker.module.scss';
 
 
 function Sticker(props) {
     return (
-        <span className="sticker" style={props.Sticker}>{props.saleValue}</span>
+        <span className={props.className} style={props.Sticker}>{props.saleValue}</span>
     );
 }
 

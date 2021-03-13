@@ -1,0 +1,53 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.catalogHead {
+    @include flex ();
+    flex-direction: column;
+    &Title {
+        align-self: flex-start;
+        padding-bottom: 25px;
+    }
+    &Buttons {
+        @include flex (start, center);
+    }
+    &Sort {
+        @include flex (start, center);
+    }
+}
+.catalogHeadWrap {
+    @include flex (space-between, center);
+    width: 100%;
+    padding-bottom: 50px;
+}
+.catalogHeadBtn {
+    padding: 5px 25px;
+    margin-right: 10px;
+    border-radius: 3px;
+    background-color: $secondaryBg;
+    border: none;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+div > select  {
+    width: 178px;
+    height: 33px;
+    border: 1.5px solid #D7D9DF;
+    margin-right: 35px;
+}
+.catalogHeadBtnView {
+    border: none;
+    background-color: transparent;
+    margin-right: 15px;
+}
+.catalogHeadBtnList {
+    border: none;
+    background-color: transparent;
+}
+
+
+
+
+
+
