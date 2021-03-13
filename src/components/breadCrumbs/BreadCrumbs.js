@@ -1,5 +1,5 @@
 
-import './BreadCrumbs.module.scss';
+import s from './BreadCrumbs.module.scss';
 
 
 
@@ -9,9 +9,9 @@ import './BreadCrumbs.module.scss';
 
 function BreadCrumbs(props) {
     return (
-        <ul className='breadCrumbList'>
-            <li className='breadCrumbItem'>
-                <a className='breadCrumbLink' href={props.to}>{props.value}</a>
+        <ul className={s.breadCrumbList}>
+            <li className={s.breadCrumbItem}>
+                <a className={s.breadCrumbLink} href={props.to}>{props.value}</a>
             </li>
         </ul>
     );

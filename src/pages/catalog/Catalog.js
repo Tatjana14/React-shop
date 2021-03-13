@@ -1,4 +1,5 @@
 
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import Cards from '../../components/cards/Cards';
 import CatalogHead from '../../components/catalogHead/CatalogHead';
 import s from './Catalog.module.scss';
@@ -8,6 +9,7 @@ import s from './Catalog.module.scss';
 function Catalog() {
   return (
     <section className={s.Catalog}>
+      <BreadCrumbs value='Главная'/>
       <CatalogHead title = 'Гидроциклы' btnValue1 = 'Полноприводные' btnValue2 = 'от 5000' btnValue3 = 'BRP' btnValue4 = 'Еще'/>
       <div className={s.catalogWrapper}>
         <div>
