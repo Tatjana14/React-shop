@@ -1,4 +1,4 @@
-import './ProductTableInfoNav.css';
+import './ProductTableInfoNav.module.scss';
 
 function ProductTableInfoNav() {
     return (

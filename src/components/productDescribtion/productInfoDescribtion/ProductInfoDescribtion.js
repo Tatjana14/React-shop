@@ -1,12 +1,7 @@
-import './ProductInfoDescribtion.css';
-import Button from '../../../../components/button/Button';
-import ButtonLike from '../../../../components/buttonLike/ButtonLike';
-import Like from '../../../../assets/img/common/like.svg';
-import Raiting from '../../../../assets/img/Product/raiting_icon.svg'
+import './ProductInfoDescribtion.module.scss';
+import Like from '../../../assets/img/common/like.svg';
+import Raiting from '../../../assets/img/Product/raiting_icon.svg';
 import ProductInfoRow from './productInfoRow/ProductInfoRow';
-import Star from '../../../../assets/img/Product/Star_empty.svg';
-
-
 
 function ProductInfoDescribtion() {
     return (
@@ -16,7 +11,7 @@ function ProductInfoDescribtion() {
             <div className="productInfoDescribtion__product-buttons">
                 <button className="productInfoDescribtion__btn"><a href="" className="productInfoDescribtion__link"><img src={Like} alt="" className="productInfoDescribtion__icon"/></a></button>
                 <button className="productInfoDescribtion__btn"><a href="" className="productInfoDescribtion__link"><img src={Raiting} alt="" className="productInfoDescribtion__icon"/></a></button>
-                <img src={Star} alt=""/>
+                <img src="" alt=""/>
                 </div>
                 
                 <div className="productInfoDescribtion-characteristick">

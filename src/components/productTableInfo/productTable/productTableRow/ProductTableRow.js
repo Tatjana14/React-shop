@@ -1,4 +1,4 @@
-import './ProductTableRow.css';
+import './ProductTableRow.module.scss';
 
 function ProductTableInfoRow(props) {
     return (

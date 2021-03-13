@@ -1,13 +1,11 @@
-import './Product.css';
-import NavMenu from './navMenu/NavMenu';
-import ProductDescribtion from './productDescribtion/ProductDescribtion';
-import ProductTableInfo from './productTableInfo/ProductTableInfo';
+import './Product.module.scss';
+import ProductDescribtion from '../../components/productDescribtion/ProductDescribtion';
+import ProductTableInfo from '../../components/productTableInfo/ProductTableInfo';
 
 
 function Product() {
     return (
         <div className="Product">
-            <NavMenu/>
             <div className="ProductDescription">
                     <ProductDescribtion />
                     <ProductTableInfo/>

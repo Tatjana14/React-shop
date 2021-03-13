@@ -1,12 +1,178 @@
+@import '../sass/abstracts/vars';
+
 .footer {
+  $footer: &;
   display: flex;
   flex-direction: column;
   background-color: #F0F0F4;
-  padding: 42px 451px 0px 375px;
+
+
+
+  
+
+
+
+  &__top {
+    display: flex;
+    position: relative;
+    padding: {
+      top: 43px;
+      bottom: 0px;
+      left: 375px;
+      right: 0px;
+    }
+  }
+
+  &__bottom{
+    padding-bottom: 500px;
+
+  }
+
+
+  
+
 }
 
-.footer-top {
+.subscribeForm {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+
+  padding: {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  margin: {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 159px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 16.71px;
+    max-width: 223px;
+    width: 100%;
+
+    padding: {
+      top: 0;
+      bottom: 0;
+      right: 0px;
+      left: 0;
+    }
+
+    margin: {
+      top: 0;
+      bottom: 34px;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  .inputEmail {
+    display: flex;
+
+    &__input {
+      border: none;
+      font-size: 14px;
+
+      padding: {
+        top: 10px;
+        bottom: 10px;
+        right: 0px;
+        left: 15px;
+      }
+    }
+
+    &__btn {
+      border: none;
+      background-color: $secondaryColor;
+      color: $colorText;
+      font-size: 11px;
+      align-self: start;
+
+      padding: {
+        top: 10px;
+        bottom: 10px;
+        right: 16px;
+        left: 16px;
+      }
+    }
+  }
+
+}
+
+
+.lists {
+  display: flex;
+  margin-right: 100px;
+
+  .informationMenu {
+    margin-right: 100px;
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    &__item {
+      margin-bottom: 12px;
+      font-size: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .onlineRetailMenu {
+    margin-right: 0px;
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    &__item {
+      margin-bottom: 12px;
+      font-size: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+  }
+}
+
+
+.socialMenu{
+  position: absolute;
+  top: 50%;
+  right: 451px;
+
+&__list {
+  
+  display: flex;
+  align-self: center;
+
+  &Item {
+    margin: {
+      top: 0px;
+      bottom: 0px;
+      right: 30px;
+      left: 0px;
+    }
+
+
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 }

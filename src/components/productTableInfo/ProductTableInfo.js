@@ -1,4 +1,4 @@
-import './ProductTableInfo.css';
+import './ProductTableInfo.module.scss';
 import ProductTableInfoNav from '../productTableInfo/productTableinfoNav/ProductTableInfoNav';
 import ProductTable from './productTable/ProductTable';
 import ProductTableInfoDelivery from './productTableInfoDelivery/ProductTableInfoDelivery';

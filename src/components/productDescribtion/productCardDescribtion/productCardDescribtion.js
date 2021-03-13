@@ -1,9 +1,6 @@
-import './productCardDescribtion.css';
-import Button from '../../../../components/button/Button';
-import Image from '../../../../components/image/Image';
-import Link from '../../../../components/link/Link';
-import HydroCicleBlueMetallic from '../../../../assets/img/Product/gidrotsikl-beach-blue-metallic.svg'
-import Sticker from '../../../../components/sticker/Sticker';
+import './productCardDescribtion.module.scss';
+import HydroCicleBlueMetallic from '../../../assets/img/Product/gidrotsikl-beach-blue-metallic.svg';
+import Sticker from '../../../components/sticker/Sticker';
 
 
 function ProductCardDescribtion(props) {

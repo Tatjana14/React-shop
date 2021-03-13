@@ -1,4 +1,4 @@
-import './ProductTableInfoDelivery.css';
+import './ProductTableInfoDelivery.module.scss';
 
 function ProductTableInfoDelivery() {
     return (
