@@ -29,4 +29,36 @@ ul {
   font-family: 'BarlowBold';
   src: local('BarlowBold'), url(./assets/fonts/barlow/Barlow-Bold.ttf) format('ttf');
 }
+@font-face{
+  font-family: 'SFProDisplayRegular';
+  src: local('SFProDisplayRegular'), url(./assets/fonts/sf_display/SFProDisplay-Regular.ttf) format('ttf');
+}
+@font-face{
+  font-family: 'SFProDisplayBold';
+  src: local('SFProDisplayBold'), url(./assets/fonts/sf_display/SFProDisplay-Bold.ttf) format('ttf');
+}
+@font-face{
+  font-family: 'BarlowRegular';
+  src: local('BarlowRegular'), url(./assets/fonts/barlow/Barlow-Regular.ttf) format('ttf');
+}
+@font-face{
+  font-family: 'SFProDisplaySemibold';
+  src: local('SFProDisplaySemibold'), url(./assets/fonts/sf_display/SFProDisplay-Semibold.ttf) format('ttf');
+}
+@font-face{
+  font-family: 'ProximaNovaBold';
+  src: local('ProximaNovaBold'), url(./assets/fonts/ProximaNova/ProximaNova-Bold.ttf) format('ttf');
+}
+
+@font-face{
+  font-family: 'BarlowLight';
+  src: local('BarlowLight'), url(./assets/fonts/barlow/Barlow-Light.ttf) format('ttf');
+}
+
+@font-face{
+  font-family: 'BarlowSemiBold';
+  src: local('BarlowSemiBold'), url(./assets/fonts/barlow/Barlow-SemiBold.ttf) format('ttf');
+}
+
+
 
