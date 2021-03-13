@@ -24,3 +24,9 @@ a {
 ul {
   list-style: none;
 }
+
+@font-face{
+  font-family: 'BarlowBold';
+  src: local('BarlowBold'), url(./assets/fonts/barlow/Barlow-Bold.ttf) format('ttf');
+}
+

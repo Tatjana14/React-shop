@@ -1,5 +1,5 @@
 
-import Cards from './cards/Cards';
+import Cards from '../../components/cards/Cards';
 import './Catalog.module.scss';
 
 
