@@ -2,18 +2,18 @@
 
 import './Cards.module.scss';
 import Card from '../card/Card';
-import jet_ski_130hp from '../../../assets/img/products/jet_sky/jet_ski_130hp.svg';
-import jet_ski_155hp from '../../../assets/img/products/jet_sky/jet_ski_155hp.svg';
-import jet_ski_230hp from '../../../assets/img/products/jet_sky/jet_ski_230hp.svg';
-import jet_ski_230hp_black from '../../../assets/img/products/jet_sky/jet_ski_230hp_black.svg';
-import jet_ski_300hp from '../../../assets/img/products/jet_sky/jet_ski_300hp.svg';
-import jet_ski_60hp from '../../../assets/img/products/jet_sky/jet_ski_60hp.svg';
-import jet_ski_90hp from '../../../assets/img/products/jet_sky/jet_ski_90hp.svg';
-import jet_ski_230hp_pro from '../../../assets/img/products/jet_sky/jet_ski_230hp_PRO.svg';
-import jet_ski_spark_pepper from '../../../assets/img/products/jet_sky/jet_ski_spark_pepper.svg';
-import jet_ski_spark_pineapple from '../../../assets/img/products/jet_sky/jet_ski_spark_pineapple.svg';
-import jet_ski_spark_ace from '../../../assets/img/products/jet_sky/jet_ski_spark_ace.svg';
-import jet_ski_spark_blueberry from '../../../assets/img/products/jet_sky/jet_ski_spark_blueberry.svg';
+import jet_ski_130hp from '../../assets/img/products/jet_sky/jet_ski_130hp.svg';
+import jet_ski_155hp from '../../assets/img/products/jet_sky/jet_ski_155hp.svg';
+import jet_ski_230hp from '../../assets/img/products/jet_sky/jet_ski_230hp.svg';
+import jet_ski_230hp_black from '../../assets/img/products/jet_sky/jet_ski_230hp_black.svg';
+import jet_ski_300hp from '../../assets/img/products/jet_sky/jet_ski_300hp.svg';
+import jet_ski_60hp from '../../assets/img/products/jet_sky/jet_ski_60hp.svg';
+import jet_ski_90hp from '../../assets/img/products/jet_sky/jet_ski_90hp.svg';
+import jet_ski_230hp_pro from '../../assets/img/products/jet_sky/jet_ski_230hp_PRO.svg';
+import jet_ski_spark_pepper from '../../assets/img/products/jet_sky/jet_ski_spark_pepper.svg';
+import jet_ski_spark_pineapple from '../../assets/img/products/jet_sky/jet_ski_spark_pineapple.svg';
+import jet_ski_spark_ace from '../../assets/img/products/jet_sky/jet_ski_spark_ace.svg';
+import jet_ski_spark_blueberry from '../../assets/img/products/jet_sky/jet_ski_spark_blueberry.svg';
 
 
 
