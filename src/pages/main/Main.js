@@ -99,42 +99,48 @@ function Main() {
       categoriesValue = "Квадроциклы" 
       categoriesAdress2 = "#" 
       imgCategories ={quadro} 
-      altCategories = "Квадроциклы" 
+      altCategories = "Квадроциклы"
+      style = {{ paddingRight: "10.3%"}}
       />
       <CategoriesCard 
       categoriesAdress = "#" 
       categoriesValue = "Гидроциклы" 
       categoriesAdress2 = "#" 
       imgCategories ={hydro} 
-      altCategories = "Гидроциклы" 
+      altCategories = "Гидроциклы"
+      style = {{ paddingRight: "6.8%"}}
       />
       <CategoriesCard 
       categoriesAdress = "#" 
       categoriesValue = "Катера" 
       categoriesAdress2 = "#" 
       imgCategories ={boat} 
-      altCategories = "Катера" 
+      altCategories = "Катера"
+      style = {{ paddingRight: "1.6%"}} 
       />
       <CategoriesCard 
       categoriesAdress = "#" 
       categoriesValue = "Снегоходы" 
       categoriesAdress2 = "#" 
       imgCategories ={snow} 
-      altCategories = "Снегоходы" 
+      altCategories = "Снегоходы"
+      style = {{ paddingRight: "5.4%"}} 
       />
       <CategoriesCard 
       categoriesAdress = "#" 
       categoriesValue = "Вездеходы" 
       categoriesAdress2 = "#" 
       imgCategories ={allTerain} 
-      altCategories = "Вездеходы" 
+      altCategories = "Вездеходы"
+      style = {{ paddingRight: "6.2%"}} 
       />
       <CategoriesCard 
       categoriesAdress = "#" 
       categoriesValue = "Двигатели" 
       categoriesAdress2 = "#" 
       imgCategories ={engine} 
-      altCategories = "Двигатели" 
+      altCategories = "Двигатели"
+      style = {{ paddingRight: "20.8%"}}
       />
       </div>
     </section>

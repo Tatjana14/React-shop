@@ -1,21 +1,19 @@
 
-import './HeaderMenu.module.scss';
+import s from './HeaderMenu.module.scss';
 
 
 function HeaderMenu() {
   return (
-    <div className="HeaderMenu">
-      <ul className="HeaderMenuItems">
-      {/* <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Квадроциклы'/>
-      <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Катера'/>
-      <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Гидроциклы'/>
-      <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Лодки'/>
-      <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Вездеходы'/>
-      <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Снегоходы'/>
-      <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Двигатели'/>
-      <MenuItem classItem = 'headerMenuItem' classLink = 'headerMenuLink' adress = '' valueLink = 'Запчасти'/> */}
+      <ul className={s.headerMenuItems}>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Квадроциклы</a></li>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Катера</a></li>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Гидроциклы</a></li>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Лодки</a></li>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Вездеходы</a></li>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Снегоходы</a></li>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Двигатели</a></li>
+        <li className={s.headerMenuItem}><a className={s.headerMenuLink} href="">Запчасти</a></li>
       </ul>
-    </div>
   );
 }
 

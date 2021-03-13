@@ -24,3 +24,46 @@ a {
 ul {
   list-style: none;
 }
+
+@font-face{
+  font-family: 'BarlowBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/barlow/Barlow-Bold.ttf);
+}
+@font-face{
+  font-family: 'SFProDisplayRegular' sans-serif;
+  font-weight: 400;
+  src: url(./assets/fonts/sf_display/SFProDisplay-Regular.ttf);
+}
+@font-face{
+  font-family: 'SFProDisplayBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/sf_display/SFProDisplay-Bold.ttf);
+}
+@font-face{
+  font-family: 'BarlowRegular' sans-serif;
+  font-weight: 400;
+  src: url(./assets/fonts/barlow/Barlow-Regular.ttf);
+}
+@font-face{
+  font-family: 'SFProDisplaySemibold' sans-serif;
+  font-weight: 600;
+  src: url(./assets/fonts/sf_display/SFProDisplay-Semibold.ttf);
+}
+@font-face{
+  font-family: 'ProximaNovaBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/ProximaNova/ProximaNova-Bold.ttf);
+}
+
+@font-face{
+  font-family: 'BarlowLight' sans-serif;
+  font-weight: 300;
+  src: url(./assets/fonts/barlow/Barlow-Light.ttf);
+}
+
+@font-face{
+  font-family: 'BarlowSemiBold' sans-serif;
+  font-weight: 700;
+  src: url(./assets/fonts/barlow/Barlow-SemiBold.ttf);
+}
