@@ -1,14 +1,11 @@
 import './productCardDescribtion.module.scss';
-import HydroCicleBlueMetallic from '../../../assets/img/Product/gidrotsikl-beach-blue-metallic.svg';
-import Sticker from '../../../components/sticker/Sticker';
 
 
 function ProductCardDescribtion(props) {
   return (
     <div className="ProductCardDescribtion">
       <div className="Card1">
-      <Sticker saleValue="SALE"/>
-      <img src={HydroCicleBlueMetallic} alt=""/>
+      <img src="" alt=""/>
       </div>
       <span>1 200 475 ₽</span>
       <span>1 100 475 ₽</span>

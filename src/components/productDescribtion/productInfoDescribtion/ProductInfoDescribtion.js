@@ -1,7 +1,7 @@
 import './ProductInfoDescribtion.module.scss';
 import Like from '../../../assets/img/common/like.svg';
 import Raiting from '../../../assets/img/Product/raiting_icon.svg';
-import ProductInfoRow from './productInfoRow/ProductInfoRow';
+import ProductInfoRow from '../../productInfoRow/ProductInfoRow';
 
 function ProductInfoDescribtion() {
     return (

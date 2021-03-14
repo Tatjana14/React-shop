@@ -20,6 +20,7 @@ function App() {
             <Catalog/>
             <Product1 />
             </div>
+            <Footer/>
 
       </div>
       );

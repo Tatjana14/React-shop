@@ -1,12 +1,9 @@
 import './ProductDescribtion.module.scss';
-import ProductCardDescribtion from './productCardDescribtion/productCardDescribtion';
-import ProductInfoDescribtion from './productInfoDescribtion/ProductInfoDescribtion';
 
 function ProductDescribtion() {
   return (
-    <div className="ProductDescribtion">
-      <ProductCardDescribtion/>
-      <ProductInfoDescribtion/>
+    <div className="Product">
+
     </div>
 
 
