@@ -8,8 +8,8 @@
     flex-direction: column;
     border: 2px black solid;
 
-    .breadCrumbsContainer{
-    }
+    // .breadCrumbsContainer{
+    // }
 
     .describtion {
         display: flex;
@@ -239,22 +239,32 @@
         .nav {
             background-color: #F0F0F4;
 
-            padding: {
-                top: 23px;
-                bottom: 23px;
-                right: 34px;
-                left: 38px;
-            }
+            
 
             .list {
                 display: flex;
                 justify-content: space-between;
+                position: relative;
+                
 
                 .item {
+                    padding: {
+                        top: 23px;
+                        bottom: 23px;
+                        right: 34px;
+                        left: 38px;
+                    }
                     .link {
+                        padding-bottom: 5px;
+                        border-bottom:  2px transparent solid;
                         color: #2F3035;
                         font-size: 20px;
                         font-family: 'SFProDisplayRegular';
+
+                        &:hover{
+                            border-bottom:  2px #1C62CD solid;
+
+                        }
                     }
                 }
 
