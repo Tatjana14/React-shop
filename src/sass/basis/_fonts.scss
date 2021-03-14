@@ -8,113 +8,121 @@
 800: Extra Bold (Ultra Bold);
 900: Black (Heavy). */
 
+$font-path: '../../assets/fonts/';
 
 
 @font-face{
     font-family: 'BarlowBold';
-    src: url('../../assets/fonts/barlow/Barlow-Bold.ttf');
+    src: url('#{$font-path}/Barlow-Bold.eot');
     src: local('BarlowBold'),
-        url('../../assets/fonts/barlow/Barlow-Bold.ttf') format('ttf');
+        url('#{$font-path}/Barlow-Bold.eot') format('embedded-opentype'),
+        url('#{$font-path}/Barlow-Bold.woff2') format('woff2'),
+        url('#{$font-path}/Barlow-Bold.woff') format('woff'),
+        url('#{$font-path}/Barlow-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-/*     url(../../assets/fonts/barlow/Barlow-Bold.woff2) format('woff2'),
-    url(../../assets/fonts/barlow/Barlow-Bold.woff) format('woff'),
-    url(../../assets/fonts/barlow/Barlow-Bold.eot) format('embedded-opentype') */
 }
 
 @font-face{
     font-family: 'SFProDisplayRegular';
-    src: url('../../assets/fonts/sf_display/SFProDisplay-Regular.ttf');
+    src: url('#{$font-path}/SFProDisplay-Regular.eot');
     src: local('SFProDisplayRegular'),
-        url('../../assets/fonts/sf_display/SFProDisplay-Regular.ttf') format('truetype');
+        url('#{$font-path}/SFProDisplay-Regular.ttf') format('truetype'),
+        url('#{$font-path}/SFProDisplay-Regular.woff2') format('woff2'),
+        url('#{$font-path}/SFProDisplay-Regular.woff') format('woff'),
+        url('#{$font-path}/SFProDisplay-Regular.eot') format('embedded-opentype');
     font-weight: 400;
     font-style: normal;
-/*     url(../../assets/fonts/sf_display/SFProDisplay-Regular.woff2) format('woff2'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Regular.woff) format('woff'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Regular.eot) format('embedded-opentype') */
+
 }
 
 @font-face{
     font-family: 'SFProDisplayBold';
-    src: url('../../assets/fonts/sf_display/SFProDisplay-Bold.ttf');
+    src: url('#{$font-path}/SFProDisplay-Bold.eot');
     src: local('SFProDisplayBold'),
-        url('../../assets/fonts/sf_display/SFProDisplay-Bold.ttf') format('truetype');
-    font-weight: bold;
+        url('#{$font-path}/SFProDisplay-Bold.ttf') format('truetype'),
+        url('#{$font-path}/SFProDisplay-Bold.woff2') format('woff2'),
+        url('#{$font-path}/SFProDisplay-Bold.woff') format('woff'),
+        url('#{$font-path}/SFProDisplay-Bold.eot') format('embedded-opentype');
+    font-weight: 700;
     font-style: normal;
-/*     url(../../assets/fonts/sf_display/SFProDisplay-Bold.woff2) format('woff2'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Bold.woff) format('woff'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Bold.eot) format('embedded-opentype') */
+
 }
 
 @font-face{
     font-family: 'BarlowRegular';
-    src: url('../../assets/fonts/barlow/Barlow-Regular.ttf');
+    src: url('#{$font-path}/Barlow-Regular.eot');
     src: local('BarlowRegular'),
-        url('../../assets/fonts/barlow/Barlow-Regular.ttf') format('truetype');
+        url('#{$font-path}/Barlow-Regular.ttf') format('truetype'),
+        url('#{$font-path}/Barlow-Regular.woff2') format('woff2'),
+        url('#{$font-path}/Barlow-Regular.woff') format('woff'),
+        url('#{$font-path}/Barlow-Regular.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-/*     url(../../assets/fonts/barlow/Barlow-Regular.woff2) format('woff2'),
-    url(../../assets/fonts/barlow/Barlow-Regular.woff) format('woff'),
-    url(../../assets/fonts/barlow/Barlow-Regular.eot) format('embedded-opentype') */
+
 }
 
 @font-face{
     font-family: 'SFProDisplaySemibold';
-    src: url('../../assets/fonts/sf_display/SFProDisplay-Semibold.ttf');
+    src: url('#{$font-path}/SFProDisplay-Semibold.eot');
     src: local('SFProDisplaySemibold'),
-        url('../../assets/fonts/sf_display/SFProDisplay-Semibold.ttf') format('truetype');
+        url('#{$font-path}/SFProDisplay-Semibold.ttf') format('truetype'),
+        url('#{$font-path}/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('#{$font-path}/SFProDisplay-Semibold.woff') format('woff'),
+        url('#{$font-path}/SFProDisplay-Semibold.eot') format('embedded-opentype');
     font-weight: 600;
     font-style: normal;
-/*     url(../../assets/fonts/sf_display/SFProDisplay-Semibold.woff2) format('woff2'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Semibold.woff) format('woff'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Semibold.eot) format('embedded-opentype') */
+
 }
 
 @font-face{
     font-family: 'SFProDisplayMedium';
-    src: url('../../assets/fonts/sf_display/SFProDisplay-Medium.ttf');
+    src: url('#{$font-path}/SFProDisplay-Medium.eot');
     src: local('SFProDisplayMedium'),
-        url('../../assets/fonts/sf_display/SFProDisplay-Medium.ttf') format('truetype');
+        url('#{$font-path}/SFProDisplay-Medium.ttf') format('truetype'),
+        url('#{$font-path}/SFProDisplay-Medium.woff2') format('woff2'),
+        url('#{$font-path}/SFProDisplay-Medium.woff') format('woff'),
+        url('#{$font-path}/SFProDisplay-Medium.eot') format('embedded-opentype');
     font-weight: 500;
     font-style: normal;    
-/*     url(../../assets/fonts/sf_display/SFProDisplay-Medium.woff2) format('woff2'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Medium.woff) format('woff'),
-    url(../../assets/fonts/sf_display/SFProDisplay-Medium.eot) format('embedded-opentype') */
+
 }
 
 @font-face{
     font-family: 'ProximaNovaBold';
-
-    src: url('../../assets/fonts/ProximaNova/ProximaNova-Bold.ttf');
+    src: url('#{$font-path}/ProximaNova-Bold.eot');
     src: local('ProximaNovaBold'),
-        url('../../assets/fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
-    font-weight: bold;
+        url('#{$font-path}/ProximaNova-Bold.ttf') format('truetype'),
+        url('#{$font-path}/ProximaNova-Bold.woff2') format('woff2'),
+        url('#{$font-path}/ProximaNova-Bold.woff') format('woff'),
+        url('#{$font-path}/ProximaNova-Bold.eot') format('embedded-opentype');
+    font-weight: 700;
     font-style: normal;    
-/*     url(../../assets/fonts/ProximaNova/ProximaNova-Bold.woff2) format('woff2'),
-    url(../../assets/fonts/ProximaNova/ProximaNova-Bold.woff) format('woff'),
-    url(../../assets/fonts/ProximaNova/ProximaNova-Bold.eot) format('embedded-opentype') */
+
 }
 
 @font-face{
     font-family: 'BarlowLight';
-    src: url('../../assets/fonts/barlow/Barlow-Light.ttf');
+    src: url('#{$font-path}/Barlow-Light.eot');
     src: local('BarlowLight'),
-        url('../../assets/fonts/barlow/Barlow-Light.ttf') format('truetype');
+        url('#{$font-path}/Barlow-Light.ttf') format('truetype'),
+        url('#{$font-path}/Barlow-Light.woff2') format('woff2'),
+        url('#{$font-path}/Barlow-Light.woff') format('woff'),
+        url('#{$font-path}/Barlow-Light.eot') format('embedded-opentype');
     font-weight: 300;
     font-style: normal;    
-/*     url(../../assets/fonts/barlow/Barlow-Light.woff2) format('woff2'),
-    url(../../assets/fonts/barlow/Barlow-Light.woff) format('woff'),
-    url(../../assets/fonts/barlow/Barlow-Light.eot) format('embedded-opentype') */
+    
 }
 
 @font-face{
     font-family: 'BarlowSemiBold';
-    src: url('../../assets/fonts/barlow/Barlow-SemiBold.ttf');
+    src: url('#{$font-path}/Barlow-SemiBold.eot');
     src: local('BarlowSemiBold'),
-        url('../../assets/fonts/barlow/Barlow-SemiBold.ttf') format('truetype');
+        url('#{$font-path}/Barlow-SemiBold.ttf') format('truetype'),
+        url('#{$font-path}/Barlow-SemiBold.woff2') format('woff2'),
+        url('#{$font-path}/Barlow-SemiBold.woff') format('woff'),
+        url('#{$font-path}/Barlow-SemiBold.eot') format('embedded-opentype');
     font-weight: 600;
     font-style: normal;    
-/*     url(../../assets/fonts/barlow/Barlow-SemiBold.woff2) format('woff2'),
-    url(../../assets/fonts/barlow/Barlow-SemiBold.woff) format('woff'),
-    url(../../assets/fonts/barlow/Barlow-SemiBold.eot) format('embedded-opentype') */
+
 }

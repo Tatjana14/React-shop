@@ -1,4 +1,8 @@
-@import './sass/basis/fonts';
+@import "./sass/basis/fonts";
+
+@import "./sass/abstracts/mixins";
+
+@import "./sass/abstracts/functions";
 
 .mainWrap{
     margin: 0 auto;
