@@ -1,10 +1,10 @@
-import './ProductTableRow.module.scss';
+import s from './ProductTableRow.module.scss';
 
 function ProductTableInfoRow(props) {
     return (
-        <tr className="productTableInfoRow">
-            <td>{props.adress}</td>
-            <td className="workHours">
+        <tr className={s.tableRow}>
+            <td className={s.cell}>{props.adress}</td>
+            <td className={s.workHours}>
                 <div className="weekdaysWorkHours">
                     <span className="weekdayworkDays">{props.weekdayworkDaysValue}</span>
                     <span className="weekdayworkHours">{props.weekdayworkHoursValue}</span>
@@ -17,7 +17,7 @@ function ProductTableInfoRow(props) {
             </td>
             <td>{props.avaiable}</td>
             <td>{props.count}</td>
-            <td><button>Купить</button></td>
+            <td><button className={s.btn}>Купить</button></td>
         </tr>
     );
 }
