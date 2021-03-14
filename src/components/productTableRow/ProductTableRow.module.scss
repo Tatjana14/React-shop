@@ -1,0 +1,28 @@
+@import '../../sass/abstracts/vars';
+
+.tableRow{
+    vertical-align: top;
+
+    .cell{
+        font-size: 16px;
+    }
+
+
+
+
+
+    .btn{
+        border: 0;
+        color: #FFFFFF;
+        background-color: #1C62CD;
+        font-size: 13px;
+        min-height: 35px;
+        padding: {
+            top: 0;
+            bottom: 0;
+            right: 40px;
+            left: 41px;
+        };
+
+    }
+}
