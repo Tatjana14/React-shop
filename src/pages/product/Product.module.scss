@@ -261,14 +261,16 @@
             }
 
             .table{
+                border-collapse: separate;
                 margin-top: 50px;
-                border-spacing: 81px 41px;
                 .headRow{
+                    padding-bottom: 41px;
                     
 
                     .headCell{
                         text-align: left;
                         font-size: 20px;
+                        padding-bottom: 41px;
                     }
                 }
             }
