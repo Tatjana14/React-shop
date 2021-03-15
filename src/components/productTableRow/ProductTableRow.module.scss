@@ -2,10 +2,48 @@
 
 .tableRow{
     vertical-align: top;
+    border-bottom: 1px black solid;
+    
 
-    .cell{
+    .cellAdress{
         font-size: 16px;
+        padding-right: 81px;
     }
+
+    .cellWorkHours{
+        padding-right: 96px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .weekdaysWorkHours{
+            display: flex;
+            .weekdayworkDays{
+                margin-right: 21px;
+            }
+        }
+
+
+        .weekendWorkHours{
+            display: flex;
+            .weekendWorkDays{
+                margin-right: 46px;
+            }
+        }
+
+        
+    }
+
+
+    .cellAvailability{
+        padding-right: 117px;
+    }
+
+    
+
+
+
+
 
 
 

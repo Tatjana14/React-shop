@@ -5,16 +5,22 @@ import Rating from '../../assets/img/Product/raiting_icon.svg';
 
 import ProductInfoRow from '../../components/productInfoRow/ProductInfoRow';
 import ProductTableRow from '../../components/productTableRow/ProductTableRow';
+import Sticker from '../../components/sticker/Sticker';
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 
 
 
 
-function Product(props) {
+function Product() {
     return (
         <div className={s.product}>
+            <div className={s.breadCrumbsContainer}>
+                <BreadCrumbs value="Главное"/>
+            </div>
             <div className={s.describtion}>
                 <div className={s.card}>
                     <div className={s.imgContainer}>
+                        <Sticker className={s.sticker} saleValue="Sale"/>
                         <img className={s.img} src={BRPSeaDooGTI155hpSELongBlueMetallic} alt="" />
                     </div>
                     <div className={s.purchase}>
@@ -24,10 +30,10 @@ function Product(props) {
                     </div>
                 </div>
                 <div className={s.information}>
-                    <h2 className={s.title}>{props.productName}Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h2>
+                    <h2 className={s.title}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h2>
                     <div className={s.productCode}>
                         <span className={s.code}>Код товара:</span>
-                        <span className={s.codeNumber}>{props.productCode}366666-2</span>
+                        <span className={s.codeNumber}>366666-2</span>
                     </div>
 
                     <div className={s.buttons}>
@@ -133,29 +139,33 @@ function Product(props) {
                                 <label className={s.inputRadioBtnLater} for="today">Забрать сегодня</label>
                             </div>
                             <div className={s.radioBtnLater}>
-                                <input type="radio" name="later" checked />
+                                <input type="radio" name="later" />
                                 <label for="later">Забрать в течение недели</label>
                             </div>
                         </div>
                     </div>
 
                     <table className={s.table}>
-                        <tr className={s.headRow}>
-                            <th className={s.headCell}>Адрес</th>
-                            <th className={s.headCell}>Режим работы</th>
-                            <th className={s.headCell}>Доступно</th>
-                            <th className={s.headCell}>Количество</th>
-                        </tr >
+                        <thead className={s.tableHead}>
+                            <tr className={s.headRow}>
+                                <th className={s.headCell}>Адрес</th>
+                                <th className={s.headCell}>Режим работы</th>
+                                <th className={s.headCell}>Доступно</th>
+                                <th className={s.headCell}>Количество</th>
+                            </tr >
+                        </thead>
 
-                        <ProductTableRow adress="Москва, ул. Науки 25"
-                            weekdayworkDaysValue="пн-сб:"
-                            weekdayworkHoursValue="08:00-19:00"
-                            weekendWorkDaysValue="вс:"
-                            weekendWorkHoursValue="09:00-17:00"
-                            avaiable="В наличии" count="1" />
-                        <ProductTableRow adress="Москва, ул. Южная 134" weekdayworkDaysValue="пн-сб:" weekdayworkHoursValue="08:00-19:00" weekendWorkDaysValue="вс:" weekendWorkHoursValue="09:00-17:00" avaiable="В наличии" count="2" />
-                        <ProductTableRow adress="Санкт-Петербург, ул. Красная 19" weekdayworkDaysValue="пн-сб:" weekdayworkHoursValue="08:00-19:00" weekendWorkDaysValue="вс:" weekendWorkHoursValue="09:00-17:00" avaiable="Нет в наличии" count="0" />
-                        <ProductTableRow adress="Киев, ул Шевченко 167" weekdayworkDaysValue="пн-сб:" weekdayworkHoursValue="08:00-19:00" weekendWorkDaysValue="вс:" weekendWorkHoursValue="09:00-17:00" avaiable="Нет в наличии" count="0" />
+                        <tbody className={s.tableBody}>
+                            <ProductTableRow adress="Москва, ул. Науки 25"
+                                weekdayworkDaysValue="пн-сб:"
+                                weekdayworkHoursValue="08:00-19:00"
+                                weekendWorkDaysValue="вс:"
+                                weekendWorkHoursValue="09:00-17:00"
+                                avaiable="В наличии" count="1" />
+                            <ProductTableRow adress="Москва, ул. Южная 134" weekdayworkDaysValue="пн-сб:" weekdayworkHoursValue="08:00-19:00" weekendWorkDaysValue="вс:" weekendWorkHoursValue="09:00-17:00" avaiable="В наличии" count="2" />
+                            <ProductTableRow adress="Санкт-Петербург, ул. Красная 19" weekdayworkDaysValue="пн-сб:" weekdayworkHoursValue="08:00-19:00" weekendWorkDaysValue="вс:" weekendWorkHoursValue="09:00-17:00" avaiable="Нет в наличии" count="0" />
+                            <ProductTableRow adress="Киев, ул Шевченко 167" weekdayworkDaysValue="пн-сб:" weekdayworkHoursValue="08:00-19:00" weekendWorkDaysValue="вс:" weekendWorkHoursValue="09:00-17:00" avaiable="Нет в наличии" count="0" />
+                        </tbody>
                     </table>
 
                 </div>

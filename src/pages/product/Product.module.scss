@@ -8,6 +8,9 @@
     flex-direction: column;
     border: 2px black solid;
 
+    // .breadCrumbsContainer{
+    // }
+
     .describtion {
         display: flex;
 
@@ -17,15 +20,34 @@
             flex-direction: column;
             align-items: center;
             margin-right: 116px;
+            position: relative;
 
             padding: {
                 top: 64px;
                 bottom: 0px;
                 right: 0px;
                 left: 0px;
-            }
+            };
 
-            ;
+
+            .imgContainer{
+                
+
+                .sticker{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    font-size: 15px;
+                    padding: {
+                        top: 6px;
+                        bottom: 6px;
+                        right: 26px;
+                        left: 26px;
+                    };
+                    background-color: $secondaryColor;
+                    color: #FFFFFF;
+                }
+            }
 
             .purchase {
                 display: flex;
@@ -35,6 +57,19 @@
 
                 .priceOld {
                     font-size: 30px;
+                    position: relative;
+
+                    &::before{
+                        content: '';
+                        background-color: #2F3035;
+                        width: 140px;
+                        height: 2px;
+                        position: absolute;
+                        top: 20px;
+                        left: 10px;
+                        transform: rotate(390grad);
+                        
+                    }
                 }
 
                 .priceDiscount {
@@ -204,20 +239,32 @@
         .nav {
             background-color: #F0F0F4;
 
-            padding: {
-                top: 23px;
-                bottom: 23px;
-                right: 34px;
-                left: 38px;
-            }
+            
 
             .list {
                 display: flex;
                 justify-content: space-between;
+                position: relative;
+                
 
                 .item {
+                    padding: {
+                        top: 23px;
+                        bottom: 23px;
+                        right: 34px;
+                        left: 38px;
+                    }
                     .link {
+                        padding-bottom: 5px;
+                        border-bottom:  2px transparent solid;
+                        color: #2F3035;
                         font-size: 20px;
+                        font-family: 'SFProDisplayRegular';
+
+                        &:hover{
+                            border-bottom:  2px #1C62CD solid;
+
+                        }
                     }
                 }
 
@@ -235,8 +282,14 @@
                     margin-right: 155px;
 
                     .inputSearchLabel{
+                        
                         margin-right: 17px;
                         font-size: 17px;
+                    }
+
+                    .inputSearchShop{
+                        border: none;
+                        background-color: #F0F0F4;
                     }
                 }
 
@@ -261,14 +314,16 @@
             }
 
             .table{
+                border-collapse: separate;
                 margin-top: 50px;
-                border-spacing: 81px 41px;
                 .headRow{
+                    padding-bottom: 41px;
                     
 
                     .headCell{
                         text-align: left;
                         font-size: 20px;
+                        padding-bottom: 41px;
                     }
                 }
             }
