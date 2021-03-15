@@ -36,13 +36,13 @@ function Main() {
   <section className = {s.iformation}>
       <div className = {s.informationContainer}>
         <div className = {s.informationWrapper}>
-          <button buttonClass = {s.informationButtonLeft}>
+          <button className = {s.informationButtonLeft}>
             <img className = {s.imgLeft} src = {arrowLeft} alt = "Arrow left"/>
           </button>
           <div className = {s.images}>
             <img className={s.image} src = {bannerFirst} alt = "First banner"/>
           </div>
-          <button buttonClass = {s.informationButtonRight}>
+          <button className = {s.informationButtonRight}>
             <img className = {s.imgLeft} src = {arrowRight} alt = "Arrow right"/>
           </button>
           <div className = {s.indicatores}>
@@ -61,7 +61,7 @@ function Main() {
               <img className = {s.img} src = {motor} alt="Motor"/>
               <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
             </div>
-            <div cclassName = {s.wrapperSubtitle}>
+            <div className = {s.wrapperSubtitle}>
               <p className = {s.subtitle}>Акция действует до</p>
               <span className = {s.date}>31.08.2020</span>
             </div>

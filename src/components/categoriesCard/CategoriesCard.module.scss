@@ -1,6 +1,6 @@
 @import '../../sass/abstracts/mixins';
 @import '../../sass/abstracts/vars';
-@import '../../sass/basis/fonts.scss';
+@import '../../sass/basis/fonts';
 
 .category{
     
@@ -17,11 +17,14 @@
         flex-direction: column;
         .linkCategory{
             .title{
-                @include font ($font-family:'BarlowBold', $color: $colorTitle, $font-size: 23px)
+                // @include font ($font-family:'Barlow-Bold', $color: $colorTitle, $font-size: 23px)
+                font-family: 'BarlowBold';
+                font-weight: 700; 
+                font-style: normal;
             }
         }
         .linkMore{
-            @include font ($font-family:'SFProDisplaySemibold', $color: $colorText, $font-size: 14px)
+            @include font ($font-family:'SFProDisplay-Semiboldnp', $color: $colorText, $font-size: 14px)
         }
     }
     .image{
