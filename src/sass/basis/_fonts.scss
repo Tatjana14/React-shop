@@ -1,122 +1,13 @@
+/* 100: Thin;
+200: Extra Light (Ultra Light);
+300: Light;
+400: Normal;
+500: Medium;
+600: Semi Bold (Demi Bold);
+700: Bold;
+800: Extra Bold (Ultra Bold);
+900: Black (Heavy). */
 
-<<<<<<< HEAD
-$font-path: '../../assets/fonts/';
-
-
-@font-face{
-    font-family: 'Barlow-Bold';
-    src: url('../../assets/fonts/Barlow-Bold.eot');
-    src: local('Barlow-Bold'),
-        url('../../assets/fonts/Barlow-Bold.eot') format
-        ('embedded-opentype'),
-        url('../../assets/fonts/Barlow-Bold.woff2') format
-        ('woff2'),
-        url('../../assets/fonts/Barlow-Bold.woff') format
-        ('woff'),
-        url('../../assets/fonts/Barlow-Bold.ttf') format
-        ('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'SFProDisplay-Regular';
-    src: url('#{$font-path}/SFProDisplay-Regular.eot');
-    src: local('SFProDisplay-Regular'),
-        url('#{$font-path}/SFProDisplay-Regular.ttf') format('truetype'),
-        url('#{$font-path}/SFProDisplay-Regular.woff2') format('woff2'),
-        url('#{$font-path}/SFProDisplay-Regular.woff') format('woff'),
-        url('#{$font-path}/SFProDisplay-Regular.eot') format('embedded-opentype');
-    font-weight: 400;
-    font-style: normal;
-
-}
-
-@font-face{
-    font-family: 'SFProDisplay-Bold';
-    src: url('#{$font-path}/SFProDisplay-Bold.eot');
-    src: local('SFProDisplay-Bold'),
-        url('#{$font-path}/SFProDisplay-Bold.ttf') format('truetype'),
-        url('#{$font-path}/SFProDisplay-Bold.woff2') format('woff2'),
-        url('#{$font-path}/SFProDisplay-Bold.woff') format('woff'),
-        url('#{$font-path}/SFProDisplay-Bold.eot') format('embedded-opentype');
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-/* @font-face{
-    font-family: 'Barlow-Regular';
-    src: url('#{$font-path}/Barlow-Regular.eot');
-    src: local('Barlow-Regular'),
-        url('#{$font-path}/Barlow-Regular.ttf') format('truetype'),
-        url('#{$font-path}/Barlow-Regular.woff2') format('woff2'),
-        url('#{$font-path}/Barlow-Regular.woff') format('woff'),
-        url('#{$font-path}/Barlow-Regular.eot') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-@font-face{
-    font-family: 'SFProDisplay-Semibold';
-    src: url('#{$font-path}/SFProDisplay-Semibold.eot');
-    src: local('SFProDisplay-Semibold'),
-        url('#{$font-path}/SFProDisplay-Semibold.ttf') format('truetype'),
-        url('#{$font-path}/SFProDisplay-Semibold.woff2') format('woff2'),
-        url('#{$font-path}/SFProDisplay-Semibold.woff') format('woff'),
-        url('#{$font-path}/SFProDisplay-Semibold.eot') format('embedded-opentype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'SFProDisplay-Medium';
-    src: url('#{$font-path}/SFProDisplay-Medium.eot');
-    src: local('SFProDisplay-Medium'),
-        url('#{$font-path}/SFProDisplay-Medium.ttf') format('truetype'),
-        url('#{$font-path}/SFProDisplay-Medium.woff2') format('woff2'),
-        url('#{$font-path}/SFProDisplay-Medium.woff') format('woff'),
-        url('#{$font-path}/SFProDisplay-Medium.eot') format('embedded-opentype');
-    font-weight: 500;
-    font-style: normal;    
-}
-
-/* @font-face{
-    font-family: 'ProximaNova-Bold';
-    src: url('#{$font-path}/ProximaNova-Bold.eot');
-    src: local('ProximaNova-Bold'),
-        url('#{$font-path}/ProximaNova-Bold.ttf') format('truetype'),
-        url('#{$font-path}/ProximaNova-Bold.woff2') format('woff2'),
-        url('#{$font-path}/ProximaNova-Bold.woff') format('woff'),
-        url('#{$font-path}/ProximaNova-Bold.eot') format('embedded-opentype');
-    font-weight: 700;
-    font-style: normal;    
-}
-
-@font-face{
-    font-family: 'Barlow-Light';
-    src: url('#{$font-path}/Barlow-Light.eot');
-    src: local('Barlow-Light'),
-        url('#{$font-path}/Barlow-Light.ttf') format('truetype'),
-        url('#{$font-path}/Barlow-Light.woff2') format('woff2'),
-        url('#{$font-path}/Barlow-Light.woff') format('woff'),
-        url('#{$font-path}/Barlow-Light.eot') format('embedded-opentype');
-    font-weight: 300;
-    font-style: normal;     
-}
-
-@font-face{
-    font-family: 'Barlow-SemiBold';
-    src: url('#{$font-path}/Barlow-SemiBold.eot');
-    src: local('Barlow-SemiBold'),
-        url('#{$font-path}/Barlow-SemiBold.ttf') format('truetype'),
-        url('#{$font-path}/Barlow-SemiBold.woff2') format('woff2'),
-        url('#{$font-path}/Barlow-SemiBold.woff') format('woff'),
-        url('#{$font-path}/Barlow-SemiBold.eot') format('embedded-opentype');
-    font-weight: 600;
-    font-style: normal;    
-} */
-=======
 $way-fonts: '../../assets/fonts/';
 
 
@@ -183,7 +74,7 @@ $way-fonts: '../../assets/fonts/';
 //...........................//
 
 @font-face {
-	font-family: 'Barlow';
+	font-family: 'BarlowBold';
 	src: url('#{$way-fonts}/Barlow-Bold.eot');
 	src: local('Barlow-Bold'),
 		 url('#{$way-fonts}/Barlow-Bold.eot?#iefix') format('embedded-opentype'),
@@ -205,4 +96,3 @@ $way-fonts: '../../assets/fonts/';
 	font-weight: 400;
 	font-style: normal;
 }
->>>>>>> 96a878bb2baa3c14e4868d9f028e470f5757712e

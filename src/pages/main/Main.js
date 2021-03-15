@@ -58,10 +58,11 @@ function Main() {
           <a className = {s.linkSale} href="#">АКЦИЯ</a>
           <span className = {s.priceNow} >190 000 ₽</span>
           <span className = {s.priceOld}>225 000 ₽</span>
-          <div className = {s.imgWrapper}>
-            <img className = {s.imgCard} src = {motor} alt="Motor"/>
+          <img className = {s.imgCard} src = {motor} alt="Motor"/>
+          <div className = {s.titleWrapper}>
+            <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
           </div>
-          <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
+          
           <div className = {s.wrapperSubtitle}>
             <p className = {s.subtitle}>Акция действует до</p>
             <span className = {s.date}>31.08.2020</span>

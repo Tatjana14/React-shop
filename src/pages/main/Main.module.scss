@@ -27,9 +27,10 @@
     }
   }
   .informationCard{
+    @include flex ();
+    flex-direction: column;
     position: relative;
     max-width: 265px;
-    height: 397px;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     .linkSale{
@@ -54,8 +55,21 @@
       right: 1.1%;
       top: 10.8%;
     }
-    .imgWrapper{
+    .imgCard{
       padding: 67px 79px 0 61px;
+    }
+    .titleWrapper{
+      text-align: center;
+      margin-top: 4px;
+      max-width: 160px;
+    }
+    .wrapperSubtitle{
+      margin-top: 7px;
+      width: 100%;
+      height: 100px;
+      background-color: $secondaryBg;
+      @include flex ();
+      flex-direction: column;
     }
   }
 }
