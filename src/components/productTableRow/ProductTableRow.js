@@ -17,7 +17,7 @@ function ProductTableInfoRow(props) {
             </td>
             <td className={s.cellAvailability}>{props.avaiable}</td>
             <td className={s.cellCount}>{props.count}</td>
-            <td><button className={s.btn}>Купить</button></td>
+            <td className={s.cellBtn}><button className={s.btn}>Купить</button></td>
         </tr>
     );
 }

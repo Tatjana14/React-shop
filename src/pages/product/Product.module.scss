@@ -1,7 +1,6 @@
 @import '../../sass/abstracts/vars';
 
 
-
 .product {
     $product: &;
     display: flex;
@@ -27,23 +26,28 @@
                 bottom: 0px;
                 right: 0px;
                 left: 0px;
-            };
+            }
+
+            ;
 
 
-            .imgContainer{
-                
+            .imgContainer {
 
-                .sticker{
+
+                .sticker {
                     position: absolute;
                     top: 0;
                     left: 0;
                     font-size: 15px;
+
                     padding: {
                         top: 6px;
                         bottom: 6px;
                         right: 26px;
                         left: 26px;
-                    };
+                    }
+
+                    ;
                     background-color: $secondaryColor;
                     color: #FFFFFF;
                 }
@@ -59,7 +63,7 @@
                     font-size: 30px;
                     position: relative;
 
-                    &::before{
+                    &::before {
                         content: '';
                         background-color: #2F3035;
                         width: 140px;
@@ -68,7 +72,7 @@
                         top: 20px;
                         left: 10px;
                         transform: rotate(390grad);
-                        
+
                     }
                 }
 
@@ -231,6 +235,7 @@
         }
     }
 
+
     .tableContainer {
         margin-top: 82px;
         display: flex;
@@ -239,13 +244,13 @@
         .nav {
             background-color: #F0F0F4;
 
-            
+
 
             .list {
                 display: flex;
                 justify-content: space-between;
                 position: relative;
-                
+
 
                 .item {
                     padding: {
@@ -254,15 +259,16 @@
                         right: 34px;
                         left: 38px;
                     }
+
                     .link {
                         padding-bottom: 5px;
-                        border-bottom:  2px transparent solid;
+                        border-bottom: 2px transparent solid;
                         color: #2F3035;
                         font-size: 20px;
-                        font-family: 'SFProDisplayRegular';
+                        font-family: 'SFProRegular';
 
-                        &:hover{
-                            border-bottom:  2px #1C62CD solid;
+                        &:hover {
+                            border-bottom: 2px #1C62CD solid;
 
                         }
                     }
@@ -273,6 +279,7 @@
 
         .delivery {
             padding-left: 39px;
+
             .inputsContainer {
                 margin-top: 50px;
                 display: flex;
@@ -281,13 +288,13 @@
                     display: flex;
                     margin-right: 155px;
 
-                    .inputSearchLabel{
-                        
+                    .inputSearchLabel {
+
                         margin-right: 17px;
                         font-size: 17px;
                     }
 
-                    .inputSearchShop{
+                    .inputSearchShop {
                         border: none;
                         background-color: #F0F0F4;
                     }
@@ -297,12 +304,12 @@
                     display: flex;
                     align-items: center;
 
-                    .radioBtnToday{
+                    .radioBtnToday {
                         margin-right: 54px;
                         display: flex;
                         align-items: center;
 
-                        .inputRadioBtnToday{
+                        .inputRadioBtnToday {
                             margin-right: 15px;
                         }
 
@@ -313,14 +320,15 @@
                 }
             }
 
-            .table{
+            .table {
                 border-collapse: separate;
                 margin-top: 50px;
-                .headRow{
-                    padding-bottom: 41px;
-                    
 
-                    .headCell{
+                .headRow {
+                    padding-bottom: 41px;
+
+
+                    .headCell {
                         text-align: left;
                         font-size: 20px;
                         padding-bottom: 41px;

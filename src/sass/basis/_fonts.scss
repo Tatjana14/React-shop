@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 $font-path: '../../assets/fonts/';
 
 
@@ -115,3 +116,93 @@ $font-path: '../../assets/fonts/';
     font-weight: 600;
     font-style: normal;    
 } */
+=======
+$way-fonts: '../../assets/fonts/';
+
+
+@font-face {
+	font-family: 'SfProBold';
+	src: url('#{$way-fonts}/SFProDisplay-Bold.eot');
+	src:local('SFProDisplay-Bold'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.eot') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProSemibold';
+	src: url('#{$way-fonts}/SFProDisplay-Semibold.eot');
+	src: local('SFProDisplay-Semibold'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProMedium';
+	src: url('#{$way-fonts}/SFProDisplay-Medium.eot');
+	src: local('SFProDisplay-Medium'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProRegular';
+	src: url('#{$way-fonts}/SFProDisplay-Regular.eot');
+	src: local('SFProDisplay-Regular'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.woff2') format('woff2'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.woff') format('woff'),
+		 url('#{$way-fonts}/SFProDisplay-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+//...........................//
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('#{$way-fonts}/ProximaNovaCond-Regular.eot');
+	src: local('ProximaNovaCond-Regular'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.woff2') format('woff2'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.woff') format('woff'),
+		 url('#{$way-fonts}/ProximaNovaCond-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+//...........................//
+
+@font-face {
+	font-family: 'Barlow';
+	src: url('#{$way-fonts}/Barlow-Bold.eot');
+	src: local('Barlow-Bold'),
+		 url('#{$way-fonts}/Barlow-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/Barlow-Bold.woff2') format('woff2'),
+		 url('#{$way-fonts}/Barlow-Bold.woff') format('woff'),
+		 url('#{$way-fonts}/Barlow-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+//...........................//
+@font-face {
+	font-family: 'Staatliches';
+	src: url('#{$way-fonts}/Staatliches-Regular.eot');
+	src:  local('Staatliches-Regular'),
+		 url('#{$way-fonts}/Staatliches-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('#{$way-fonts}/Staatliches-Regular.woff2') format('woff2'),
+		 url('#{$way-fonts}/Staatliches-Regular.woff') format('woff'),
+		 url('#{$way-fonts}/Staatliches-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+>>>>>>> 96a878bb2baa3c14e4868d9f028e470f5757712e

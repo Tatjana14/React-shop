@@ -1,45 +1,47 @@
 @import '../../sass/abstracts/vars';
 
-.tableRow{
+.tableRow {
     vertical-align: top;
     border-bottom: 1px black solid;
-    
 
-    .cellAdress{
+
+    .cellAdress {
         font-size: 16px;
         padding-right: 81px;
     }
 
-    .cellWorkHours{
+    .cellWorkHours {
+        font-family: 'SFProRegular';
         padding-right: 96px;
         padding-bottom: 20px;
         display: flex;
         flex-direction: column;
 
-        .weekdaysWorkHours{
+        .weekdaysWorkHours {
             display: flex;
-            .weekdayworkDays{
+
+            .weekdayworkDays {
                 margin-right: 21px;
             }
         }
 
 
-        .weekendWorkHours{
+        .weekendWorkHours {
             display: flex;
-            .weekendWorkDays{
+
+            .weekendWorkDays {
                 margin-right: 46px;
             }
         }
 
-        
+
     }
 
 
-    .cellAvailability{
+    .cellAvailability {
         padding-right: 117px;
     }
 
-    
 
 
 
@@ -48,19 +50,25 @@
 
 
 
+    .cellBtn {
+        display: flex;
+        border: 2px red solid;
 
-    .btn{
-        border: 0;
-        color: #FFFFFF;
-        background-color: #1C62CD;
-        font-size: 13px;
-        min-height: 35px;
-        padding: {
-            top: 0;
-            bottom: 0;
-            right: 40px;
-            left: 41px;
-        };
+        .btn {
+            border: 0;
+            color: #FFFFFF;
+            background-color: #1C62CD;
+            font-size: 13px;
+            min-height: 35px;
+            align-self: end;
+            padding: {
+                top: 0;
+                bottom: 0;
+                right: 40px;
+                left: 41px;
+            }
 
+            ;
+        }
     }
 }
