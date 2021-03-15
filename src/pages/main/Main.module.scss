@@ -1,6 +1,64 @@
+@import "../../sass/abstracts/mixins";
+@import '../../sass/abstracts/vars';
 
-
-
+.informationContainer{
+  width: 100%;
+  @include flex ($justify-content: space-between);
+  .informationSlider{
+    position: relative;
+    max-width: 870px;
+    .informationButtonLeft,
+    .informationButtonRight{
+      background: transparent;
+      position: absolute;
+      border-color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+    .informationButtonLeft{
+      left: 2.6%;
+    }
+    .informationButtonRight{
+      right: 2.6%;
+    }
+  }
+  .informationCard{
+    position: relative;
+    max-width: 265px;
+    height: 397px;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    .linkSale{
+      width: 34%;
+      height: 7.6%;
+      background: $secondaryColor;
+      color: white;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .priceNow{
+      position: absolute;
+      color:  $secondaryColor;
+      right: 4.5%;
+      top: 1.1%;
+    }
+    .priceOld{
+      position: absolute;
+      color:  $colorText;
+      right: 1.1%;
+      top: 10.8%;
+    }
+    .imgWrapper{
+      padding: 67px 79px 0 61px;
+    }
+  }
+}
 
 
 

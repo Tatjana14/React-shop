@@ -3,8 +3,8 @@ import s from './Main.module.scss'
 import motor from '../../assets/img/sale/motor.svg'
 import CategoriesCard from "../../components/categoriesCard/CategoriesCard";
 
-import arrowLeft from '../../assets/img/common/slider_arrow_left.svg';
-import arrowRight from '../../assets/img/common/slider_arrow_right.svg';
+import arrowLeft from '../../assets/img/common/slider_arrow_left.png';
+import arrowRight from '../../assets/img/common/slider_arrow_right.png';
 import bannerFirst  from '../../assets/img/common/slider_banner.svg';
 import SectionProducts from '../../components/section/SectionProducts';
 import Slider from '../../components/slider/Slider';
@@ -35,7 +35,7 @@ function Main() {
   <>
   <section className = {s.iformation}>
       <div className = {s.informationContainer}>
-        <div className = {s.informationWrapper}>
+        <div className = {s.informationSlider}>
           <button className = {s.informationButtonLeft}>
             <img className = {s.imgLeft} src = {arrowLeft} alt = "Arrow left"/>
           </button>
@@ -53,20 +53,20 @@ function Main() {
             <div className = {s.SliderIndicatorItem}></div>
             <div className = {s.SliderIndicatorItem}></div>
           </div>
-          <div className = {s.informationSale}>
-            <a className = {s.link} href="#">АКЦИЯ</a>
-            <span className = {s.priceNow} >190 000 ₽</span>
-            <span className = {s.priceOld}>225 000 ₽</span>
-            <div className = {s.content}>
-              <img className = {s.img} src = {motor} alt="Motor"/>
-              <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
-            </div>
-            <div className = {s.wrapperSubtitle}>
-              <p className = {s.subtitle}>Акция действует до</p>
-              <span className = {s.date}>31.08.2020</span>
-            </div>
-          </div>        
         </div>
+        <div className = {s.informationCard}>
+          <a className = {s.linkSale} href="#">АКЦИЯ</a>
+          <span className = {s.priceNow} >190 000 ₽</span>
+          <span className = {s.priceOld}>225 000 ₽</span>
+          <div className = {s.imgWrapper}>
+            <img className = {s.imgCard} src = {motor} alt="Motor"/>
+          </div>
+          <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
+          <div className = {s.wrapperSubtitle}>
+            <p className = {s.subtitle}>Акция действует до</p>
+            <span className = {s.date}>31.08.2020</span>
+          </div>
+        </div>        
       </div>
     </section>
     

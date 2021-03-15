@@ -15,14 +15,11 @@
         padding: 20px 0px 16px 20px;
         @include flex ($justify-content: space-between, $align-items:start);
         flex-direction: column;
-        .linkCategory{
+/*         .linkCategory{
             .title{
-                // @include font ($font-family:'Barlow-Bold', $color: $colorTitle, $font-size: 23px)
-                font-family: 'BarlowBold';
-                font-weight: 700; 
-                font-style: normal;
+                font-family: 'Barlow-Bold'; 
             }
-        }
+        } */
         .linkMore{
             @include font ($font-family:'SFProDisplay-Semiboldnp', $color: $colorText, $font-size: 14px)
         }

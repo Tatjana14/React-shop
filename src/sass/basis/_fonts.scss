@@ -3,21 +3,19 @@ $font-path: '../../assets/fonts/';
 
 
 @font-face{
-    font-family: 'BarlowBold';
-    src: url('../../assets/fonts/BarlowBold.woff2') format('woff2');
-            /* url('#{$font-path}/BarlowBold.eot') format('embedded-opentype'),
-        url('#{$font-path}/BarlowBold.woff') format('woff'),
-        url('#{$font-path}/BarlowBold.ttf') format('truetype'); */
+    font-family: 'Barlow-Bold';
+    src: url('../../assets/fonts/Barlow-Bold.eot');
+    src: local('Barlow-Bold'),
+        url('../../assets/fonts/Barlow-Bold.eot') format
+        ('embedded-opentype'),
+        url('../../assets/fonts/Barlow-Bold.woff2') format
+        ('woff2'),
+        url('../../assets/fonts/Barlow-Bold.woff') format
+        ('woff'),
+        url('../../assets/fonts/Barlow-Bold.ttf') format
+        ('truetype');
     font-weight: 700;
     font-style: normal;
-}
-
-
-/* @font-face {
-    font-family: 'BarlowBold';
-        src: url('../../assets/fonts/BarlowBold.woff2') format('woff2');
-        font-weight: 700;
-        font-style: normal;
 }
 
 @font-face{
@@ -46,7 +44,7 @@ $font-path: '../../assets/fonts/';
 
 }
 
-@font-face{
+/* @font-face{
     font-family: 'Barlow-Regular';
     src: url('#{$font-path}/Barlow-Regular.eot');
     src: local('Barlow-Regular'),
@@ -56,8 +54,7 @@ $font-path: '../../assets/fonts/';
         url('#{$font-path}/Barlow-Regular.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-
-}
+} */
 
 @font-face{
     font-family: 'SFProDisplay-Semibold';
@@ -69,7 +66,6 @@ $font-path: '../../assets/fonts/';
         url('#{$font-path}/SFProDisplay-Semibold.eot') format('embedded-opentype');
     font-weight: 600;
     font-style: normal;
-
 }
 
 @font-face{
@@ -82,10 +78,9 @@ $font-path: '../../assets/fonts/';
         url('#{$font-path}/SFProDisplay-Medium.eot') format('embedded-opentype');
     font-weight: 500;
     font-style: normal;    
-
 }
 
-@font-face{
+/* @font-face{
     font-family: 'ProximaNova-Bold';
     src: url('#{$font-path}/ProximaNova-Bold.eot');
     src: local('ProximaNova-Bold'),
@@ -95,7 +90,6 @@ $font-path: '../../assets/fonts/';
         url('#{$font-path}/ProximaNova-Bold.eot') format('embedded-opentype');
     font-weight: 700;
     font-style: normal;    
-
 }
 
 @font-face{
@@ -107,8 +101,7 @@ $font-path: '../../assets/fonts/';
         url('#{$font-path}/Barlow-Light.woff') format('woff'),
         url('#{$font-path}/Barlow-Light.eot') format('embedded-opentype');
     font-weight: 300;
-    font-style: normal;    
-    
+    font-style: normal;     
 }
 
 @font-face{
@@ -121,5 +114,4 @@ $font-path: '../../assets/fonts/';
         url('#{$font-path}/Barlow-SemiBold.eot') format('embedded-opentype');
     font-weight: 600;
     font-style: normal;    
-
 } */
