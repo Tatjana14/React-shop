@@ -1,0 +1,47 @@
+#expand-btn {
+    margin: 0 3px;
+    display: inline-block;
+    font: 12px / 13px "Lucida Grande", sans-serif;
+    text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+    padding: 3px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    cursor: default;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px, inset 0 20px 20px -10px white;
+}
+
+#isexpanded:checked ~ #expand-btn, #isexpanded:checked ~ * #expand-btn {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+
+#isexpanded, .expandable, #check {
+    display: none;
+}
+
+
+#isexpanded:checked ~ #check {
+    display: block;
+    background: transparent;
+    border: 1px solid red;
+}
+
+#wrapFlex {
+    border: 1px solid red;
+    max-width: 290px;
+    min-width: 250px;
+}
+h3 {
+    text-align: end;
+}
+.arrowTop {
+    width: 12px;
+    height: 7px;
+    margin-right: 14px;
+}
+
