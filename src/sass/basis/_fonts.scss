@@ -75,7 +75,7 @@ $way-fonts: '../../assets/fonts/';
 
 @font-face {
 	font-family: 'BarlowBold';
-	src: url('#{$way-fonts}/Barlow-Bold.eot');
+	src: url('#{$way-fonts}/Barlow-Bold.woff2');
 	src: local('Barlow-Bold'),
 		 url('#{$way-fonts}/Barlow-Bold.eot?#iefix') format('embedded-opentype'),
 		 url('#{$way-fonts}/Barlow-Bold.woff2') format('woff2'),
