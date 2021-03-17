@@ -11,7 +11,7 @@ import Sticker from '../sticker/Sticker';
 
 function Card(props) {
     return (
-        <div id={props.idCard} style={props.styleCard} className={s.card}>
+        <div style={props.styleCard} className={s.card}>
             <div className={s.actionCard}><a href='#' className={s.actionCardText}>посмотреть товар</a></div>
                 <Sticker Sticker={props.Sticker} className={s.cardSticker} saleValue = {props.value}/>
                 <button className={s.btnLike}><img className={s.imgLike} src={like} alt=""/></button>
