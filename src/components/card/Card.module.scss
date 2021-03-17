@@ -8,8 +8,8 @@
     flex-direction: column;
     width: 271px;
     height: 403px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    // margin-right: 30px;
+    // margin-bottom: 30px;
     border: 1px solid #CDCDCD;
     position: relative;
     border: 1px solid #E0E0E0;
@@ -17,6 +17,10 @@
     &:hover {
         box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
     }
+}
+#idCard {
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .actionCard {
     visibility: hidden;

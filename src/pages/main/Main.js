@@ -201,7 +201,7 @@ function Main() {
       <SectionProducts nameSection = "С этим товаром покупают"/>
       <Slider sliderContent ={
         <>
-        <Card to  src = {audioSystem} cardText = 'Водонепроницаемый Рюкзак' valuePrice = '9 800 ₽'  Sticker={{display: 'none'}} NonAvailable={{display: 'none'}} />
+        <Card idCard='idCard' to  src = {audioSystem} cardText = 'Водонепроницаемый Рюкзак' valuePrice = '9 800 ₽'  Sticker={{display: 'none'}} NonAvailable={{display: 'none'}} />
         <Card to value = 'Sale'  src = {echomap} cardText = "Спасательный жилет BRP Men's Airflow PFD" valuePrice = '6 900 ₽'  NonAvailable={{display: 'none'}} />
         <Card to  src = {audioSystemPremium} cardText = "BRP Audio-Premium System" valuePrice = '68 000 ₽'  Sticker={{display: 'none'}}  NonAvailable={{display: 'none'}} />
         <Card to value = 'Sale'  src = {equipment} cardText = "Спасательное снаряжение" valuePrice = '68 000 ₽' Available = {{display: 'none'}} />
