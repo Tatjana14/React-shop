@@ -75,20 +75,22 @@ function Main() {
       <div className = {s.wrapperSearch} > 
         <div className = {s.menuSearch}>
           <ul className = {s.menuList}>
-            <li>
-              <a href="">Поиск по номеру</a>
+            <li className = {s.menuListItem}>
+              <a className = {s.searchLink} href="#">Поиск по номеру</a>
             </li>
-            <li>
-              <a href="">Поиск по марке</a>
+            <li className = {s.menuListItem}>
+              <a className = {s.searchLink} href="#">Поиск по марке</a>
             </li>
-            <li>
-              <a href="">Поиск по названию товара</a>
+            <li className = {s.menuListItem}>
+              <a className = {s.searchLink} href="#">Поиск по названию товара</a>
             </li>
-            <div className = {s.inputForm}>
-              <input className = {s.inputSearch} type="text" placeholder =  "Введите марку" />
-              <button className = {s.button}>Искать</button>
-            </div>
           </ul>
+          </div>
+        <div className = {s.inputForm}>
+          <div className = {s.inputWrapper}>
+            <input className = {s.inputSearch} type="text" placeholder =  "Введите марку" />
+          </div>
+          <button className = {s.buttonSearch}>ИСКАТЬ</button>
         </div>
       </div>
     </section>
@@ -185,9 +187,12 @@ function Main() {
             <img className = {s.advertisingImg} src={moto} alt="Moto"/>
             <img className = {s.advertisingImg} src={quadrosale} alt="Quadro"/>
           </div>
-            <h3 className = {s.advertisingTitle}>CКИДКИ на все запчасти до 70%</h3>
-            <button className = {s.advertisingBtn}>ПОСМОТРЕТЬ ВСЕ</button>
-            
+          <div className = {s.advertisingTitleWrapper} >
+            <p className = {s.advertisingTitle}>CКИДКИ</p>
+            <p className = {s.advertisingTitle}>на все запчасти</p>
+            <p className = {s.advertisingTitle}>до 70%</p>
+          </div>
+          <button className = {s.advertisingBtn}>ПОСМОТРЕТЬ ВСЕ</button>
         </div>
     </div>
     </section>

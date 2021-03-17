@@ -17,14 +17,22 @@
         flex-direction: column;
         .linkCategory{
             .title{
-                font-family: 'BarlowBold';
+                font-family: 'Barlow', sans-serif;
                 color: $colorTitle;
                 font-size: 23px;
+                font-weight: 700;
             }
         }
         .linkMore{
-            @include font ($font-family: 'SFProRegular', $color: $colorText, $font-size: 14px);
+            @include font ($font-family: 'IBM Plex Sans', $color: $colorText, $font-size: 14px);
             line-height: 17px;
+        }
+        .linkMore::after{
+            content: '';
+            background-image: url(../../assets/img/main/Back.svg);
+            display: inline-block;
+            width: 6px;
+            height: 9px;
         }
     }
     .image{
