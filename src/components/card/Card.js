@@ -12,10 +12,13 @@ import Sticker from '../sticker/Sticker';
 function Card(props) {
     return (
         <div className={s.card}>
+            <div className={s.actionCard}><a href='#' className={s.actionCardText}>посмотреть товар</a></div>
                 <Sticker Sticker={props.Sticker} className={s.cardSticker} saleValue = {props.value}/>
                 <button className={s.btnLike}><img className={s.imgLike} src={like} alt=""/></button>
             <a className={s.cardLink} href={props.to}>
-                <img className={s.cardImg} src = {props.src}/>
+                <div className={s.sizeBox}>
+                    <img className={s.cardImg} src = {props.src}/>
+                </div>
                 <p className={s.cardText}>{props.cardText}</p>
             </a>
             <div className={s.cardAvailable} style={props.Available}>
@@ -23,7 +26,7 @@ function Card(props) {
                 <button className={s.btnCount}><img className="imgCount" src={count} alt=""/></button>
             </div>
             <div className={s.cardNonAvailable} style={props.NonAvailable}>
-                <span className={s.cardNonAvailableText}>Нет в наличии</span>
+                <span className={s.cardNonAvailableText}>нет в наличии</span>
                 <a className={s.cardNonAvailableLink} href="">Сообщить о поступлении</a>
             </div>
         </div>

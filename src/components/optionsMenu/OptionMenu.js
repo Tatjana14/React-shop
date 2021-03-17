@@ -6,14 +6,13 @@ function OptionMenu(props) {
     return (
         <div id='wrapFlex' className={props.className}>
             <input type="checkbox" id="isexpanded" />
-            <label className='labell' for="isexpanded">
+            <label className='lab' for="isexpanded" id='expand-btn'>
                 <img className='arrowTop' src={arrowTop} alt=""/>
-                <span>{props.titleValue}</span>
+                {props.titleValue}
             </label> 
-            <div id='check'>
+            <div id='expandable' className={props.boxOption}>
                 {props.option}
             </div>
-            
         </div>
     );
 }
