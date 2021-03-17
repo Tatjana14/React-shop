@@ -26,15 +26,22 @@
     border-radius: 3px;
     background-color: $secondaryBg;
     border: none;
+    @include font ('IBM Plex Sans', $colorTitle, 14px);
+    font-weight: 400;
+    opacity: 70%;
     &:last-child {
         margin-right: 0;
     }
 }
+
 div > select  {
     width: 178px;
     height: 33px;
     border: 1.5px solid #D7D9DF;
     margin-right: 35px;
+    @include font ('IBM Plex Sans', $colorTitle, 14px);
+    font-weight: 400;
+    padding: 0 10px;
 }
 .catalogHeadBtnView {
     border: none;
@@ -44,6 +51,11 @@ div > select  {
 .catalogHeadBtnList {
     border: none;
     background-color: transparent;
+}
+
+.catalogHeadTitle {
+    @include font ('IBM Plex Sans', $colorTitle, 30px);
+    font-weight: 700;
 }
 
 

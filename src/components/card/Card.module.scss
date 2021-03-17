@@ -2,6 +2,7 @@
 @import '../../sass/abstracts/vars';
 
 
+
 .card {
     @include flex(center,center);
     flex-direction: column;
@@ -37,6 +38,12 @@
 }
 .card:hover > .actionCard {
     visibility: visible;
+}
+.card:hover > .cardLink > .cardText {
+    color: $secondaryColor;
+}
+.card:hover > .cardAvailable > .cardPrice {
+    color: $secondaryColor;
 }
 .cardImg {
     margin-bottom: 25px;
@@ -93,6 +100,7 @@
     @include font ('IBM Plex Sans', $colorTitle, 18px);
     font-weight: 400;
     max-width: 250px;
+    transition: 0.2s;
 }
 .cardNonAvailable {
     @include flex (center, center);
@@ -115,6 +123,7 @@
     @include font ('Barlow', $colorTitle, 30px);
     font-weight: 700;
     text-align: center;
+    transition: 0.2s; 
 }
 
 

@@ -1,4 +1,33 @@
-#expand-btn {
+@import '../../sass//abstracts/mixins';
+@import '../../sass//abstracts/vars';
+
+// COMMON 
+#wrapFlex {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.rotate:checked ~ .rotating > .arrowTop {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.rotating {
+    @include font ('IBM Plex Sans', $colorTitle, 16px);
+    font-weight: 600;
+}
+.arrowTop {
+    margin-right: 10px;
+}
+
+
+
+
+// AVAILABLE
+
+#expandBtn {
     margin: 40px 0 20px 0;
     display: inline-block;
     padding: 3px 6px;
@@ -6,33 +35,179 @@
     cursor: default;
     border-radius: 3px;
 }
-.lab {
-    border: 1px solid red;
-    width: 100%;
-}
-.arrowTop {
-    margin-right: 10px;
-}
-#isexpanded:checked ~ #expand-btn > .arrowTop {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-}
 
 #isexpanded, #expandable {
-    display: none;
+    display: none;   
 }
 
 #isexpanded:checked ~ #expandable {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
-#wrapFlex {
-    border: 1px solid red;
+
+
+
+// RADIO
+
+#expandBtnRadio {
+    margin: 40px 0 20px 0;
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: transparent;
+    cursor: default;
+    border-radius: 3px;
 }
+
+#isexpandedRadio, #expandableRadio {
+    display: none;   
+}
+
+#isexpandedRadio:checked ~ #expandableRadio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+
+// PRICE 
+
+#expandBtnPrice {
+    margin: 40px 0 20px 0;
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: transparent;
+    cursor: default;
+    border-radius: 3px;
+}
+
+#isexpandedPrice, #expandablePrice {
+    display: none;   
+}
+
+#isexpandedPrice:checked ~ #expandablePrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#range {
+    width: 275px;
+}
+.rangeInner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    word-spacing: 5px;
+}
+.rangeInner > label {
+    @include font ('IBM Plex Sans', black, 14px);
+    font-weight: 400;
+}
+
+
+
+// BRAND
+
+#expandBtnBrand {
+    margin: 40px 0 20px 0;
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: transparent;
+    cursor: default;
+    border-radius: 3px;
+}
+
+#isexpandedBrand, #expandableBrand {
+    display: none;   
+}
+
+#isexpandedBrand:checked ~ #expandableBrand {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+
+// MODEL
+
+#expandBtnModel {
+    margin: 40px 0 20px 0;
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: transparent;
+    cursor: default;
+    border-radius: 3px;
+}
+
+#isexpandedModel, #expandableModel {
+    display: none;   
+}
+
+#isexpandedModel:checked ~ #expandableModel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+// PROMO
+
+#expandBtnPromo {
+    margin: 40px 0 20px 0;
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: transparent;
+    cursor: default;
+    border-radius: 3px;
+}
+
+#isexpandedPromo, #expandablePromo {
+    display: none;   
+}
+
+#isexpandedPromo:checked ~ #expandablePromo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+// COUNTRY
+
+#expandBtnCountry {
+    margin: 40px 0 20px 0;
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: transparent;
+    cursor: default;
+    border-radius: 3px;
+}
+
+#isexpandedCountry, #expandableCountry {
+    display: none;   
+}
+
+#isexpandedCountry:checked ~ #expandableCountry {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+
+
 
 

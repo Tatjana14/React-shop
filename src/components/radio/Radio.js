@@ -6,7 +6,7 @@ import s from './Radio.module.scss';
 function Radio(props) {
     return (
         <div className={s.wrapRadio}>
-            <input type="radio" id='radio'/>
+            <input type="radio" id='radio' name='radio'/>
             <label for='radio'>{props.radioName}</label>
         </div>        
     );

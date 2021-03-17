@@ -1,3 +1,10 @@
+@import '../../sass//abstracts/mixins';
+@import '../../sass//abstracts/vars';
+
 .wrapCheck > input {
     margin-right: 10px;
+}
+.wrapCheck > label {
+    @include font ('IBM Plex Sans', Black, 14px);
+    font-weight: 400;
 }

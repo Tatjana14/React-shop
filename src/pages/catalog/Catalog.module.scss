@@ -1,6 +1,24 @@
 @import '../../sass/abstracts/_mixins.scss';
 @import '../../sass/abstracts/_vars.scss';
 
+.linkMenu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &Item {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @include font ('IBM Plex Sans', $colorTitle, 16px);
+        font-weight: 700;
+        &:first-child {
+            border-bottom: 3px solid $secondaryColor;
+        }
+        &:last-child {
+            color: $colorText;
+        }
+    }
+}
+
 .catalogWrapper {
     display: flex;
     justify-content: space-between;
@@ -10,14 +28,74 @@
     flex-basis: 25%;
 }
 
+.checkWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.btnSale {
+    @include font ('IBM Plex Sans', white, 12px);
+    font-weight: 700;
+    background-color: $secondaryColor;
+    border: none;
+    padding: 7px 15px;
+    letter-spacing: 1px;
+}
 
+.btnNew {
+    @include font ('IBM Plex Sans', $colorText, 12px);
+    font-weight: 700;
+    background-color: $secondaryBg;
+    color: $colorText;
+    border: none;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+}
 
+.btnHit {
+    background-color: $secondaryBg;
+    color: $colorText;
+    border: none;
+    padding: 7px 15px;
+    letter-spacing: 1px;
+}
 
+.btnDealer {
+    background-color: $colorTitle;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    letter-spacing: 1px;
+}
 
+.menuBottom {
+    @include flex; 
+    flex-direction: column;
+}
 
-
-
+.btnSelect {
+    text-transform: uppercase;
+    @include font ('IBM Plex Sans', #BDBEC2, 15px);
+    font-weight: 400;
+    border: none;
+    background: #F0F0F4;
+    padding: 16px 85px;
+    margin-bottom: 15px;
+}
+.extra {
+    @include font ('IBM Plex Sans', $colorTitle, 13px);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.btnFilter {
+    @include font ('IBM Plex Sans', $colorText, 13px);
+    font-weight: 400;
+    text-decoration: underline;
+    background: transparent;
+    border: none;
+}
 
 
 
