@@ -1,3 +1,26 @@
-.wrapper{
+.wrapperSlider{
+    position: relative;
+    width: 100%;
     display: flex;
+    .sliderContent{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2.6%;
+    }
+    .buttonLeft,
+    .buttonRight{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+    .buttonLeft{
+        left: -30px;
+    }
+    .buttonRight{
+        right: -30px;
+    }
 }

@@ -3,7 +3,7 @@
 @import '../../sass/basis/fonts';
 
 .category{
-    
+    height: 130px;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -38,4 +38,16 @@
     .image{
         @include flex ($justify-content: flex-end);
     }
+}
+.category:hover{
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    color: $secondaryColor;
+}
+.category:hover > .links > .linkCategory > .title{
+    color: $secondaryColor;
 }
