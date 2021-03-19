@@ -4,12 +4,14 @@ import s from './Slider.module.scss';
 
 function Slider(props) {
   return ( 
-  <div className = {s.wrapper}>
-    <button className = {s.buttonLeft}>
+  <div className = {s.wrapperSlider}>
+    <a className = {s.buttonLeft}>
       <img src={left} alt="Arrow left"/>
-    </button>
-    {props.sliderContent}
-    <button className = {s.buttonRight}><img src={right} alt="Arrow right"/> </button>
+    </a>
+    <div className = {s.sliderContent}>
+      {props.sliderContent}
+    </div>
+    <a className = {s.buttonRight}><img src={right} alt="Arrow right"/> </a>
   </div>
   );
 }

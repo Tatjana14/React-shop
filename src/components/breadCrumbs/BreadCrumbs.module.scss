@@ -1,7 +1,13 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
 .breadCrumbList {
     margin-bottom: 40px;
 }
 
+.breadCrumbLink {
+    @include font ('IBM Plex Sans', $colorText, 15px);
+    font-weight: 400;
+}
 
 
 

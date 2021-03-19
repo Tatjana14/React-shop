@@ -2,18 +2,56 @@
 @import '../../sass/abstracts/vars';
 
 
+
 .card {
-    @include flex (start, center);
+    @include flex(center,center);
     flex-direction: column;
     width: 271px;
     height: 403px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    // margin-right: 30px;
+    // margin-bottom: 30px;
     border: 1px solid #CDCDCD;
     position: relative;
     border: 1px solid #E0E0E0;
+    transition: 0.3s;
+    &:hover {
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    }
 }
-
+#idCard {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.actionCard {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 61px;
+    opacity: 0.9;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    position: absolute;
+    top: 30%;
+    &Text {
+        @include font ('IBM Plex Sans', $colorTitle, 20px);
+        font-weight: 400;
+    }
+}
+.card:hover > .actionCard {
+    visibility: visible;
+}
+.card:hover > .cardLink > .cardText {
+    color: $secondaryColor;
+}
+.card:hover > .cardAvailable > .cardPrice {
+    color: $secondaryColor;
+}
+.cardImg {
+    margin-bottom: 25px;
+}
 .card:nth-child(3), .card:nth-child(6), .card:nth-child(9), .card:nth-child(12){
     margin-right: 0px;
 }
@@ -36,7 +74,7 @@
     border: none;
     background: #1C62CD;
     border-radius: 10px 0px 0px 0px;
-    padding: 10px 14px;
+    padding: 7px 17px 9px 15px;
 }
 
 .cardSticker{
@@ -46,6 +84,11 @@
     position: absolute;
     top: 0;
     left: 0;
+    font-family: 'IBM Plex Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .cardLink {
@@ -54,29 +97,46 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+    height: 260px;
 }
 .cardText {
     text-align: center;
+    @include font ('IBM Plex Sans', $colorTitle, 18px);
+    font-weight: 400;
+    max-width: 250px;
+    transition: 0.2s;
 }
 .cardNonAvailable {
     @include flex (center, center);
     flex-direction: column;
-    &Text {
-        margin-top: -5px;
-    }
     &Link {
-        margin-top: 30px;
+        @include font ('IBM Plex Sans', $secondaryColor, 16px);
+        font-weight: 400;
+        text-decoration: underline;
+        position: relative;
+        width: 190px;
+        top: 15px;
+    }
+    &Text {
+        @include font ('IBM Plex Sans', $colorTitle, 18px);
+        font-weight: 700;
     }
 }
-.cardImg {
-    padding: 50px 0 20px 0
-}
+
 .cardPrice {
-    font-size: 30px;
+    @include font ('Barlow', $colorTitle, 30px);
+    font-weight: 700;
+    text-align: center;
+    transition: 0.2s; 
 }
 
 
 
 
-
+.sizeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 215px;
+}
 

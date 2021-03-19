@@ -27,7 +27,7 @@
   }
   &Link {
     color: black;
-    @include font ('SF Pro Display', $colorTitle, 20px);
+    @include font ('IBM Plex Sans', $colorTitle, 20px);
     font-weight: 700;
   }
 }
@@ -36,7 +36,7 @@
   align-items: center;
   margin-right: 90px;
   &Text {
-    @include font ('SFProDisplayRegular', $colorTitle, 20px);
+    @include font ('IBM Plex Sans', $colorTitle, 20px);
     font-weight: 700;
     margin-left: 5px;
   }

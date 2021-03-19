@@ -3,8 +3,8 @@ import s from './Main.module.scss'
 import motor from '../../assets/img/sale/motor.svg'
 import CategoriesCard from "../../components/categoriesCard/CategoriesCard";
 
-import arrowLeft from '../../assets/img/common/slider_arrow_left.svg';
-import arrowRight from '../../assets/img/common/slider_arrow_right.svg';
+import arrowLeft from '../../assets/img/common/slider_arrow_left.png';
+import arrowRight from '../../assets/img/common/slider_arrow_right.png';
 import bannerFirst  from '../../assets/img/common/slider_banner.svg';
 import SectionProducts from '../../components/section/SectionProducts';
 import Slider from '../../components/slider/Slider';
@@ -29,44 +29,48 @@ import echomap from '../../assets/img/products/with_this_product/echomap.svg'
 import key from '../../assets/img/products/with_this_product/key.svg'
 import menSuit from '../../assets/img/products/with_this_product/men_suit.svg'
 
+import ellips from '../../../src/assets/img/main/Ellipse.svg';
+
 
 function Main() {
   return ( 
   <>
+  <div className = {s.main}>
   <section className = {s.iformation}>
       <div className = {s.informationContainer}>
-        <div className = {s.informationWrapper}>
-          <button buttonClass = {s.informationButtonLeft}>
+        <div className = {s.informationSlider}>
+          <button className = {s.informationButtonLeft}>
             <img className = {s.imgLeft} src = {arrowLeft} alt = "Arrow left"/>
           </button>
           <div className = {s.images}>
             <img className={s.image} src = {bannerFirst} alt = "First banner"/>
           </div>
-          <button buttonClass = {s.informationButtonRight}>
+          <button className = {s.informationButtonRight}>
             <img className = {s.imgLeft} src = {arrowRight} alt = "Arrow right"/>
           </button>
           <div className = {s.indicatores}>
-            <div className = {s.SliderIndicatorItem}></div>
-            <div className = {s.SliderIndicatorItem} ></div>
-            <div className = {s.SliderIndicatorItem}></div>
-            <div className = {s.SliderIndicatorItem}></div>
-            <div className = {s.SliderIndicatorItem}></div>
-            <div className = {s.SliderIndicatorItem}></div>
+            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
+            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
+            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
+            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
+            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
+            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
           </div>
-          <div className = {s.informationSale}>
-            <a className = {s.link} href="#">АКЦИЯ</a>
-            <span className = {s.priceNow} >190 000 ₽</span>
-            <span className = {s.priceOld}>225 000 ₽</span>
-            <div className = {s.content}>
-              <img className = {s.img} src = {motor} alt="Motor"/>
-              <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
-            </div>
-            <div cclassName = {s.wrapperSubtitle}>
-              <p className = {s.subtitle}>Акция действует до</p>
-              <span className = {s.date}>31.08.2020</span>
-            </div>
-          </div>        
         </div>
+        <div className = {s.informationCard}>
+          <a className = {s.linkSale} href="#">АКЦИЯ</a>
+          <span className = {s.priceNow} >190 000 ₽</span>
+          <span className = {s.priceOld}>225 000 ₽</span>
+          <img className = {s.imgCard} src = {motor} alt="Motor"/>
+          <div className = {s.titleWrapper}>
+            <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
+          </div>
+          
+          <div className = {s.wrapperSubtitle}>
+            <p className = {s.subtitle}>Акция действует до</p>
+            <span className = {s.date}>31.08.2020</span>
+          </div>
+        </div>        
       </div>
     </section>
     
@@ -74,20 +78,22 @@ function Main() {
       <div className = {s.wrapperSearch} > 
         <div className = {s.menuSearch}>
           <ul className = {s.menuList}>
-            <li>
-              <a href="">Поиск по номеру</a>
+            <li className = {s.menuListItem}>
+              <a className = {s.searchLink} href="#">Поиск по номеру</a>
             </li>
-            <li>
-              <a href="">Поиск по марке</a>
+            <li className = {s.menuListItem}>
+              <a className = {s.searchLink} href="#">Поиск по марке</a>
             </li>
-            <li>
-              <a href="">Поиск по названию товара</a>
+            <li className = {s.menuListItem}>
+              <a className = {s.searchLink} href="#">Поиск по названию товара</a>
             </li>
-            <div className = {s.inputForm}>
-              <input className = {s.inputSearch} type="text" placeholder =  "Введите марку" />
-              <button className = {s.button}>Искать</button>
-            </div>
           </ul>
+          </div>
+        <div className = {s.inputForm}>
+          <div className = {s.inputWrapper}>
+            <input className = {s.inputSearch} type="text" placeholder =  "Введите марку" />
+          </div>
+          <button className = {s.buttonSearch}>ИСКАТЬ</button>
         </div>
       </div>
     </section>
@@ -145,7 +151,7 @@ function Main() {
       </div>
     </section>
 
-    <section>
+    <section className = {s.sectionPopular}>
       <div>
       <SectionProducts nameSection = "Популярные товары"/>
       <Slider sliderContent ={
@@ -174,7 +180,10 @@ function Main() {
         NonAvailable={{display: 'none'}} />
         </>
       } />
-      <button>ПОКАЗАТЬ ЕЩЁ</button>
+      <div className = {s.popularBtnWrapper}>
+        <button className = {s.popularBtn} >ПОКАЗАТЬ ЕЩЁ</button>
+      </div>
+      
       </div>
     </section>
     <section className = {s.advertising}>
@@ -184,26 +193,27 @@ function Main() {
             <img className = {s.advertisingImg} src={moto} alt="Moto"/>
             <img className = {s.advertisingImg} src={quadrosale} alt="Quadro"/>
           </div>
-            <h3 className = {s.advertisingTitle}>CКИДКИ на все запчасти до 70%</h3>
-            <button className = {s.advertisingBtn}>ПОСМОТРЕТЬ ВСЕ</button>
-            
+          <div className = {s.advertisingTitleWrapper} >
+            <p className = {s.advertisingTitle}>CКИДКИ</p>
+            <p className = {s.advertisingTitle}>на все запчасти</p>
+            <p className = {s.advertisingTitle}>до 70%</p>
+          </div>
+          <button className = {s.advertisingBtn}>ПОСМОТРЕТЬ ВСЕ</button>
         </div>
     </div>
     </section>
     <section>
-      <div>
       <SectionProducts nameSection = "С этим товаром покупают"/>
       <Slider sliderContent ={
         <>
-        <Card to  src = {audioSystem} cardText = 'Водонепроницаемый Рюкзак' valuePrice = '9 800 ₽'  Sticker={{display: 'none'}} NonAvailable={{display: 'none'}} />
+        <Card idCard='idCard' to  src = {audioSystem} cardText = 'Водонепроницаемый Рюкзак' valuePrice = '9 800 ₽'  Sticker={{display: 'none'}} NonAvailable={{display: 'none'}} />
         <Card to value = 'Sale'  src = {echomap} cardText = "Спасательный жилет BRP Men's Airflow PFD" valuePrice = '6 900 ₽'  NonAvailable={{display: 'none'}} />
         <Card to  src = {audioSystemPremium} cardText = "BRP Audio-Premium System" valuePrice = '68 000 ₽'  Sticker={{display: 'none'}}  NonAvailable={{display: 'none'}} />
         <Card to value = 'Sale'  src = {equipment} cardText = "Спасательное снаряжение" valuePrice = '68 000 ₽' Available = {{display: 'none'}} />
         </>
       } />
-      
-      </div>
     </section>
+    </div>
     </>
   );
 }

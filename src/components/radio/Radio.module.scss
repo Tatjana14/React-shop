@@ -1,0 +1,11 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
+.wrapRadio > input {
+    margin-right: 10px;
+}
+
+.wrapRadio > label {
+    @include font ('IBM Plex Sans', Black, 14px);
+    font-weight: 400;
+}

@@ -1,7 +1,36 @@
-.wrapper{
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+@import '../../sass/basis/fonts';
+
+
+.wrapperSection{
     display: flex;
     flex-direction: column;
-}
-.menuList{
+    padding-bottom: 35px;
+    .titleSection{
+        font-family: 'Barlow', sans-serif;
+        color: $colorTitle;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .menuListSection{
     display: flex;
+    .menuListItem{
+        margin-right: 50px;
+        .linkSection{
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            color: $colorTitle;
+            padding-bottom: 10px;
+        }
+        .linkSection:focus{
+            font-weight: 600;
+            border-bottom: 2px solid $secondaryColor;
+        }
+    }
 }
+}
+

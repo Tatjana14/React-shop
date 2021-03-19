@@ -1,9 +1,9 @@
 @import '../../sass/abstracts/mixins';
 @import '../../sass/abstracts/vars';
-@import '../../sass/basis/fonts.scss';
+@import '../../sass/basis/fonts';
 
 .category{
-    
+    height: 130px;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -17,14 +17,37 @@
         flex-direction: column;
         .linkCategory{
             .title{
-                @include font ($font-family:'BarlowBold', $color: $colorTitle, $font-size: 23px)
+                font-family: 'Barlow', sans-serif;
+                color: $colorTitle;
+                font-size: 23px;
+                font-weight: 700;
             }
         }
         .linkMore{
-            @include font ($font-family:'SFProDisplaySemibold', $color: $colorText, $font-size: 14px)
+            @include font ($font-family: 'IBM Plex Sans', $color: $colorText, $font-size: 14px);
+            line-height: 17px;
+        }
+        .linkMore::after{
+            content: '';
+            background-image: url(../../assets/img/main/Back.svg);
+            display: inline-block;
+            width: 6px;
+            height: 9px;
         }
     }
     .image{
         @include flex ($justify-content: flex-end);
     }
+}
+.category:hover{
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    color: $secondaryColor;
+}
+.category:hover > .links > .linkCategory > .title{
+    color: $secondaryColor;
 }

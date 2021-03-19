@@ -4,36 +4,36 @@ import s from './SectionProducts.module.scss';
 function SectionProducts(props) {
   return (
     <>
-    <div className = {s.wrapper}>
-      <h2 className = {s.title}>{props.nameSection}</h2>
-      <ul className = {s.menuList}>
-        <li>
-          <a classname = {s.menuListItem} className = {s.menuLink}  href="#">
+    <div className = {s.wrapperSection}>
+      <h2 className = {s.titleSection}>{props.nameSection}</h2>
+      <ul className = {s.menuListSection}>
+        <li className = {s.menuListItem}>
+          <a className = {s.linkSection}  href="#">
           запчасти
           </a>
         </li>
-        <li>
-          <a classname = {s.menuListItem} className = {s.menuLink} href="#">
+        <li className = {s.menuListItem}>
+          <a className = {s.linkSection} href="#">
           моторы
           </a>
-        </li>
-        <li>
-          <a classname = {s.menuListItem} className = {s.menuLink} href="#">
+        </li >
+        <li className = {s.menuListItem}>
+          <a className = {s.linkSection} href="#">
           шины
           </a>
         </li>
-        <li>
-          <a classname = {s.menuListItem} className = {s.menuLink} href="#">
+        <li className = {s.menuListItem}>
+          <a className = {s.linkSection} href="#">
           электроника
           </a>
         </li>
-        <li>
-          <a classname = {s.menuListItem} className = {s.menuLink} href="#">
+        <li className = {s.menuListItem}>
+          <a className = {s.linkSection} href="#">
           инструменты
           </a>
         </li>
-        <li>
-          <a classname = {s.menuListItem} className = {s.menuLink} href="#">
+        <li className = {s.menuListItem}>
+          <a className = {s.linkSection} href="#">
           аксессуары
           </a>
         </li>

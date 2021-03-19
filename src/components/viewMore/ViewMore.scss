@@ -1,0 +1,14 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+.viewMore {
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: underline;
+    @include font ('IBM Plex Sans', $secondaryColor, 14px);
+}
+
+
+
+
+
+

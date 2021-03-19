@@ -1,17 +1,260 @@
+@import "../../sass/abstracts/mixins";
+@import '../../sass/abstracts/vars';
 
+.main{
+  padding-bottom: 98px;
+}
 
+.informationContainer{
+  padding: 81px 0 88px;
+  width: 100%;
+  @include flex ($justify-content: space-between);
+  .informationSlider{
+    position: relative;
+    max-width: 870px;
+    .informationButtonLeft,
+    .informationButtonRight{
+      background: transparent;
+      position: absolute;
+      border-color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+    .informationButtonLeft{
+      left: 2.6%;
+    }
+    .informationButtonRight{
+      right: 2.6%;
+    }
+    .indicatores{
+      display: flex;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      .sliderIndicatorItem{
+        margin-right: 9px;
+      }
+      .sliderIndicatorItem:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .informationCard{
+    @include flex ();
+    flex-direction: column;
+    position: relative;
+    max-width: 265px;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    .linkSale{
+      font-family: 'Roboto', sans-serif;;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      width: 34%;
+      height: 7.6%;
+      background: $secondaryColor;
+      color: white;
+      @include flex ();
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .priceNow{
+      font-family: 'Barlow', sans-serif;
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 32px;
+      position: absolute;
+      color:  $secondaryColor;
+      right: 2.8%;
+      top: 1%;
+    }
+    .priceOld{
+      font-family: 'Barlow', sans-serif ;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      position: absolute;
+      color:  $colorText;
+      right: 1.1%;
+      top: 10.8%;
+    }
+    .priceOld::after{
+      content: '';
+      display: inline-block;
+      background-image: url('../../assets/img/main/line_price.svg');
+      width: 60px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+    }
+    .imgCard{
+      padding: 67px 79px 0 61px;
+    }
+    .titleWrapper{
+      text-align: center;
+      margin-top: 4px;
+      max-width: 160px;
+      .titleProduct{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $colorTitle;
+      }
+    }
+    .wrapperSubtitle{
+      margin-top: 7px;
+      width: 100%;
+      height: 100px;
+      background-color: $secondaryBg;
+      @include flex ();
+      flex-direction: column;
+      .subtitle{
+        font-size: 18px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 400;
+      }
+      .date{
+        font-family: 'Barlow', sans-serif ;
+        font-weight: 700;
+        font-size: 18px;
+        color: $secondaryColor;
+      }
+      
+    }
+  }
+}
 
-
-
-
-
-
+.wrapperSearch{
+  padding-bottom: 80px;
+  @include flex ($justify-content: start, $align-items: start);
+  flex-direction: column;
+  .menuSearch{
+    padding-bottom: 25px;
+    .menuList{
+      @include flex ($justify-content: space-between, $align-items: start);
+      .menuListItem{
+        height: 47px;
+        @include flex ();
+        .searchLink{
+          width: 100%;
+          padding: 11px 26px;
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-weight: 500;
+          font-size: 17px;
+          color: $colorTitle;
+          letter-spacing: -0.06em;
+        }
+        .searchLink:focus{
+          background-color: $secondaryBg;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .inputForm{
+    @include flex ($justify-content: start);
+    width: 100%;
+    .buttonSearch{
+      flex:none;
+      width: 145px;
+      height: 50px;
+      border-radius: 3px;
+      background-color: $secondaryColor;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      color: #FFFFFF;
+    }
+    .inputWrapper{
+      width: 87.6%;
+      .inputSearch{
+        width: 100%;
+        height: 50px;
+        background: $secondaryBg;
+        border-radius: 3px;
+        border-color: transparent;
+      }
+    .inputSearch::placeholder{
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      color: #656464;
+      padding-left: 20px;
+    }
+    }
+  }
+}
+.advertising{
+  padding: 86px 0 72px;
+}
+.advertisingContainer{
+  width: 100%;
+  background-color: $secondaryColor;
+  .advertisingWrapper{
+    padding: 28px 10.5% 19px 6.1%;
+    @include flex ();
+    .advertisingImages{
+      margin-right: 4.7%;
+    }
+    .advertisingTitleWrapper{
+      max-width: 380px;
+      .advertisingTitle{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+    }
+    .advertisingBtn{
+      margin-left: 3%;
+      width: 284px;
+      height: 57px;
+      background-color: #FFFFFF;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      color: $colorTitle;
+      border-color: transparent;
+    }
+  }
+}
 
 .categories{
   .categoriesWrapper{
     display: grid;
-    grid-template-rows: repeat(2, 129px);
-    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    padding-bottom: 80px;
+  }
+}
+
+.popularBtnWrapper{
+  @include flex ();
+  margin-top: 50px;
+  width: 100%;
+  .popularBtn{
+    background-color: $secondaryBg;
+    height: 50px;
+    width: 252px;
+    border-color: transparent;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: $colorTitle;
   }
 }
