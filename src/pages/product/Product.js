@@ -1,6 +1,6 @@
 import s from './Product.module.scss';
 import BRPSeaDooGTI155hpSELongBlueMetallic from '../../assets/img/Product/gidrotsikl-beach-blue-metallic.svg';
-import Rating from '../../assets/img/Product/raiting_icon.svg';
+import Raiting from '../../assets/img/Product/raiting_icon.svg';
 
 
 import ProductInfoRow from '../../components/productInfoRow/ProductInfoRow';
@@ -9,18 +9,55 @@ import Sticker from '../../components/sticker/Sticker';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 
 
+import SimpleRating from './SimpleRating';
+
+
+
+
+
+
 
 
 function Product() {
+
+
     return (
+        
+
+        
         <div className={s.product}>
+
+<SimpleRating/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
             <div className={s.breadCrumbsContainer}>
-                <BreadCrumbs value="Главное"/>
+                <BreadCrumbs value="Главное" />
             </div>
             <div className={s.describtion}>
                 <div className={s.card}>
                     <div className={s.imgContainer}>
-                        <Sticker className={s.sticker} saleValue="Sale"/>
+                        <Sticker className={s.sticker} saleValue="Sale" />
                         <img className={s.img} src={BRPSeaDooGTI155hpSELongBlueMetallic} alt="" />
                     </div>
                     <div className={s.purchase}>
@@ -38,7 +75,7 @@ function Product() {
 
                     <div className={s.buttons}>
                         <button className={s.raiting}>
-                            <img className={s.img} src={Rating} alt="" />
+                            <img className={s.img} src={Raiting} alt="" />
                         </button>
                     </div>
 
