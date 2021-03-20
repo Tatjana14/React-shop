@@ -12,6 +12,9 @@
   .informationSlider{
     position: relative;
     max-width: 870px;
+    .imagesSlider > .imageSlider{
+      width: 100%;
+    }
     .informationButtonLeft,
     .informationButtonRight{
       background: transparent;
@@ -33,7 +36,7 @@
     .indicatores{
       display: flex;
       position: absolute;
-      bottom: 40px;
+      bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
@@ -132,6 +135,15 @@
         color: $secondaryColor;
       }
       
+    }
+  }
+}
+
+@media screen and (max-width: 1450px){
+  .informationContainer{
+    flex-direction: column;
+    .informationSlider{
+      margin-bottom: 40px;
     }
   }
 }
@@ -237,7 +249,7 @@
   .categoriesWrapper{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
     padding-bottom: 80px;
   }

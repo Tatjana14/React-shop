@@ -10,18 +10,19 @@
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
-    @include flex ($justify-content: space-between, $align-items: stretch);
+    @include flex ($justify-content: space-between);
+    
     .links{
+        align-self: stretch;
         padding: 20px 0px 16px 20px;
         @include flex ($justify-content: space-between, $align-items:start);
         flex-direction: column;
-        .linkCategory{
-            .title{
-                font-family: 'Barlow', sans-serif;
-                color: $colorTitle;
-                font-size: 23px;
-                font-weight: 700;
-            }
+        .title{
+            font-family: 'Barlow', sans-serif;
+            color: $colorTitle;
+            font-size: 23px;
+            font-weight: 700;
+        }
         }
         .linkMore{
             @include font ($font-family: 'IBM Plex Sans', $color: $colorText, $font-size: 14px);
@@ -34,11 +35,12 @@
             width: 6px;
             height: 9px;
         }
+    .imgWrapper{
+        .imgCategories{
+            width: 100%;
+        }
+    }    
     }
-    .image{
-        @include flex ($justify-content: flex-end);
-    }
-}
 .category:hover{
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
     transition: all 0.5s;
@@ -48,6 +50,22 @@
     -o-transition: all 0.5s;
     color: $secondaryColor;
 }
-.category:hover > .links > .linkCategory > .title{
+.category:hover > .links > .title{
     color: $secondaryColor;
+}
+
+@media screen and (max-width: 480px){
+    .category{
+        position: relative;
+        .imgWrapper{
+            transform: scale(0.6);
+            -webkit-transform: scale(0.6);
+            -moz-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+            -o-transform: scale(0.6);
+            position: absolute;
+            bottom: -11px;
+            right: 41px;
+}
+    } 
 }

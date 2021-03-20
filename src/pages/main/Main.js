@@ -42,8 +42,8 @@ function Main() {
           <button className = {s.informationButtonLeft}>
             <img className = {s.imgLeft} src = {arrowLeft} alt = "Arrow left"/>
           </button>
-          <div className = {s.images}>
-            <img className={s.image} src = {bannerFirst} alt = "First banner"/>
+          <div className = {s.imagesSlider}>
+            <img className={s.imageSlider} src = {bannerFirst} alt = "First banner"/>
           </div>
           <button className = {s.informationButtonRight}>
             <img className = {s.imgLeft} src = {arrowRight} alt = "Arrow right"/>
