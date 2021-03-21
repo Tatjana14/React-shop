@@ -2,8 +2,10 @@ import left from '../../assets/img/common/slider_arrow_left.svg'
 import right from '../../assets/img/common/slider_arrow_right.svg'
 import s from './Slider.module.scss';
 
+
 function Slider(props) {
-  return ( 
+  return (
+  
   <div className = {s.wrapperSlider}>
     <a className = {s.buttonLeft}>
       <img src={left} alt="Arrow left"/>

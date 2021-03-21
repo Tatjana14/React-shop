@@ -32,31 +32,17 @@ import menSuit from '../../assets/img/products/with_this_product/men_suit.svg'
 import ellips from '../../../src/assets/img/main/Ellipse.svg';
 
 
+
+import SliderBanner from '../../components/sliderBanner/SliderBanner';
+
+
 function Main() {
   return ( 
   <>
   <div className = {s.main}>
   <section className = {s.iformation}>
       <div className = {s.informationContainer}>
-        <div className = {s.informationSlider}>
-          <button className = {s.informationButtonLeft}>
-            <img className = {s.imgLeft} src = {arrowLeft} alt = "Arrow left"/>
-          </button>
-          <div className = {s.imagesSlider}>
-            <img className={s.imageSlider} src = {bannerFirst} alt = "First banner"/>
-          </div>
-          <button className = {s.informationButtonRight}>
-            <img className = {s.imgLeft} src = {arrowRight} alt = "Arrow right"/>
-          </button>
-          <div className = {s.indicatores}>
-            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
-            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
-            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
-            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
-            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
-            <div className = {s.sliderIndicatorItem}> <img src={ellips} alt="indicator"/></div>
-          </div>
-        </div>
+        <SliderBanner />
         <div className = {s.informationCard}>
           <a className = {s.linkSale} href="#">АКЦИЯ</a>
           <span className = {s.priceNow} >190 000 ₽</span>

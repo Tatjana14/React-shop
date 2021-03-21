@@ -51,6 +51,9 @@
       }
     }
   }
+  .imageSlider{
+    width: 100%;
+  }
   .informationCard{
     @include flex ();
     flex-direction: column;
@@ -147,6 +150,8 @@
     }
   }
 }
+
+
 
 .wrapperSearch{
   padding-bottom: 80px;
@@ -255,6 +260,22 @@
   }
 }
 
+@media screen and (max-width: 1500px){
+  .categoriesWrapper{
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .categories{
+    .categoriesWrapper{
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    column-gap: 30px;
+  }
+}
+}
+
 .popularBtnWrapper{
   @include flex ();
   margin-top: 50px;
@@ -270,3 +291,4 @@
     color: $colorTitle;
   }
 }
+
