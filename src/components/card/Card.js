@@ -14,8 +14,13 @@ function Card(props) {
     return (
         <div style={props.styleCard} className={s.card}>
             <div className={s.actionCard}>
+<<<<<<< HEAD
                 <NavLink to={props.product} className={s.actionCardText} >посмотреть товар</NavLink>
             </div>
+=======
+                <NavLink className={s.actionCardText} to='/Product' >посмотреть товар</NavLink>
+                </div>
+>>>>>>> 1ecf46850ac307b3094a0ac9535efb3fba019e01
                 <Sticker Sticker={props.Sticker} className={s.cardSticker} saleValue = {props.value}/>
                 <button className={s.btnLike}><img className={s.imgLike} src={like} alt=""/></button>
             <div className={s.cardLink} href={props.to}>
