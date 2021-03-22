@@ -1,4 +1,6 @@
 @import '../../sass/abstracts/vars';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/functions';
 
 
 .product {
@@ -7,8 +9,13 @@
     flex-direction: column;
     border: 2px black solid;
 
-    // .breadCrumbsContainer{
-    // }
+    .breadCrumbsContainer {
+        margin-bottom: 17px;
+
+        .breadCrumb {
+            @include font('IBM Plex Sans', #C4C4C4, 15px);
+        }
+    }
 
     .describtion {
         display: flex;
@@ -38,18 +45,19 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    font-size: 15px;
 
                     padding: {
-                        top: 6px;
-                        bottom: 6px;
+                        top: 13px;
+                        bottom: 13px;
                         right: 26px;
                         left: 26px;
                     }
 
                     ;
                     background-color: $secondaryColor;
-                    color: #FFFFFF;
+                    border-radius: 3px;
+                    letter-spacing: 2px;
+                    @include font('IBM Plex Sans', #FFFFFF, 15px);
                 }
             }
 
@@ -60,7 +68,7 @@
                 margin-top: 17px;
 
                 .priceOld {
-                    font-size: 30px;
+                    @include font('Barlow', #000000, 30px);
                     position: relative;
 
                     &::before {
@@ -77,7 +85,7 @@
                 }
 
                 .priceDiscount {
-                    font-size: 40px;
+                    @include font('Roboto', $colorTitle, 40px);
 
                     margin: {
                         top: 6px;
@@ -88,8 +96,7 @@
                 }
 
                 .link {
-                    font-size: 15px;
-                    color: #1C62CD;
+                    @include font('IBM Plex Sans', $secondaryColor, 15px);
                 }
             }
         }
@@ -99,7 +106,8 @@
             flex-direction: column;
 
             .title {
-                font-size: 30px;
+                @include font('IBM Plex Sans', $colorTitle, 30px);
+                font-weight: 700;
                 line-height: 35.8px;
                 max-width: 570px;
                 width: 100%;
@@ -119,18 +127,35 @@
 
                 .code {
                     margin-right: 8px;
+                    @include font('IBM Plex Sans', $colorText, 15px);
+                }
+
+                .codeNumber {
+                    @include font('IBM Plex Sans', $colorText, 15px);
                 }
             }
 
             .buttons {
-                margin: {
-                    top: 0px;
-                    bottom: 50px;
-                    right: 0;
-                    left: 0;
-                }
+                margin-bottom: 50px;
 
-                ;
+                .btnsList {
+                    display: flex;
+                    align-items: center;
+
+                    .listItem {
+                        margin-right: 30px;
+
+                        .like {
+                            background-color: transparent;
+                            border: none;
+                        }
+
+                        .raiting {
+                            background-color: transparent;
+                            border: none;
+                        }
+                    }
+                }
             }
 
 
@@ -156,6 +181,8 @@
                     .item {
                         font-size: 20px;
                         margin-right: 34px;
+                        @include font('IBM Plex Sans', #FFFFFF, 20px);
+                        font-weight: 400;
 
                         &:last-child {
                             margin-right: 0;
@@ -163,6 +190,19 @@
 
                         .link {
                             font-size: 20px;
+
+                            &:hover {
+                                font-weight: 700;
+                                transition: 0.2s;
+                            }
+
+
+
+                            &:active {
+                                font-weight: 700;
+                                border-bottom: 2px $secondaryColor solid;
+                                color: $colorTitle;
+                            }
                         }
                     }
                 }
@@ -176,7 +216,8 @@
 
 
                 .item {
-                    font-size: 20px;
+                    @include font('IBM Plex Sans', $colorTitle, 20px);
+                    font-weight: 400;
 
                     padding: {
                         top: 0px;
@@ -207,7 +248,8 @@
                 }
 
                 .link {
-                    font-size: 14px;
+                    @include font('IBM Plex Sans', $secondaryColor, 14px);
+                    border-bottom: 1px $secondaryColor solid;
 
                     margin: {
                         top: 20px;
@@ -264,8 +306,7 @@
                         padding-bottom: 5px;
                         border-bottom: 2px transparent solid;
                         color: #2F3035;
-                        font-size: 20px;
-                        font-family: 'SFProRegular';
+                        @include font('IBM Plex Sans', $colorTitle, 20px);
 
                         &:hover {
                             border-bottom: 2px #1C62CD solid;
@@ -291,12 +332,26 @@
                     .inputSearchLabel {
 
                         margin-right: 17px;
-                        font-size: 17px;
+                        @include font('IBM Plex Sans', $colorTitle, 17px);
+                        font-weight: 400;
                     }
 
                     .inputSearchShop {
                         border: none;
                         background-color: #F0F0F4;
+                        padding-left: 17px;
+                        caret-color: $colorText;
+                        position: relative;
+
+
+                        &::after {
+                            content: '';
+                            background-image: url('../../assets//img/Product/searchIcon.svg');
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+
+                        }
                     }
                 }
 
@@ -321,18 +376,27 @@
             }
 
             .table {
-                border-collapse: separate;
+                // border-collapse: separate;
                 margin-top: 50px;
 
-                .headRow {
-                    padding-bottom: 41px;
 
 
-                    .headCell {
-                        text-align: left;
-                        font-size: 20px;
-                        padding-bottom: 41px;
+                .tableHead {
+                    @include font('IBM Plex Sans', $colorTitle, 20px);
+
+                    .headRow {
+                        // padding-bottom: 41px;
+
+
+                        .headCell {
+                            text-align: left;
+                            // padding-bottom: 41px;
+                        }
                     }
+                }
+
+                .tableBody{
+                    @include font('IBM Plex Sans', $colorTitle, 16px);
                 }
             }
 

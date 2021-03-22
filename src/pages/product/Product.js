@@ -6,10 +6,30 @@ import Raiting from '../../assets/img/Product/raiting_icon.svg';
 import ProductInfoRow from '../../components/productInfoRow/ProductInfoRow';
 import ProductTableRow from '../../components/productTableRow/ProductTableRow';
 import Sticker from '../../components/sticker/Sticker';
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
+import SimpleRating from '../../components/simpleRating/SimpleRating';
+import ProductTableHead from '../../components/productTableHead/ProductTableHead';
+import LikeIcon from '../../assets/img/common/like.svg';
+// import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 
+import { makeStyles } from '@material-ui/core/styles';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
-import SimpleRating from './SimpleRating';
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > * + *': {
+            marginTop: theme.spacing(2),
+        },
+    },
+}));
+
+function handleClick(event) {
+    event.preventDefault();
+    console.info('You clicked a breadcrumb.');
+}
+
 
 
 
@@ -22,42 +42,27 @@ function Product() {
 
 
     return (
-        
 
-        
+
+
         <div className={s.product}>
 
-<SimpleRating/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
             <div className={s.breadCrumbsContainer}>
-                <BreadCrumbs value="Главное" />
+                <Breadcrumbs separator=">" aria-label="breadcrumb">
+                    <Link color="#C4C4C4" href="#" onClick={handleClick} className={s.breadCrumb}>
+                        Главная
+        </Link>
+                    <Link color="#C4C4C4" href="#" onClick={handleClick} className={s.breadCrumb}>
+                        Гидроциклы
+        </Link>
+                    <Typography color="#C4C4C4" className={s.breadCrumb}>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</Typography>
+                </Breadcrumbs>
             </div>
             <div className={s.describtion}>
                 <div className={s.card}>
                     <div className={s.imgContainer}>
-                        <Sticker className={s.sticker} saleValue="Sale" />
+                        <Sticker className={s.sticker} saleValue="SALE" />
                         <img className={s.img} src={BRPSeaDooGTI155hpSELongBlueMetallic} alt="" />
                     </div>
                     <div className={s.purchase}>
@@ -74,9 +79,21 @@ function Product() {
                     </div>
 
                     <div className={s.buttons}>
-                        <button className={s.raiting}>
-                            <img className={s.img} src={Raiting} alt="" />
-                        </button>
+                        <ul className={s.btnsList}>
+                            <li className={s.listItem}>
+                                <button className={s.like}>
+                                    <img src={LikeIcon} alt="" className={s.likeImg} />
+                                </button>
+                            </li>
+                            <li className={s.listItem}>
+                                <button className={s.raiting}>
+                                    <img className={s.img} src={Raiting} alt="" />
+                                </button>
+                            </li>
+                            <li className={s.listItem}>
+                                <SimpleRating />
+                            </li>
+                        </ul>
                     </div>
 
                     <div className={s.characteristics}>
@@ -183,14 +200,7 @@ function Product() {
                     </div>
 
                     <table className={s.table}>
-                        <thead className={s.tableHead}>
-                            <tr className={s.headRow}>
-                                <th className={s.headCell}>Адрес</th>
-                                <th className={s.headCell}>Режим работы</th>
-                                <th className={s.headCell}>Доступно</th>
-                                <th className={s.headCell}>Количество</th>
-                            </tr >
-                        </thead>
+                        <ProductTableHead/>
 
                         <tbody className={s.tableBody}>
                             <ProductTableRow adress="Москва, ул. Науки 25"
@@ -210,8 +220,20 @@ function Product() {
             </div>
 
 
+
+
+
+
+
+
+
+
+
+
         </div >
     );
 }
 
+
 export default Product;
+
