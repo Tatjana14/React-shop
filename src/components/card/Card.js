@@ -14,7 +14,7 @@ function Card(props) {
     return (
         <div style={props.styleCard} className={s.card}>
             <div className={s.actionCard}>
-                <NavLink className={s.actionCardText} to={props.product} >посмотреть товар</NavLink>
+                <NavLink className={s.actionCardText} to='/Product' >посмотреть товар</NavLink>
                 </div>
                 <Sticker Sticker={props.Sticker} className={s.cardSticker} saleValue = {props.value}/>
                 <button className={s.btnLike}><img className={s.imgLike} src={like} alt=""/></button>
