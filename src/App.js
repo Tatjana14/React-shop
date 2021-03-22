@@ -5,6 +5,7 @@ import Catalog from './pages/catalog/Catalog';
 import Footer from './footer/Footer';
 import Main from "../src/pages/main/Main"
 import Product from './pages/product/Product';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 
 
@@ -13,15 +14,17 @@ import Product from './pages/product/Product';
 
 function App() {
       return (
-      <div className="App">
-            <div className='mainWrap'>
-            <Header/>
-            <Main/> 
-            <Catalog/>
-            <Product />
-            </div>
-            <Footer/>
-      </div>
+            <BrowserRouter>
+                  <div className="App">
+                        <div className='mainWrap'>
+                              <Header />
+                              <Route path = '/main' component = {Main}/>
+                              <Route path = '/hydroCatalog' component = {Catalog}/>
+                              <Route path = '/product' component = {Product}/>
+                        </div>
+                        <Footer />
+                  </div>
+            </BrowserRouter>
       );
 }
 

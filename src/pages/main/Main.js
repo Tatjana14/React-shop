@@ -97,7 +97,7 @@ function Main() {
       <CategoriesCard 
       categoriesAdress = "#" 
       categoriesValue = "Гидроциклы" 
-      categoriesAdress2 = "#" 
+      categoriesAdress2 = "/hydroCatalog" 
       imgCategories ={hydro} 
       altCategories = "Гидроциклы"
       style = {{ paddingRight: "6.8%"}}
