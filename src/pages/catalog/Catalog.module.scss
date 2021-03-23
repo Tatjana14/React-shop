@@ -36,6 +36,13 @@
     flex-wrap: wrap;
 }
 
+.checkWrapCountry {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .btnSale {
     @include font ('IBM Plex Sans', white, 12px);
     font-weight: 700;

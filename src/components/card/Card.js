@@ -14,11 +14,11 @@ function Card(props) {
     return (
         <div style={props.styleCard} className={s.card}>
             <div className={s.actionCard}>
-                <NavLink className={s.actionCardText} to='/Product' >посмотреть товар</NavLink>
+                <NavLink className={s.actionCardText} to='/product'>посмотреть товар</NavLink>
                 </div>
                 <Sticker Sticker={props.Sticker} className={s.cardSticker} saleValue = {props.value}/>
                 <button className={s.btnLike}><img className={s.imgLike} src={like} alt=""/></button>
-            <div className={s.cardLink} href={props.to}>
+            <div className={s.cardLink}>
                 <div className={s.sizeBox}>
                     <img className={s.cardImg} src = {props.src}/>
                 </div>
@@ -30,7 +30,7 @@ function Card(props) {
             </div>
             <div className={s.cardNonAvailable} style={props.NonAvailable}>
                 <span className={s.cardNonAvailableText}>нет в наличии</span>
-                <NavLink className={s.cardNonAvailableLink} to="/product">Сообщить о поступлении</NavLink>
+                <a className={s.cardNonAvailableLink} href= '#'>Сообщить о поступлении</a>
             </div>
         </div>
     );

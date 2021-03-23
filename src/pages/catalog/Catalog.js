@@ -128,8 +128,8 @@ function Catalog() {
             expandable='expandableCountry'
             option = {
               <>
-              <div className={s.checkWrap}>
-              <Checkbox checkName='Россия'/>
+              <div className={s.checkWrapCountry}>
+              <Checkbox basis = {{background: 'green'}} checkName='Россия'/>
               <Checkbox checkName='Германия'/>
               <Checkbox checkName='Китай'/>
               <Checkbox checkName='США'/>
