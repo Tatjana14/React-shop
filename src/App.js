@@ -18,9 +18,12 @@ function App() {
                   <div className="App">
                         <div className='mainWrap'>
                               <Header />
-                              <Route path = '/main' component = {Main}/>
-                              <Route path = '/hydroCatalog' component = {Catalog}/>
-                              <Route path = '/product' component = {Product}/>
+                              <Route 
+                              exact
+                              path="/"
+                              component = {Main}/>
+                              <Route  path = '/hydroCatalog' component = {Catalog}/>
+                              <Route  path = '/product' component = {Product}/>
                         </div>
                         <Footer />
                   </div>

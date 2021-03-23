@@ -3,9 +3,6 @@ import s from './Main.module.scss'
 import motor from '../../assets/img/sale/motor.svg'
 import CategoriesCard from "../../components/categoriesCard/CategoriesCard";
 
-import arrowLeft from '../../assets/img/common/slider_arrow_left.png';
-import arrowRight from '../../assets/img/common/slider_arrow_right.png';
-import bannerFirst  from '../../assets/img/common/slider_banner.svg';
 import SectionProducts from '../../components/section/SectionProducts';
 import Slider from '../../components/slider/Slider';
 import quadro from '../../assets/img/catalog_section/quadro.svg'
@@ -19,21 +16,17 @@ import moto  from '../../assets/img/main/advertising/moto.svg'
 import quadrosale  from '../../assets/img/main/advertising/quadro.svg'
 import Card from '../../components/card/Card';
 
-import bag from '../../assets/img/products/popular/backpack.svg'
 import audioSystemPremium from '../../assets/img/products/popular/audio_system_premium.svg'
 import equipment from '../../assets/img/products/popular/equipment.svg'
-import vest from '../../assets/img/products/popular/vest.svg'
 
 import audioSystem from '../../assets/img/products/with_this_product/audio_system.svg'
 import echomap from '../../assets/img/products/with_this_product/echomap.svg'
-import key from '../../assets/img/products/with_this_product/key.svg'
-import menSuit from '../../assets/img/products/with_this_product/men_suit.svg'
-
-import ellips from '../../../src/assets/img/main/Ellipse.svg';
 
 
 
 import SliderBanner from '../../components/sliderBanner/SliderBanner';
+
+import PopularProducts from '../../components/popularProducts/PopularProducts';
 
 
 function Main() {
@@ -51,7 +44,6 @@ function Main() {
           <div className = {s.titleWrapper}>
             <p className = {s.titleProduct}>Лодочный мотор Suzuki DF9.9BRS</p>
           </div>
-          
           <div className = {s.wrapperSubtitle}>
             <p className = {s.subtitle}>Акция действует до</p>
             <span className = {s.date}>31.08.2020</span>
@@ -137,40 +129,8 @@ function Main() {
       </div>
     </section>
 
-    <section className = {s.sectionPopular}>
-      <div>
-      <SectionProducts nameSection = "Популярные товары"/>
-      <Slider sliderContent ={
-        <>
-        <Card to 
-        value = 'Sale'  
-        src = {bag} 
-        cardText = 'BRP Audio-портативная система' 
-        Available = {{display: 'none'}}  />
-        <Card to   
-        src = {vest} 
-        cardText = "Garmin Echomap Plus 62cv" 
-        valuePrice = '45 800 ₽' 
-        Sticker={{display: 'none'}}  
-        NonAvailable={{display: 'none'}} />
-        <Card to 
-        value = 'Sale' 
-        src = {key} 
-        cardText = "RF D.E.S.S.TM Key"  
-        Available = {{display: 'none'}} />
-        <Card to  
-        src = {menSuit} 
-        cardText = "Мужской костюм 3мм" 
-        valuePrice = '7 000 ₽' 
-        Sticker={{display: 'none'}}  
-        NonAvailable={{display: 'none'}} />
-        </>
-      } />
-      <div className = {s.popularBtnWrapper}>
-        <button className = {s.popularBtn} >ПОКАЗАТЬ ЕЩЁ</button>
-      </div>
-      
-      </div>
+    <section className = {s.popular}>
+      <PopularProducts />
     </section>
     <section className = {s.advertising}>
       <div className = {s.advertisingContainer}>
