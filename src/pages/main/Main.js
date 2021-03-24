@@ -28,6 +28,7 @@ import SliderBanner from '../../components/sliderBanner/SliderBanner';
 
 import PopularProducts from '../../components/popularProducts/PopularProducts';
 
+import { SwiperSlide } from 'swiper/react';
 
 function Main() {
   return ( 
@@ -128,7 +129,6 @@ function Main() {
       />
       </div>
     </section>
-
     <section className = {s.popular}>
       <PopularProducts />
     </section>
@@ -136,28 +136,77 @@ function Main() {
       <div className = {s.advertisingContainer}>
         <div className = {s.advertisingWrapper}>
           <div className = {s.advertisingImages}>
-            <img className = {s.advertisingImg} src={moto} alt="Moto"/>
-            <img className = {s.advertisingImg} src={quadrosale} alt="Quadro"/>
+            <img className = {s.imgQuadro} src={moto} alt="Moto"/>
+            <img className = {s.imgAll} src={quadrosale} alt="Quadro"/>
           </div>
           <div className = {s.advertisingTitleWrapper} >
-            <p className = {s.advertisingTitle}>CКИДКИ</p>
-            <p className = {s.advertisingTitle}>на все запчасти</p>
-            <p className = {s.advertisingTitle}>до 70%</p>
+            <p className = {s.advertisingTitle}>CКИДКИ на все запчасти до 70%</p>
           </div>
           <button className = {s.advertisingBtn}>ПОСМОТРЕТЬ ВСЕ</button>
         </div>
     </div>
     </section>
     <section>
+      <div className = {s.withThisWrapper}>
       <SectionProducts nameSection = "С этим товаром покупают"/>
       <Slider sliderContent ={
         <>
-        <Card idCard='idCard' to  src = {audioSystem} cardText = 'Водонепроницаемый Рюкзак' valuePrice = '9 800 ₽'  Sticker={{display: 'none'}} NonAvailable={{display: 'none'}} />
-        <Card to value = 'Sale'  src = {echomap} cardText = "Спасательный жилет BRP Men's Airflow PFD" valuePrice = '6 900 ₽'  NonAvailable={{display: 'none'}} />
-        <Card to  src = {audioSystemPremium} cardText = "BRP Audio-Premium System" valuePrice = '68 000 ₽'  Sticker={{display: 'none'}}  NonAvailable={{display: 'none'}} />
-        <Card to value = 'Sale'  src = {equipment} cardText = "Спасательное снаряжение" valuePrice = '68 000 ₽' Available = {{display: 'none'}} />
+        <SwiperSlide>
+          <Card 
+          idCard='idCard' 
+          src = {audioSystem} 
+          cardText = 'Водонепроницаемый Рюкзак' 
+          valuePrice = '9 800 ₽'  
+          Sticker={{display: 'none'}} 
+          NonAvailable={{display: 'none'}} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card
+          value = 'Sale'  
+          src = {echomap} 
+          cardText = "Спасательный жилет BRP Men's Airflow PFD" 
+          valuePrice = '6 900 ₽'  
+          NonAvailable={{display: 'none'}} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card 
+          src = {audioSystemPremium} 
+          cardText = "BRP Audio-Premium System" 
+          valuePrice = '68 000 ₽'  
+          Sticker={{display: 'none'}}  
+          NonAvailable={{display: 'none'}} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card 
+          value = 'Sale'  
+          src = {equipment} 
+          cardText = "Спасательное снаряжение" 
+          valuePrice = '68 000 ₽' 
+          Available = {{display: 'none'}} 
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card 
+          value = 'Sale'  
+          src = {equipment} 
+          cardText = "Спасательное снаряжение" 
+          valuePrice = '68 000 ₽' 
+          Available = {{display: 'none'}} 
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card 
+          value = 'Sale'  
+          src = {equipment} 
+          cardText = "Спасательное снаряжение" 
+          valuePrice = '68 000 ₽' 
+          Available = {{display: 'none'}} 
+          />
+        </SwiperSlide>
         </>
-      } />
+      } 
+      />
+      </div>
     </section>
     </div>
     </>
