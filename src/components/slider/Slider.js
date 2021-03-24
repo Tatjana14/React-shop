@@ -9,10 +9,11 @@ function Slider(props) {
     <div className = "wrapperSlider">
       <Swiper
         slidesPerView = {1}
+        spaceBetween = {2}
         navigation
         pagination={
           { clickable: true,
-          dynamicMainBullets: 2}}
+          dynamicMainBullets: 3}}
         breakpoints={{
           1400: {
           slidesPerView: 4,

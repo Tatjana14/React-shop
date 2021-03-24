@@ -25,7 +25,7 @@ function PopularProducts() {
             Available = {{display: 'none'}}  />
         </SwiperSlide>
         <SwiperSlide>
-            <Card to   
+            <Card  
             src = {vest} 
             cardText = "Garmin Echomap Plus 62cv" 
             valuePrice = '45 800 ₽' 
@@ -33,14 +33,14 @@ function PopularProducts() {
             NonAvailable={{display: 'none'}} />
         </SwiperSlide>
         <SwiperSlide>
-            <Card to 
+            <Card
                 value = 'Sale' 
                 src = {key} 
                 cardText = "RF D.E.S.S.TM Key"  
                 Available = {{display: 'none'}} />
         </SwiperSlide>
         <SwiperSlide>
-            <Card to  
+            <Card 
                 src = {menSuit} 
                 cardText = "Мужской костюм 3мм" 
                 valuePrice = '7 000 ₽' 
@@ -48,7 +48,7 @@ function PopularProducts() {
                 NonAvailable={{display: 'none'}} />
         </SwiperSlide>
         <SwiperSlide>
-            <Card to  
+            <Card 
                 src = {menSuit} 
                 cardText = "Мужской костюм 3мм" 
                 valuePrice = '7 000 ₽' 
@@ -56,7 +56,23 @@ function PopularProducts() {
                 NonAvailable={{display: 'none'}} />
         </SwiperSlide>
         <SwiperSlide>
-            <Card to  
+            <Card 
+                src = {menSuit} 
+                cardText = "Мужской костюм 3мм" 
+                valuePrice = '7 000 ₽' 
+                Sticker={{display: 'none'}}  
+                NonAvailable={{display: 'none'}} />
+        </SwiperSlide>
+        <SwiperSlide>
+            <Card 
+                src = {menSuit} 
+                cardText = "Мужской костюм 3мм" 
+                valuePrice = '7 000 ₽' 
+                Sticker={{display: 'none'}}  
+                NonAvailable={{display: 'none'}} />
+        </SwiperSlide>
+        <SwiperSlide>
+            <Card 
                 src = {menSuit} 
                 cardText = "Мужской костюм 3мм" 
                 valuePrice = '7 000 ₽' 

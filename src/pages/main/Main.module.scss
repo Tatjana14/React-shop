@@ -228,7 +228,7 @@
       margin-right: 4.7%;
     }
     .advertisingTitleWrapper{
-      max-width: 380px;
+      max-width: 272px;
       .advertisingTitle{
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: bold;
@@ -249,6 +249,80 @@
     }
   }
 }
+
+@media screen and (max-width: 980px){
+  .advertisingContainer{
+    position: relative;
+    .advertisingWrapper{
+      @include flex ();
+      flex-direction: column;
+      .advertisingTitleWrapper{
+      max-width: 800px;
+      margin-bottom: 8px;
+    }
+    }
+    .advertisingImages{
+      .imgQuadro,
+      .imgAll{
+        position: absolute;
+        bottom: 0;
+      }
+      .imgQuadro{
+        left: 7%;
+        height: 80px;
+      }
+      .imgAll{
+        right: 9%;
+        height: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px){
+  .advertisingContainer{
+    .advertisingWrapper{
+      .advertisingBtn{
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+      }
+      .advertisingTitleWrapper{
+        max-width: 225px;
+        .advertisingTitle{
+          text-align: center;
+          font-size: 21px;
+          margin-bottom: 30px;
+        }
+      }
+      .advertisingImages{
+        .imgQuadro{
+          height: 54px;
+        }
+        .imgAll{
+          height: 48px;
+        }
+      }
+    }
+  }
+  }
+
+  @media screen and (max-width: 530px){
+    .advertisingContainer{
+      .advertisingWrapper{
+        .advertisingBtn{
+          width: 132px;
+          height: 33px;
+          font-size: 14px;
+        }
+        .advertisingTitleWrapper{
+          .advertisingTitle{
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    } 
 
 .categories{
   .categoriesWrapper{
@@ -292,3 +366,8 @@
   }
 }
 
+.withThisWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
