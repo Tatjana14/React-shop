@@ -1,0 +1,96 @@
+@import "../../sass/abstracts/mixins";
+@import '../../sass/abstracts/vars';
+
+.wrapperSlider{
+    position: relative;
+    width: 100%;
+    display: flex;
+    .swiper-container{
+        max-width: 1170px;
+        position: static;
+        }
+    .sliderContent{
+        width: 100%;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+    height: 30px;
+    width: 16px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.swiper-button-disabled {
+        opacity: 0.35;
+        cursor: auto;
+        pointer-events: none;
+        }
+    }
+    .swiper-button-next{
+        background-image: url('../../assets/img/common/slider_arrow_right.svg');
+        right: -3%;
+    }
+    .swiper-button-prev{
+        background-image: url('../../assets/img/common/slider_arrow_left.svg');
+        left: -3%;
+    }
+    .swiper-container-horizontal{
+        .swiper-pagination-bullets{
+            bottom: -30px; 
+        }
+    } 
+    .swiper-pagination{
+        display: none;
+    }
+    .swiper-pagination-bullet {
+        width: 11px;
+        height: 11px;
+        border: none;
+        background-color: $colorText;
+        @at-root button#{&} {
+            border: none;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $secondaryColor;
+        opacity: 1;
+        }
+}
+    @media screen and (max-width: 1450px) {
+        .wrapperSlider {
+            .swiper-container {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (min-width: 990px) and (max-width: 1400px) {
+        .wrapperSlider {
+            max-width: 900px;
+            align-self: center;
+        }
+    }
+
+    @media (min-width: 650px) and (max-width: 990px) {
+        .wrapperSlider {
+            max-width: 560px;
+            align-self: center;
+        }
+    }
+
+    @media screen and (max-width: 649px) {
+        .wrapperSlider {
+            align-self: center;
+            max-width: 270px;
+            .swiper-container{
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: none;
+                }
+                .swiper-pagination{
+                display: block;
+                }
+            }
+        }
+    }

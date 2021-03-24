@@ -1,20 +1,38 @@
-import left from '../../assets/img/common/slider_arrow_left.svg'
-import right from '../../assets/img/common/slider_arrow_right.svg'
-import s from './Slider.module.scss';
+import './Slider.scss';
+import { Swiper} from 'swiper/react';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+SwiperCore.use([Navigation, Pagination]);
 
 
 function Slider(props) {
   return (
-  
-  <div className = {s.wrapperSlider}>
-    <a className = {s.buttonLeft}>
-      <img src={left} alt="Arrow left"/>
-    </a>
-    <div className = {s.sliderContent}>
-      {props.sliderContent}
+    <div className = "wrapperSlider">
+      <Swiper
+        slidesPerView = {1}
+        navigation
+        pagination={
+          { clickable: true,
+          dynamicMainBullets: 2}}
+        breakpoints={{
+          1400: {
+          slidesPerView: 4,
+          spaceBetween: 28, 
+          },
+          990: {
+          slidesPerView: 3,
+          spaceBetween: 20, 
+          },
+          650: {
+            slidesPerView: 2,
+            spaceBetween: 10, 
+            },
+        }}
+      >
+      <div className = "sliderContent">
+        {props.sliderContent}
+      </div>
+      </Swiper>
     </div>
-    <a className = {s.buttonRight}><img src={right} alt="Arrow right"/> </a>
-  </div>
   );
 }
 

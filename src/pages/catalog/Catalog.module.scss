@@ -20,6 +20,13 @@
     }
 }
 
+.rightBlockWrap {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    align-items: center;
+}
+
 .catalogWrapper {
     display: flex;
     justify-content: space-between;
@@ -40,6 +47,11 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+.checkWrapModel {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
 }
 

@@ -1,0 +1,23 @@
+@import "../../sass/abstracts/mixins";
+@import '../../sass/abstracts/vars';
+
+.popularWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .popularBtnWrapper{
+        @include flex ();
+        margin-top: 50px;
+        width: 100%;
+        .popularBtn{
+            background-color: $secondaryBg;
+            height: 50px;
+            width: 252px;
+            border-color: transparent;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color: $colorTitle;
+        }
+        }
+}
