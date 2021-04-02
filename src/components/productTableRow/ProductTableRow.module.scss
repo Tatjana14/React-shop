@@ -1,84 +1,69 @@
 @import '../../sass/abstracts/vars';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/basis/fonts';
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    
-    
 
-    .tableRow {
+.tableRow {
+    position: relative;
+    border-bottom: 1px solid #2F3035;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+    &__list {
         display: flex;
-    justify-content: space-between;
-        border-bottom: 1px black solid;
+        margin-bottom: 20px;
 
-        td {
-            background-color: red;
+        li {
+            @include font('IBM Plex Sans', $colorTitle, 14px);
+            font-weight: 400;
         }
 
-
-        .cellAdress {
-            // padding-right: 81px;
+        .adress {
+            max-width: 300px;
+            width: 100%;
         }
 
-        .cellWorkHours {
-            // padding-right: 96px;
-            // padding-bottom: 20px;
-            display: flex;
-            flex-direction: column;
+        .workHours {
+            max-width: 253px;
+            width: 100%;
 
-            .weekdaysWorkHours {
+            .workHoursWeekdays {
                 display: flex;
 
-                .weekdayworkDays {
+
+                .weekdays {
                     margin-right: 21px;
                 }
             }
 
-
-            .weekendWorkHours {
+            .weekend {
                 display: flex;
 
-                .weekendWorkDays {
-                    margin-right: 46px;
+                .weekendDays {
+                    margin-right: 43px;
                 }
             }
-
-
         }
 
-
-        .cellAvailability {
-            // padding-right: 117px;
+        .available {
+            max-width: 204px;
+            width: 100%;
         }
 
+    }
 
+    .btnCell {
+        position: absolute;
+        right: 0;
+        top: -2px;
 
-
-
-
-
-
-
-        .cellBtn {
-            display: flex;
-            border: 2px red solid;
-
-            .btn {
-                border: 0;
-                color: #FFFFFF;
-                background-color: #1C62CD;
-                font-size: 13px;
-                min-height: 35px;
-
-                padding: {
-                    top: 0;
-                    bottom: 0;
-                    right: 40px;
-                    left: 41px;
-                }
-
-                ;
-            }
+        .btn {
+            min-height: 35px;
+            padding: 0px 40px;
+            background-color: $secondaryColor;
+            border: none;
+            color: white;
+            border-radius: 3px;
         }
     }
 }

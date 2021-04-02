@@ -2,14 +2,14 @@ import s from './ProductTableHead.module.scss';
 
 function ProductTableHead() {
     return (
-        <thead className={s.tableHead}>
-            <tr className={s.headRow}>
-                <th className={s.headCell}>Адрес</th>
-                <th className={s.headCell}>Режим работы</th>
-                <th className={s.headCell}>Доступно</th>
-                <th className={s.headCell}>Количество</th>
-            </tr>
-        </thead>
+        <div className={s.tableHead}>
+            <ul className={s.tableHead__list}>
+                <li className={s.item}>Адрес</li>
+                <li className={s.item}>Режим работы</li>
+                <li className={s.item}>Доступно</li>
+                <li className={s.item}>Количество</li>
+            </ul>
+        </div>
 
     );
 }

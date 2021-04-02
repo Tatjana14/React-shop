@@ -7,21 +7,23 @@
     $product: &;
     display: flex;
     flex-direction: column;
-    border: 2px black solid;
+    margin-top: 43px;
 
-    .breadCrumbsContainer {
-        margin-bottom: 17px;
 
-        .breadCrumb {
-            @include font('IBM Plex Sans', #C4C4C4, 15px);
+
+        .breadCrumbs {
+            margin-bottom: 36px;
         }
-    }
+    
 
     .describtion {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(50px, auto);
 
 
         .card {
+            grid-area: 1/1/4/2;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -101,20 +103,15 @@
             }
         }
 
-        .information {
-            display: flex;
-            flex-direction: column;
+    
 
-            .title {
-                @include font('IBM Plex Sans', $colorTitle, 30px);
-                font-weight: 700;
-                line-height: 35.8px;
-                max-width: 570px;
-                width: 100%;
-            }
+
+            
 
             .productCode {
                 display: flex;
+                flex-direction: column;
+                grid-area: 1/2/2/3;
 
                 margin: {
                     top: 10px;
@@ -124,7 +121,15 @@
                 }
 
                 ;
-
+                .title {
+                    @include font('IBM Plex Sans', $colorTitle, 30px);
+                    font-weight: 700;
+                    line-height: 35.8px;
+                    max-width: 570px;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .codeBox{
                 .code {
                     margin-right: 8px;
                     @include font('IBM Plex Sans', $colorText, 15px);
@@ -134,9 +139,11 @@
                     @include font('IBM Plex Sans', $colorText, 15px);
                 }
             }
+            }
 
             .buttons {
                 margin-bottom: 50px;
+                grid-area: 2/2/3/3;
 
                 .btnsList {
                     display: flex;
@@ -159,11 +166,12 @@
             }
 
 
-        }
+    
 
         .characteristics {
             display: flex;
             flex-direction: column;
+            grid-area: 3/2/4/3;
 
             .linksWrapper {
                 margin: {
@@ -179,10 +187,14 @@
                     display: flex;
 
                     .item {
-                        font-size: 20px;
                         margin-right: 34px;
                         @include font('IBM Plex Sans', #FFFFFF, 20px);
                         font-weight: 400;
+
+                        &:first-child{
+                            font-weight: 700;
+                            border-bottom: 2px solid #1C62CD;
+                        }
 
                         &:last-child {
                             margin-right: 0;
@@ -191,18 +203,7 @@
                         .link {
                             font-size: 20px;
 
-                            &:hover {
-                                font-weight: 700;
-                                transition: 0.2s;
-                            }
-
-
-
-                            &:active {
-                                font-weight: 700;
-                                border-bottom: 2px $secondaryColor solid;
-                                color: $colorTitle;
-                            }
+                        
                         }
                     }
                 }
@@ -307,11 +308,6 @@
                         border-bottom: 2px transparent solid;
                         color: #2F3035;
                         @include font('IBM Plex Sans', $colorTitle, 20px);
-
-                        &:hover {
-                            border-bottom: 2px #1C62CD solid;
-
-                        }
                     }
                 }
 
@@ -323,14 +319,18 @@
 
             .inputsContainer {
                 margin-top: 50px;
+                margin-bottom: 50px;
                 display: flex;
 
                 .inputSearchShopContainer {
                     display: flex;
+                    align-items: center;
                     margin-right: 155px;
+                    max-width: 395px;
+                    width: 100%;
+                    
 
                     .inputSearchLabel {
-
                         margin-right: 17px;
                         @include font('IBM Plex Sans', $colorTitle, 17px);
                         font-weight: 400;
@@ -340,13 +340,20 @@
                         border: none;
                         background-color: #F0F0F4;
                         padding-left: 17px;
+                        padding-right: 9px;
                         caret-color: $colorText;
                         position: relative;
+                        width: 100%;
+                        height: 33px;
+                        background-image: url('../../assets//img/Product/searchIcon.svg');
+                        background-repeat: no-repeat;
+                        background-position: 96% center;
+                        
 
 
                         &::after {
                             content: '';
-                            background-image: url('../../assets//img/Product/searchIcon.svg');
+                            
                             position: absolute;
                             top: 0;
                             left: 0;
@@ -367,8 +374,26 @@
                         .inputRadioBtnToday {
                             margin-right: 15px;
                         }
+                        .labelRadioBtnToday{
+                            @include font('IBM Plex Sans', $colorTitle, 17px);
+                            font-weight: 400;
+                        }
 
 
+                    }
+
+                    .radioBtnLater{
+                        margin-right: 54px;
+                        display: flex;
+                        align-items: center;
+                        .inputRadioBtnLater{
+                            margin-right: 15px;
+                        }
+
+                        .laberRadioBtnLater{
+                            @include font('IBM Plex Sans', $colorTitle, 17px);
+                            font-weight: 400;
+                        }
                     }
 
 

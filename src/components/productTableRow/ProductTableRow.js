@@ -2,23 +2,26 @@ import s from './ProductTableRow.module.scss';
 
 function ProductTableInfoRow(props) {
     return (
-            <tr className={s.tableRow}>
-                <td className={s.cellAdress}>{props.adress}</td>
-                <td className={s.cellWorkHours}>
-                    <div className={s.weekdaysWorkHours}>
-                        <span className={s.weekdayworkDays}>{props.weekdayworkDaysValue}</span>
-                        <span className={s.weekdayworkHours}>{props.weekdayworkHoursValue}</span>
+        <div className={s.tableRow}>
+            <ul className={s.tableRow__list}>
+                <li className={s.adress}>{props.adressValue}</li>
+                <li className={s.workHours}>
+                    <div className={s.workHoursCell}>
+                        <div className={s.workHoursWeekdays}>
+                            <span className={s.weekdays}>{props.weekdaysValue}</span>
+                            <span className={s.weekDaysHours}>{props.weekDaysHoursValue}</span>
+                        </div>
+                        <div className={s.weekend}>
+                            <span className={s.weekendDays}>{props.weekendDaysValue}</span>
+                            <span className={s.weekendHours}>{props.weekendHoursValue}</span>
+                        </div>
                     </div>
-
-                    <div className={s.weekendWorkHours}>
-                        <span className={s.weekendWorkDays}>{props.weekendWorkDaysValue}</span>
-                        <span className={s.weekendWorkHours}>{props.weekendWorkHoursValue}</span>
-                    </div>
-                </td>
-                <td className={s.cellAvailability}>{props.avaiable}</td>
-                <td className={s.cellCount}>{props.count}</td>
-                <td className={s.cellBtn}></td>
-            </tr>
+                </li>
+                <li className={s.available}>{props.availableValue}</li>
+                <li className={s.count}>{props.countValue}</li>
+                <li className={s.btnCell}><button className = {s.btn}>КУПИТЬ</button></li>
+            </ul>
+        </div>
 
     );
 

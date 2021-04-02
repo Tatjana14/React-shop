@@ -1,0 +1,51 @@
+@import '../../../sass/basis/fonts';
+@import '../../../sass/abstracts/vars';
+@import '../../../sass/abstracts/mixins';
+
+.bodyRow{
+    position: relative;
+    border-bottom: $colorTitle 1px solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 300px 253px 204px 104px 60px;
+    .bodyCell{
+        @include font('IBM Plex Sans', $colorTitle, 16px);
+
+        &:first-child{
+            max-width: 219px;
+            width: 100%;
+        }
+
+        &:last-child{
+            position: absolute;
+            top: 20px;
+            right: 0;
+            .button{
+            min-height: 35px;
+            padding: 0px 40px;
+            background-color: $secondaryColor;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            }
+        }
+        font-weight: 400;
+        .workHoursCell{
+            .workHoursWeekdays{
+                display: flex;
+                .weekdays{
+                    margin-right: 21px;
+                    margin-bottom: 9px;
+                }
+            }
+
+            .weekend{
+                display: flex;
+                .weekendDays{
+                    margin-right: 46px;
+                }
+            }
+        }
+    }
+}

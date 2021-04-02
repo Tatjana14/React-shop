@@ -11,7 +11,7 @@ function Footer() {
       <div className={s.top}>
 
         <div className={s.subscribeForm}>
-          <h3 className={s.title}>Подпишитесь на нашу рассылку и узнавайте о акция быстрее </h3>
+          <h3 className={s.title}>Подпишитесь на нашу рассылку и узнавайте о акциях быстрее </h3>
           <form className={s.inputEmail}>
             <input className={s.input} type="email" placeholder="Введите ваш e-mail:" />
             <button className={s.btn}>Отправить</button>
@@ -34,7 +34,7 @@ function Footer() {
               </li>
               <li className={s.item}>
                 <a href="" className={s.link}>
-                  Акци
+                  Акции
                 </a>
               </li>
               <li className={s.item}>
@@ -42,6 +42,8 @@ function Footer() {
                   Магазины
                 </a>
               </li>
+              <li className={s.item}>
+            </li>
             </ul>
           </div>
 
@@ -68,6 +70,7 @@ function Footer() {
                   Новости
                 </a>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -99,18 +102,19 @@ function Footer() {
                 <img src={Youtube} alt="" className={s.socialMenu__icon} />
               </a>
             </li>
+            
 
           </ul>
 
         </div>
       </div>
 
-      <div className={s.bottom}>
+      {/* <div className={s.bottom}>
         <div className={s.wrapper}>
           <a href="#" className={s.link}>Договор оферты</a>
           <a href="#" className={s.link}>Политика обработки персональных данных</a>
           </div>
-      </div>
+      </div> */}
 
     </div>
   );

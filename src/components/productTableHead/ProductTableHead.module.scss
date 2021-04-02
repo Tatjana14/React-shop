@@ -1,8 +1,32 @@
+@import '../../sass/basis/fonts';
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/vars';
+
 .tableHead{
-    .headRow{
-        .headCell{
-            background-color: red;
-            text-align: left;
+    max-width: 100%;
+    margin-bottom: 33px;    
+    &__list{
+        display: flex;
+        .item{
+            @include font('IBM Plex Sans', $colorTitle, 20px);
+            font-weight: 400;
+            &:first-child{
+                max-width: 300px;
+                width: 100%;
+            }
+
+            &:nth-child(2){
+                max-width: 253px;
+                width: 100%;
+            }
+
+            &:nth-child(3){
+                max-width: 204px;
+                width: 100%;
+            }
+            
+
+        }
+            
         }
     }
-}

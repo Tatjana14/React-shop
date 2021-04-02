@@ -1,4 +1,6 @@
 @import '../sass/abstracts/vars';
+@import '../sass/basis/fonts';
+@import '../sass/abstracts/mixins';
 
 .footer {
   $footer: &;
@@ -8,17 +10,20 @@
 
   .top {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 
     padding: {
       top: 43px;
       bottom: 0px;
       left: 375px;
-      right: 0px;
+      right: 375px;
     }
 
     .subscribeForm {
       display: flex;
+      align-self: start;
       flex-direction: column;
 
       padding: {
@@ -36,7 +41,8 @@
       }
 
       .title {
-        font-size: 14px;
+        @include font('IBM Plex Sans', $colorTitle, 14px);
+        font-weight: 700;
         line-height: 16.71px;
         max-width: 223px;
         width: 100%;
@@ -105,13 +111,17 @@
 
         .title {
           margin-bottom: 8px;
-          font-size: 14px;
+          @include font('IBM Plex Sans', $colorTitle, 14px);
+        font-weight: 700;
         }
         .list{
 
         .item {
-          margin-bottom: 12px;
-          font-size: 14px;
+          margin-bottom: 5px;
+          @include font('IBM Plex Sans', $colorTitle, 14px);
+        font-weight: 400;
+
+
 
           &:last-child {
             margin-bottom: 0;
@@ -125,14 +135,16 @@
 
         .title {
           margin-bottom: 8px;
-          font-size: 14px;
+          @include font('IBM Plex Sans', $colorTitle, 14px);
+          font-weight: 700;
         }
 
         .list{
 
         .item {
-          margin-bottom: 12px;
-          font-size: 14px;
+          margin-bottom: 5px;
+          @include font('IBM Plex Sans', $colorTitle, 14px);
+        font-weight: 400;
 
           &:last-child {
             margin-bottom: 0;
@@ -145,9 +157,6 @@
 
 
     .socialMenu {
-      position: absolute;
-      top: 50%;
-      right: 451px;
 
       &__list {
 
@@ -155,6 +164,7 @@
         align-self: center;
 
         &Item {
+          
           margin: {
             top: 0px;
             bottom: 0px;
@@ -180,22 +190,19 @@
   }
 
   .bottom {
-    
-
+    margin-top: 46px;
+    margin-bottom: 27px;
     .wrapper{
-      margin-left: 805px;
-
+      display: flex;
+      transform: translateX(835px);
       .link{
-        font-size: 10px;
+        @include font('IBM Plex Sans', #2F3035, 10px);
 
-        &:first-child{
-margin-right: 81px;
-        }
+      &:first-child{
+        margin-right: 81px;
       }
-      
-    
-  }
-
+    }
+    }
   }
 
 
