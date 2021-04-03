@@ -14,107 +14,108 @@ function Footer() {
           <h3 className={s.title}>Подпишитесь на нашу рассылку и узнавайте о акциях быстрее </h3>
           <form className={s.inputEmail}>
             <input className={s.input} type="email" placeholder="Введите ваш e-mail:" />
-            <button className={s.btn}>Отправить</button>
+            <button className={s.btn}>ОТПРАВИТЬ</button>
           </form>
         </div>
 
         <div className={s.lists}>
-          <div className={s.informationMenu}>
-            <h3 className={s.title}>Информация</h3>
-            <ul className={s.list}>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  О компании
+          <div className={s.content}>
+            <div className={s.informationMenu}>
+              <h3 className={s.title}>Информация</h3>
+              <ul className={s.list}>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    О компании
                 </a>
-              </li>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  Контакты
+                </li>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    Контакты
                 </a>
-              </li>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  Акции
+                </li>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    Акции
                 </a>
-              </li>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  Магазины
+                </li>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    Магазины
                 </a>
-              </li>
-              <li className={s.item}>
-            </li>
-            </ul>
-          </div>
+                </li>
+                <li className={s.item}>
+                </li>
+              </ul>
+            </div>
 
-          <div className={s.onlineRetailMenu}>
-            <h3 className={s.title}>Интернет-магазин</h3>
-            <ul className={s.list}>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  Доставка и самовывоз
+            <div className={s.onlineRetailMenu}>
+              <h3 className={s.title}>Интернет-магазин</h3>
+              <ul className={s.list}>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    Доставка и самовывоз
               </a>
-              </li>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  Оплата
+                </li>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    Оплата
                 </a>
-              </li>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  Возврат-обмен
+                </li>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    Возврат-обмен
               </a>
-              </li>
-              <li className={s.item}>
-                <a href="" className={s.link}>
-                  Новости
+                </li>
+                <li className={s.item}>
+                  <a href="" className={s.link}>
+                    Новости
                 </a>
-              </li>
-              
-            </ul>
+                </li>
+              </ul>
+            </div>
+            <div className={s.socialMenu}>
+
+              <ul className={s.socialMenu__list}>
+
+                <li className={s.socialMenu__listItem}>
+                  <a href="" className={s.socialMenu__itemLink}>
+                    <img src={Instagram} alt="" className={s.socialMenu__icon} />
+                  </a>
+                </li>
+
+                <li className={s.socialMenu__listItem}>
+                  <a href="" className={s.socialMenu__itemLink}>
+                    <img src={VK} alt="" className={s.socialMenu__icon} />
+                  </a>
+                </li>
+
+                <li className={s.socialMenu__listItem}>
+                  <a href="" className={s.socialMenu__itemLink}>
+                    <img src={Facebook} alt="" className={s.socialMenu__icon} />
+                  </a>
+                </li>
+
+                <li className={s.socialMenu__listItem}>
+                  <a href="" className={s.socialMenu__itemLink}>
+                    <img src={Youtube} alt="" className={s.socialMenu__icon} />
+                  </a>
+                </li>
+
+
+              </ul>
+
+            </div>
+          </div>
+          <div className={s.documents}>
+            <a href="#" className={s.link}>Договор оферты</a>
+            <a href="#" className={s.link}>Политика обработки персональных данных</a>
           </div>
         </div>
 
-        <div className={s.socialMenu}>
 
-          <ul className={s.socialMenu__list}>
-
-            <li className={s.socialMenu__listItem}>
-              <a href="" className={s.socialMenu__itemLink}>
-                <img src={Instagram} alt="" className={s.socialMenu__icon} />
-              </a>
-            </li>
-
-            <li className={s.socialMenu__listItem}>
-              <a href="" className={s.socialMenu__itemLink}>
-                <img src={VK} alt="" className={s.socialMenu__icon} />
-              </a>
-            </li>
-
-            <li className={s.socialMenu__listItem}>
-              <a href="" className={s.socialMenu__itemLink}>
-                <img src={Facebook} alt="" className={s.socialMenu__icon} />
-              </a>
-            </li>
-
-            <li className={s.socialMenu__listItem}>
-              <a href="" className={s.socialMenu__itemLink}>
-                <img src={Youtube} alt="" className={s.socialMenu__icon} />
-              </a>
-            </li>
-            
-
-          </ul>
-
-        </div>
       </div>
 
-      {/* <div className={s.bottom}>
-        <div className={s.wrapper}>
-          <a href="#" className={s.link}>Договор оферты</a>
-          <a href="#" className={s.link}>Политика обработки персональных данных</a>
-          </div>
-      </div> */}
+
 
     </div>
   );

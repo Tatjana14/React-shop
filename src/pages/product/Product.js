@@ -93,10 +93,16 @@ function Product() {
                             characteristicValueClass={s.item}
                             CharacteristicName="Год выпуска" CharacteristicValue="2018" />
                         <a className={s.link} href="">Показать еще</a>
+
+                    </div>
+
+                    <div className={s.btnContainer}>
                         <button className={s.btn}>КУПИТЬ</button>
                     </div>
                 </div>
-
+                <div className={s.btnContainerMobile}>
+                    <button className={s.btnMobile}>КУПИТЬ</button>
+                </div>
             </div>
 
 

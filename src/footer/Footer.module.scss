@@ -7,18 +7,24 @@
   display: flex;
   flex-direction: column;
   background-color: #F0F0F4;
+  padding-bottom: 22px;
+  @media screen and(max-width: 988px) {
+    display: none;
+}
 
   .top {
+    margin: 0 auto; 
+    max-width: 1170px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: relative;
 
     padding: {
       top: 43px;
       bottom: 0px;
-      left: 375px;
-      right: 375px;
+      left: 0px;
+      right: 0px;
     }
 
     .subscribeForm {
@@ -30,14 +36,14 @@
         top: 0px;
         bottom: 0px;
         left: 0px;
-        right: 0px;
+        right: 176px;
       }
 
       margin: {
         top: 0px;
         bottom: 0px;
         left: 0px;
-        right: 159px;
+        right: 0px;
       }
 
       .title {
@@ -82,9 +88,9 @@
 
         .btn {
           border: none;
+          @include font('IBM Plex Sans', $colorText, 11px);
+          line-height: 13px;
           background-color: $secondaryColor;
-          color: $colorText;
-          font-size: 11px;
           align-self: start;
           min-height: 33px;
 
@@ -102,9 +108,16 @@
 
     .lists {
       display: flex;
-      margin-right: 100px;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .content{
+        display: flex;
+        align-items: center;
+        margin-bottom: 46px;
 
       .informationMenu {
+        align-self: start;
         margin-right: 100px;
 
         
@@ -131,7 +144,8 @@
       }
 
       .onlineRetailMenu {
-        margin-right: 0px;
+        align-self: start;
+        margin-right: 107px;
 
         .title {
           margin-bottom: 8px;
@@ -153,59 +167,53 @@
         }
       }
       }
-    }
-
-
-    .socialMenu {
-
-      &__list {
-
-        display: flex;
-        align-self: center;
-
-        &Item {
-          
-          margin: {
-            top: 0px;
-            bottom: 0px;
-            right: 30px;
-            left: 0px;
-          }
-
-
-
-          &:last-child {
-            margin-right: 0;
+      .socialMenu {
+        margin-right: 0px;
+  
+        &__list {
+  
+          display: flex;
+          align-self: center;
+  
+          &Item {
+            
+            margin: {
+              top: 0px;
+              bottom: 0px;
+              right: 30px;
+              left: 0px;
+            }
+  
+  
+  
+            &:last-child {
+              margin-right: 0;
+            }
           }
         }
+  
       }
-
     }
-
-
-
-
-
-
-  }
-
-  .bottom {
-    margin-top: 46px;
-    margin-bottom: 27px;
-    .wrapper{
+    .documents{
       display: flex;
-      transform: translateX(835px);
       .link{
-        @include font('IBM Plex Sans', #2F3035, 10px);
+        @include font('IBM Plex Sans', $colorTitle, 10px);
+        font-weight: 400;
 
-      &:first-child{
-        margin-right: 81px;
+        &:last-child{
+          margin-left: 81px;
+        }
       }
     }
     }
+
+
+    
+
+
+
+
+
+
   }
-
-
-
-
 }
