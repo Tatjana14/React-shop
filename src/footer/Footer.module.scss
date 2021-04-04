@@ -8,9 +8,6 @@
   flex-direction: column;
   background-color: #F0F0F4;
   padding-bottom: 22px;
-  @media screen and(max-width: 988px) {
-    display: none;
-}
 
   .top {
     margin: 0 auto; 
@@ -20,11 +17,27 @@
     align-items: center;
     position: relative;
 
+    
+
+    
+
     padding: {
       top: 43px;
       bottom: 0px;
       left: 0px;
       right: 0px;
+    }
+    @media screen and(max-width: 1200px) {
+      padding: {
+        top: 43px;
+        bottom: 0px;
+        left: 20px;
+        right: 20px;
+      }
+    }
+
+    @media screen and(max-width: 768px){
+          flex-direction: column;
     }
 
     .subscribeForm {
@@ -32,19 +45,37 @@
       align-self: start;
       flex-direction: column;
 
+      
+
       padding: {
         top: 0px;
         bottom: 0px;
         left: 0px;
-        right: 176px;
+        right: 0;
       }
 
       margin: {
         top: 0px;
         bottom: 0px;
         left: 0px;
-        right: 0px;
+        right: 176px;
       }
+
+      @media screen and(max-width: 1200px){
+        margin-right: 100px;
+      }
+
+      @media screen and(max-width: 910px){
+        margin-right: 20px;
+      }
+
+      @media screen and(max-width: 768px){
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-right: 0;
+      }
+
 
       .title {
         @include font('IBM Plex Sans', $colorTitle, 14px);
@@ -110,15 +141,35 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      
+      @media screen and(max-width: 1200px){
+        width: 100%;
+      }
+
+      @media screen and(max-width: 480px){
+        flex-direction: column;
+      }
 
       .content{
         display: flex;
         align-items: center;
         margin-bottom: 46px;
+        @media screen and(max-width: 1200px){
+          justify-content: space-between;
+        }
+
+        @media screen and(max-width: 480px){
+          flex-direction: column;
+          
+        }
 
       .informationMenu {
         align-self: start;
         margin-right: 100px;
+
+        @media screen and(max-width: 1200px){
+          margin-right: 0px;
+        }
 
         
 
@@ -146,6 +197,10 @@
       .onlineRetailMenu {
         align-self: start;
         margin-right: 107px;
+
+        @media screen and(max-width: 1200px){
+          margin-right: 0px;
+        }
 
         .title {
           margin-bottom: 8px;
@@ -189,8 +244,18 @@
             &:last-child {
               margin-right: 0;
             }
+
+            @media screen and(max-width: 1200px){
+              margin-right: 10px;
+            }
+
+            @media screen and(max-width: 768px){
+              margin-right: 20px;
+            }
           }
         }
+
+        
   
       }
     }
@@ -202,8 +267,25 @@
 
         &:last-child{
           margin-left: 81px;
+
+          @media screen and(max-width: 480px){
+            margin-left: 0;
+          }
         }
       }
+
+      @media screen and(max-width: 1020px){
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media screen and(max-width: 480px){
+        flex-direction: column;
+        position: relative;
+      }
+
     }
     }
 
