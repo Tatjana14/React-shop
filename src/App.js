@@ -6,6 +6,7 @@ import Footer from './footer/Footer';
 import Main from "../src/pages/main/Main"
 import Product from './pages/product/Product';
 import { BrowserRouter, Route } from 'react-router-dom';
+import BurgerMenu from './components/burgerMenu/BurgerMenu';
 
 
 

@@ -10,15 +10,20 @@
     }
     &Buttons {
         @include flex (start, center);
+        overflow: scroll
     }
     &Sort {
         @include flex (start, center);
+        @media screen and (max-width: 752px) {
+            margin-top: 25px;
+        }
     }
 }
 .catalogHeadWrap {
     @include flex (space-between, center);
     width: 100%;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 .catalogHeadBtn {
     padding: 5px 25px;
@@ -42,6 +47,9 @@ div > select  {
     @include font ('IBM Plex Sans', $colorTitle, 14px);
     font-weight: 400;
     padding: 0 10px;
+    @media screen and (max-width: 768px) {
+        margin-right: 20px;
+    }
 }
 .catalogHeadBtnView {
     border: none;

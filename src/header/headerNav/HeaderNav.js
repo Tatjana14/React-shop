@@ -5,12 +5,14 @@ import map from "../../assets/img/header/map.svg";
 import like from "../../assets/img/common/like.svg";
 import user from "../../assets/img/header/user.svg";
 import count from "../../assets/img/header/count.svg";
+import BurgerMenu from '../../components/burgerMenu/BurgerMenu';
 
 
 
 function HeaderNav() {
   return (
     <div className={s.headerNav}>
+      <BurgerMenu/>
       <ul className={s.headerNavItems}>
         <li className={s.headerNavItem}>
           <a className={s.headerNavLink} href="">Магазины</a>
@@ -23,6 +25,7 @@ function HeaderNav() {
         </li>
       </ul>
       <img className={s.headerLogo} src={logo} alt="#" />
+      <span className={s.mobileLogo}>DRIVE MOTO</span>
       <div className={s.headerPersonalWrap}>
         <div className={s.headerMap}>
           <img src={map} alt="#" />
@@ -34,7 +37,6 @@ function HeaderNav() {
           <a className={s.headerPersonalIcon} href=""><img src={count} alt="#" /></a>
         </div>
       </div>
-
     </div>
   );
 }

@@ -4,6 +4,9 @@
 .headerMenuItems {
   @include flex (space-between, baseline);
   background-color: $secondaryBg;
+  @media screen and (max-width: 980px) {
+    display: none;
+}
 }
 .headerMenuItem {
   transition: border 0.2s;

@@ -17,12 +17,12 @@ import s from './Catalog.module.scss';
 
 function Catalog() {
   return (
-    <section className={s.Catalog}>
+    <section className={s.catalog}>
       <BreadCrumbs to='#' value='Главная'/>
       <CatalogHead title = 'Гидроциклы' btnValue1 = 'Полноприводные' btnValue2 = 'от 5000' btnValue3 = 'BRP' btnValue4 = 'Еще'/>
       <div className={s.catalogWrapper}>
         <div className={s.optionsWrap}>
-          <div>
+          <div className={s.leftBlock}>
           <div className={s.linkMenu}>
             <a className={s.linkMenuItem} href="">Параметры</a>
             <a className={s.linkMenuItem} href="">По марке</a>
@@ -41,7 +41,6 @@ function Catalog() {
               {/* <Checkbox checkName='В наличие'/>
               <Checkbox checkName='Под заказ'/> */}
               <Check value = 'В наличии'/>
-              <Check value = 'Под заказ'/>
               </div>
               </>
             }
