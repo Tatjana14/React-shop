@@ -2,16 +2,38 @@
 @import '../../sass/abstracts/vars';
 @import '../../sass/basis/fonts';
 
-.table{
-    width: 100%;
-    .top{
-        .topRow{
-            display: grid;
-            grid-template-columns: 300px 253px 204px 104px 60px;
-            .cell{
-                text-align: left;
-                @include font ('IBM Plex Sans', $colorTitle, 20px);
+
+    .table {
+        width: 100%;
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+
+        .top {
+            .topRow {
+                display: grid;
+                grid-template-columns: 300px 253px 204px 104px;
+
+                @media screen and (max-width:1110px) {
+                    grid-template-columns: 220px 200px 150px 100px;
+                }
+
+                @media screen and (max-width:920px) {
+                    grid-template-columns: 150px 180px 100px 70px;
+                }
+
+                @media screen and (max-width:768px) {
+                    grid-template-columns: 200px;
+                    grid-auto-rows: minmax(40px, auto);
+                }
+
+                .cell {
+                    text-align: left;
+                    @include font ('IBM Plex Sans', $colorTitle, 20px);
+                }
             }
         }
     }
-}
+
+    

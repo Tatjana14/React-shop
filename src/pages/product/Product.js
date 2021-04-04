@@ -10,6 +10,7 @@ import LikeIcon from '../../assets/img/common/like.svg';
 import CustomSeparator from './productBreadCrumbs/ProductBradCrumbs';
 
 import ProductTable from '../../components/productTable/ProductTable';
+import ProductTableMobile from '../../components/productTableMobile/ProductTableMobile';
 
 function Product() {
     return (
@@ -168,6 +169,7 @@ function Product() {
                     </div>
 
                     <ProductTable />
+                    <ProductTableMobile adressText="Москва, ул. Науки 25"availableText="В наличие" countText="1" />
 
                     {/* <div className={s.table}>
                         <ProductTableHead />
@@ -206,7 +208,7 @@ function Product() {
                     </div> */}
 
                 </div>
-
+                
             </div>
 
 

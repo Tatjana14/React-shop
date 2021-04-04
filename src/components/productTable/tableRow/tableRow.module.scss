@@ -8,13 +8,27 @@
     padding-bottom: 20px;
     padding-top: 20px;
     display: grid;
-    grid-template-columns: 300px 253px 204px 104px 60px;
+    grid-template-columns: 300px 253px 204px 104px;
+
+    @media screen and (max-width:1110px) {
+        grid-template-columns: 220px 200px 150px 100px;
+    }
+
+    @media screen and (max-width:920px) {
+        grid-template-columns: 150px 180px 100px 70px;
+    }
     .bodyCell{
         @include font('IBM Plex Sans', $colorTitle, 16px);
+
+        
 
         &:first-child{
             max-width: 219px;
             width: 100%;
+
+            @media screen and (max-width:1110px){
+                max-width: 150px;
+            }
         }
 
         &:last-child{

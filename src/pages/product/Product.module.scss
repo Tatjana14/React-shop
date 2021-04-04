@@ -427,6 +427,12 @@
         .nav {
             background-color: #F0F0F4;
 
+            @media screen and (max-width:768px){
+                background-color: #FFFFFF;
+            }
+
+
+
             .list {
                 display: flex;
                 justify-content: space-between;
@@ -437,8 +443,13 @@
                     bottom: 0px;
                     right: 34px;
                     left: 34px;
-
                 }
+
+                @media screen and(max-width: 768px){
+                    flex-direction: column;
+                    padding: 0;
+                }
+
 
 
                 .item {
@@ -447,7 +458,6 @@
                         bottom: 23px;
                         right: 0px;
                         left: 0px;
-
                     }
 
                     .link {
@@ -455,7 +465,13 @@
                         border-bottom: 2px transparent solid;
                         @include font('IBM Plex Sans', $colorTitle, 20px);
 
-                        
+                        @media screen and (max-width:933px){
+                            font-size: 18px;
+                        }
+
+                        @media screen and (max-width:768px){
+                            font-size: 26px;
+                        }
                     }
                 }
 
@@ -467,10 +483,17 @@
         .delivery {
             padding-left: 39px;
 
+            @media screen and(max-width: 768px){
+                padding: 0;
+            }
+
             .inputsContainer {
                 margin-top: 50px;
                 margin-bottom: 50px;
                 display: flex;
+                @media screen and (max-width:768px){
+                    flex-direction: column;
+                }
 
                 .inputSearchShopContainer {
                     display: flex;
@@ -479,11 +502,26 @@
                     max-width: 395px;
                     width: 100%;
 
+                    @media screen and(max-width: 1015px) {
+                        margin-right: 70px;
+                    }
+
+                    @media screen and (max-width:768px){
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    
+
 
                     .inputSearchLabel {
                         margin-right: 17px;
                         @include font('IBM Plex Sans', $colorTitle, 17px);
                         font-weight: 400;
+
+                        @media screen and (max-width:768px){
+                            font-size: 20px;
+                        }
                     }
 
                     .inputSearchShop {
@@ -498,17 +536,6 @@
                         background-image: url('../../assets//img/Product/searchIcon.svg');
                         background-repeat: no-repeat;
                         background-position: 96% center;
-
-
-
-                        &::after {
-                            content: '';
-
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-
-                        }
                     }
                 }
 
@@ -516,18 +543,57 @@
                     display: flex;
                     align-items: center;
 
+                    @media screen and(max-width: 886px){
+                        justify-content: space-between;
+                    }
+
+                    @media screen and (max-width:768px){
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
                     .radioBtnToday {
                         margin-right: 54px;
                         display: flex;
                         align-items: center;
+                        position: relative;
+
+                        
+                        
+
+                        @media screen and(max-width: 930px){
+                            margin-right: 10px;
+                        }
+
+                        @media screen and (max-width:768px){
+                            width: 100%;
+                            margin-right: 0;
+                        }
+
+
 
                         .inputRadioBtnToday {
                             margin-right: 15px;
+
+                            @media screen and (max-width:768px){
+                                margin-right: 0;
+                                position: absolute;
+                                right: 0;
+                            }
                         }
 
                         .labelRadioBtnToday {
                             @include font('IBM Plex Sans', $colorTitle, 17px);
                             font-weight: 400;
+
+
+                            @media screen and(max-width: 885px){
+                                font-size: 16px;
+                            }
+
+                            @media screen and (max-width:768px){
+                                font-size: 22px;
+                            }
                         }
 
 
@@ -537,14 +603,34 @@
                         margin-right: 54px;
                         display: flex;
                         align-items: center;
+                        position: relative;
+
+                        @media screen and (max-width:768px){
+                            width: 100%;
+                            margin-right: 0;
+                        }
 
                         .inputRadioBtnLater {
                             margin-right: 15px;
+                            @media screen and (max-width:768px){
+                                margin-right: 0;
+                                position: absolute;
+                                right: 0;
+                            }
+                            
                         }
 
                         .laberRadioBtnLater {
                             @include font('IBM Plex Sans', $colorTitle, 17px);
                             font-weight: 400;
+
+                            @media screen and(max-width: 885px){
+                                font-size: 16px;
+                            }
+
+                            @media screen and (max-width:768px){
+                                font-size: 22px;
+                            }
                         }
                     }
 
