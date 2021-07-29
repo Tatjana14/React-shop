@@ -80,10 +80,9 @@
                     @include font('IBM Plex Sans', #FFFFFF, 15px);
                 }
 
-                .img{
-                   
+                .img{                   
 
-                    @media screen and (max-width: 492px) {
+                    @media screen and (max-width: 516px) {
                     max-width: 500px;
                     width: 100%;
                     max-height: 579px;

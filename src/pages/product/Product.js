@@ -39,6 +39,7 @@ function Product() {
                         <span className={s.codeNumber}>366666-2</span>
                     </div>
                 </div>
+                
 
                 <div className={s.buttons}>
                     <ul className={s.btnsList}>
@@ -170,42 +171,6 @@ function Product() {
 
                     <ProductTable />
                     <ProductTableMobile adressText="Москва, ул. Науки 25"availableText="В наличие" countText="1" />
-
-                    {/* <div className={s.table}>
-                        <ProductTableHead />
-                        <ProductTableRow
-                            adressValue='Москва, ул. Науки 25а'
-                            weekdaysValue='пн-сб:'
-                            weekDaysHoursValue='08:00-19:00'
-                            weekendDaysValue='вс:'
-                            weekendHoursValue='09:00-17:00'
-                            availableValue='В наличии'
-                            countValue='1' />
-                        <ProductTableRow
-                            adressValue='Москва, ул. Южная 134'
-                            weekdaysValue='пн-сб:'
-                            weekDaysHoursValue='08:00-19:00'
-                            weekendDaysValue='вс:'
-                            weekendHoursValue='09:00-17:00'
-                            availableValue='В наличии'
-                            countValue='2' />
-                        <ProductTableRow
-                            adressValue='Санкт-Петербург, ул. Красная 19'
-                            weekdaysValue='пн-сб:'
-                            weekDaysHoursValue='08:00-19:00'
-                            weekendDaysValue='вс:'
-                            weekendHoursValue='09:00-17:00'
-                            availableValue='Нет наличии'
-                            countValue='0' />
-                        <ProductTableRow
-                            adressValue='Киев, ул Шевченко 167'
-                            weekdaysValue='пн-сб:'
-                            weekDaysHoursValue='08:00-19:00'
-                            weekendDaysValue='вс:'
-                            weekendHoursValue='09:00-17:00'
-                            availableValue='Нет наличии'
-                            countValue='0' />
-                    </div> */}
 
                 </div>
                 
